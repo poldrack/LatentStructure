@@ -10,7 +10,15 @@ clustering - contains files used for clustering of disorders
 
 cogatlas - contains files used for cogatlas topic modeling
 
-src: contains the following source files:
+src: contains the source files used for all analyses. these require the following
+external libraries:
+
+http://numpy.scipy.org/
+http://scikit-learn.org/stable/
+http://rpy.sourceforge.net/rpy2.html
+http://nipy.sourceforge.net/nibabel/
+
+also note that src/utils needs to be in the python path
 
 1_db_foci_to_image.py - obtains coordinates from neurosynth database and creates images
 - uses utils/tal_to_mni.py
