@@ -1,2 +1,69 @@
 This repository contains code and relevant files for the Latent Structure
 modeling project described in Poldrack et al. (submitted).
+
+1_db_foci_to_image.py - obtains coordinates from neurosynth database and creates images
+- uses utils/tal_to_mni.py
+
+1.1_merge_peakfiles.sh - creates merged image and computes mask of voxels with activation
+on at least 1% of papers
+
+1.2_extract_nidag_text.py - extract full text of each article from database
+
+2_get_cogat_concepts.py - read cognitive atlas concepts from RDF and get loading for each document
+
+3_create_disorder_list.py - load NIF dysfunction ontology, grab synonyms, and add
+additional missing terms
+
+4_get_disorders_NIF.py - get loading for each disorder term from corpus
+
+5_mk_cogatlas_docs.py - make documents based on cogatlas loadings
+
+6_mk_disorders_docs.py - make documents based on disorder loadings
+
+7_mk_pickled_data.py - created a pickle with the full dataset to make loading easier
+
+8_mk_8fold_cogatlas.py - make files for 8-fold CV
+
+9_mk_8fold_disorders.py - make files for 8-fold CV
+
+10_mk_8fold_cogatlas_mallet_data.py - make mallet data from 8-fold files
+
+11_mk_8fold_disorders_mallet_data.py - make mallet data from 8-fold files
+
+12_mk_8fold_cogatlas_topic_models.py - create scripts to run mallet jobs
+
+13_mk_8fold_disorders_topic_models.py - create scripts to run mallet jobs
+
+14_get_best_topic_likelihood.py - check likelihoods to get get dimenstionality
+
+15.1_get_disorders_dimensionality.py - generate additional topic models to get disorder dimensionality
+
+15.3_get_best_disorder_dimensionality.py - get dimensionality that has unique topic dists
+
+15_run_topic_models.py - generate scripts to run final topic models
+
+16_mk_cogatlas_loadingdata.py - load topic data and save loadingdata.txt
+
+17_mk_disorders_loadingdata.py - load topic data and save loadingdata.txt
+
+18_mk_all_chisq_maps.py - make all chisquare maps - uses utils/mk_chisq_maps_filter.py
+
+18.2_mk_6mm_chisq_maps.sh - make 6mm versions of topic
+
+19_mk_slice_images_cogatlas.py - make slice images
+
+20_mk_slice_images_disorders.py - make slice images
+
+22_mk_latexreport_cogatlas.py - create latex report
+
+23_mk_latexreport_disorders.py - create latex report
+
+24_run_CCA_nonneg.py - run CCA analysis
+
+25_cluster_disorders.R - run clustering on disorders data
+
+26_make_cognitive_topic_figure.py - generate figure 2
+
+27_make_disorders_topic_figure.py - generate figure 3
+
+
