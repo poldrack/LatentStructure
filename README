@@ -1,6 +1,17 @@
 This repository contains code and relevant files for the Latent Structure
 modeling project described in Poldrack et al. (submitted).
 
+Guide to subdirectories:
+CCA - contains results from CCA analysis
+
+NIF-Disorders - contains files used for disorders topic modeling
+
+clustering - contains files used for clustering of disorders
+
+cogatlas - contains files used for cogatlas topic modeling
+
+src: contains the following source files:
+
 1_db_foci_to_image.py - obtains coordinates from neurosynth database and creates images
 - uses utils/tal_to_mni.py
 
