@@ -1,0 +1,1212 @@
+(lp0
+S'abductive reasoning'
+p1
+aS'abstract analogy'
+p2
+aS'abstract knowledge'
+p3
+aS'acoustic coding'
+p4
+aS'acoustic encoding'
+p5
+aS'acoustic phonetic processing'
+p6
+aS'acoustic processing'
+p7
+aS'acoustic reflex'
+p8
+aS'action'
+p9
+aS'adaptation'
+p10
+aS'adaptive control'
+p11
+aS'affect perception'
+p12
+aS'affect recognition'
+p13
+aS'altruism'
+p14
+aS'altruistic motivation'
+p15
+aS'alveolar'
+p16
+aS'amodal representation'
+p17
+aS'analog representation'
+p18
+aS'analogical encoding'
+p19
+aS'analogical inference'
+p20
+aS'analogical problem solving'
+p21
+aS'analogical reasoning'
+p22
+aS'analogical transfer'
+p23
+aS'analogy'
+p24
+aS'anchoring'
+p25
+aS'anomaly detection'
+p26
+aS'anticipation'
+p27
+aS'apparent motion'
+p28
+aS'apparent movement'
+p29
+aS'apperception'
+p30
+aS'appetitive motivation'
+p31
+aS'arousal'
+p32
+aS'articulation'
+p33
+aS'articulatory planning'
+p34
+aS'articulatory rehearsal'
+p35
+aS'assimilation'
+p36
+aS'association'
+p37
+aS'association learning'
+p38
+aS'attachment'
+p39
+aS'attended channel'
+p40
+aS'attended stimulus'
+p41
+aS'attention'
+p42
+aS'attention capacity'
+p43
+aS'attentional effort'
+p44
+aS'attentional resources'
+p45
+aS'attentional state'
+p46
+aS'attitude'
+p47
+aS'audiovisual perception'
+p48
+aS'audition'
+p49
+aS'auditory'
+p50
+aS'auditory attention'
+p51
+aS'auditory coding'
+p52
+aS'auditory encoding'
+p53
+aS'auditory feedback'
+p54
+aS'auditory grouping'
+p55
+aS'auditory imagery'
+p56
+aS'auditory learning'
+p57
+aS'auditory lexical access'
+p58
+aS'auditory localization'
+p59
+aS'auditory masking'
+p60
+aS'auditory memory'
+p61
+aS'auditory perception'
+p62
+aS'auditory scene'
+p63
+aS'auditory scene analysis'
+p64
+aS'auditory sentence comprehension'
+p65
+aS'auditory stream segregation'
+p66
+aS'auditory word comprehension'
+p67
+aS'auditory word recognition'
+p68
+aS'auditory working memory'
+p69
+aS'autobiographical memory'
+p70
+aS'autobiographical recall'
+p71
+aS'automaticity'
+p72
+aS'availability heuristic'
+p73
+aS'aversive learning'
+p74
+aS'awareness'
+p75
+aS'backward chaining'
+p76
+aS'behavioral inhibition'
+p77
+aS'belief'
+p78
+aS'binocular convergence'
+p79
+aS'binocular disparity'
+p80
+aS'binocular vision'
+p81
+aS'bitterness'
+p82
+aS'body orientation'
+p83
+aS'capacity limitation'
+p84
+aS'case based reasoning'
+p85
+aS'categorical clustering'
+p86
+aS'categorical knowledge'
+p87
+aS'categorical perception'
+p88
+aS'categorization'
+p89
+aS'category based induction'
+p90
+aS'category learning'
+p91
+aS'causal inference'
+p92
+aS'central attention'
+p93
+aS'centration'
+p94
+aS'chemonociception'
+p95
+aS'choice'
+p96
+aS'chromatic contrast'
+p97
+aS'chunk'
+p98
+aS'chunking'
+p99
+aS'cognition'
+p100
+aS'cognitive development'
+p101
+aS'cognitive dissonance'
+p102
+aS'cognitive effort'
+p103
+aS'cognitive heuristic'
+p104
+aS'cognitive load'
+p105
+aS'cognitive map'
+p106
+aS'color perception'
+p107
+aS'communication'
+p108
+aS'competition'
+p109
+aS'concept'
+p110
+aS'concept learning'
+p111
+aS'conceptual category'
+p112
+aS'conceptual coherence'
+p113
+aS'conceptual planning'
+p114
+aS'conceptual skill'
+p115
+aS'conceptualization'
+p116
+aS'conditional reasoning'
+p117
+aS'conflict detection'
+p118
+aS'conjunction search'
+p119
+aS'connotation'
+p120
+aS'consciousness'
+p121
+aS'constancy'
+p122
+aS'constituent structure'
+p123
+aS'context'
+p124
+aS'context dependent'
+p125
+aS'context memory'
+p126
+aS'contextual knowledge'
+p127
+aS'contingency learning'
+p128
+aS'contrastive stress'
+p129
+aS'conventionality'
+p130
+aS'convergent thinking'
+p131
+aS'conversation'
+p132
+aS'conversational norm'
+p133
+aS'conversational speech'
+p134
+aS'conversational structure'
+p135
+aS'coordination'
+p136
+aS'coproduction'
+p137
+aS'coreference'
+p138
+aS'creative cognition'
+p139
+aS'creative problem solving'
+p140
+aS'creative thinking'
+p141
+aS'critical period'
+p142
+aS'crosstalk'
+p143
+aS'crystallized intelligence'
+p144
+aS'cue dependent forgetting'
+p145
+aS'cue validity'
+p146
+aS'cueing'
+p147
+aS'dative shift'
+p148
+aS'decay of activation'
+p149
+aS'deception'
+p150
+aS'decision making'
+p151
+aS'declarative knowledge'
+p152
+aS'declarative memory'
+p153
+aS'declarative rule'
+p154
+aS'deductive inference'
+p155
+aS'deductive reasoning'
+p156
+aS'deep processing'
+p157
+aS'deep structure'
+p158
+aS'depth cue'
+p159
+aS'depth perception'
+p160
+aS'desire'
+p161
+aS'diphthong'
+p162
+aS'dispositions'
+p163
+aS'distraction'
+p164
+aS'distributed coding'
+p165
+aS'divergent thinking'
+p166
+aS'divided attention'
+p167
+aS'dream'
+p168
+aS'efficiency'
+p169
+aS'effort'
+p170
+aS'effortful processing'
+p171
+aS'egocentric'
+p172
+aS'elaborative processing'
+p173
+aS'emotion'
+p174
+aS'emotional decision making'
+p175
+aS'emotional expression'
+p176
+aS'emotional intelligence'
+p177
+aS'emotional memory'
+p178
+aS'emotional mimicry'
+p179
+aS'emotional recognition'
+p180
+aS'emotional suppression'
+p181
+aS'episodic learning'
+p182
+aS'episodic memory'
+p183
+aS'error detection'
+p184
+aS'error signal'
+p185
+aS'error trapping'
+p186
+aS'excitation'
+p187
+aS'excitement'
+p188
+aS'executive control'
+p189
+aS'executive function'
+p190
+aS'expertise'
+p191
+aS'explicit knowledge'
+p192
+aS'explicit learning'
+p193
+aS'explicit memory'
+p194
+aS'extrinsic motivation'
+p195
+aS'face perception'
+p196
+aS'face recognition'
+p197
+aS'facial expression'
+p198
+aS'false memory'
+p199
+aS'feature extraction'
+p200
+aS'feedback'
+p201
+aS'filtering'
+p202
+aS'fixation'
+p203
+aS'fixed action patterns'
+p204
+aS'fluid intelligence'
+p205
+aS'focus'
+p206
+aS'focused attention'
+p207
+aS'form perception'
+p208
+aS'functional fixedness'
+p209
+aS'gaze'
+p210
+aS'generalization'
+p211
+aS'generic knowledge'
+p212
+aS'gestalt'
+p213
+aS'goal'
+p214
+aS'goal formation'
+p215
+aS'goal maintenance'
+p216
+aS'goal management'
+p217
+aS'goal state'
+p218
+aS'gustatory learning'
+p219
+aS'gustatory memory'
+p220
+aS'gustatory perception'
+p221
+aS'habit'
+p222
+aS'habit learning'
+p223
+aS'habit memory'
+p224
+aS'hallucination'
+p225
+aS'hedonism'
+p226
+aS'heuristic search'
+p227
+aS'hill climbing'
+p228
+aS'humiliation'
+p229
+aS'humor'
+p230
+aS'iconic memory'
+p231
+aS'imageability'
+p232
+aS'imagery'
+p233
+aS'implicit knowledge'
+p234
+aS'implicit memory'
+p235
+aS'imprinting'
+p236
+aS'inattention'
+p237
+aS'incidental learning'
+p238
+aS'incubation'
+p239
+aS'indignation'
+p240
+aS'induction'
+p241
+aS'inductive inference'
+p242
+aS'inductive reasoning'
+p243
+aS'inference'
+p244
+aS'inhibition'
+p245
+aS'inhibition of return'
+p246
+aS'insight'
+p247
+aS'instinct'
+p248
+aS'instrumental conditioning'
+p249
+aS'instrumental learning'
+p250
+aS'integration'
+p251
+aS'intelligence'
+p252
+aS'intention'
+p253
+aS'intentional forgetting'
+p254
+aS'intentional learning'
+p255
+aS'intentionality'
+p256
+aS'interference'
+p257
+aS'intermediate term memory'
+p258
+aS'internal speech'
+p259
+aS'interrogative'
+p260
+aS'intonation'
+p261
+aS'intrinsic motivation'
+p262
+aS'introspection'
+p263
+aS'involuntary attention'
+p264
+aS'irony'
+p265
+aS'judgment'
+p266
+aS'kinaesthetic representation'
+p267
+aS'kinesthesia'
+p268
+aS'knowledge'
+p269
+aS'language'
+p270
+aS'language comprehension'
+p271
+aS'language learning'
+p272
+aS'language production'
+p273
+aS'lateral inhibition'
+p274
+aS'learning'
+p275
+aS'lemma'
+p276
+aS'lexical encoding'
+p277
+aS'lexical retrieval'
+p278
+aS'lexicon'
+p279
+aS'linguistic competence'
+p280
+aS'listening'
+p281
+aS'logic'
+p282
+aS'logical reasoning'
+p283
+aS'logical thinking'
+p284
+aS'long term memory'
+p285
+aS'loss aversion'
+p286
+aS'lying'
+p287
+aS'mathematical reasoning'
+p288
+aS'meaning'
+p289
+aS'mechanical reasoning'
+p290
+aS'melody'
+p291
+aS'memory'
+p292
+aS'mental arithmetic'
+p293
+aS'mental imagery'
+p294
+aS'mental representation'
+p295
+aS'mental rotation'
+p296
+aS'metacognition'
+p297
+aS'metacognitive skill'
+p298
+aS'metaphor'
+p299
+aS'misattribution'
+p300
+aS'monitoring'
+p301
+aS'mood'
+p302
+aS'motor control'
+p303
+aS'motor execution'
+p304
+aS'motor inhibition'
+p305
+aS'motor learning'
+p306
+aS'motor planning'
+p307
+aS'motor program'
+p308
+aS'motor sequence learning'
+p309
+aS'movement'
+p310
+aS'movement planning'
+p311
+aS'naming'
+p312
+aS'narrative'
+p313
+aS'navigation'
+p314
+aS'nociception'
+p315
+aS'nondeclarative knowledge'
+p316
+aS'nondeclarative memory'
+p317
+aS'novelty detection'
+p318
+aS'object categorization'
+p319
+aS'object centered representation'
+p320
+aS'object detection'
+p321
+aS'object identification'
+p322
+aS'object manipulation'
+p323
+aS'object orientation'
+p324
+aS'object perception'
+p325
+aS'object recognition'
+p326
+aS'olfaction'
+p327
+aS'olfactory perception'
+p328
+aS'orthographic lexicon'
+p329
+aS'parsing'
+p330
+aS'passive attention'
+p331
+aS'past tense'
+p332
+aS'pattern recognition'
+p333
+aS'pavlovian conditioning'
+p334
+aS'perception'
+p335
+aS'perceptual binding'
+p336
+aS'perceptual categorization'
+p337
+aS'perceptual fluency'
+p338
+aS'perceptual identification'
+p339
+aS'perceptual learning'
+p340
+aS'perceptual similarity'
+p341
+aS'perceptual skill'
+p342
+aS'performance monitoring'
+p343
+aS'phonation'
+p344
+aS'phonological buffer'
+p345
+aS'phonological code'
+p346
+aS'phonological encoding'
+p347
+aS'phonological retrieval'
+p348
+aS'phonological working memory'
+p349
+aS'planning'
+p350
+aS'pragmatic inference'
+p351
+aS'pragmatic knowledge'
+p352
+aS'pragmatic reasoning'
+p353
+aS'preattentive processing'
+p354
+aS'preconscious perception'
+p355
+aS'precueing'
+p356
+aS'prejudice'
+p357
+aS'primary memory'
+p358
+aS'proactive inhibition'
+p359
+aS'proactive interference'
+p360
+aS'problem solving'
+p361
+aS'procedural knowledge'
+p362
+aS'procedural learning'
+p363
+aS'procedural memory'
+p364
+aS'procedural rule'
+p365
+aS'processing capacity'
+p366
+aS'processing stage'
+p367
+aS'pronunciation'
+p368
+aS'proper noun'
+p369
+aS'proprioception'
+p370
+aS'prosodic stress'
+p371
+aS'prosody'
+p372
+aS'prospective memory'
+p373
+aS'prospective planning'
+p374
+aS'prototype'
+p375
+aS'quantitative skill'
+p376
+aS'reading'
+p377
+aS'reasoning'
+p378
+aS'regret'
+p379
+aS'relational learning'
+p380
+aS'remote memory'
+p381
+aS'repressed memory'
+p382
+aS'resource limit'
+p383
+aS'resource sharing'
+p384
+aS'response inhibition'
+p385
+aS'response selection'
+p386
+aS'retention'
+p387
+aS'retrieval'
+p388
+aS'retrieval cue'
+p389
+aS'retroactive interference'
+p390
+aS'rhythm'
+p391
+aS'risk'
+p392
+aS'route knowledge'
+p393
+aS'routine'
+p394
+aS'rule'
+p395
+aS'rule learning'
+p396
+aS'sadness'
+p397
+aS'salience'
+p398
+aS'schema'
+p399
+aS'search'
+p400
+aS'selective attention'
+p401
+aS'self monitoring'
+p402
+aS'semantic category'
+p403
+aS'semantic knowledge'
+p404
+aS'semantic memory'
+p405
+aS'semantic working memory'
+p406
+aS'sensory memory'
+p407
+aS'sequence learning'
+p408
+aS'serial learning'
+p409
+aS'serial processing'
+p410
+aS'serial search'
+p411
+aS'shadowing'
+p412
+aS'shallow processing'
+p413
+aS'shame'
+p414
+aS'short term memory'
+p415
+aS'skepticism'
+p416
+aS'skill'
+p417
+aS'skill acquisition'
+p418
+aS'skill learning'
+p419
+aS'social cognition'
+p420
+aS'social context'
+p421
+aS'social intelligence'
+p422
+aS'somatosensation'
+p423
+aS'somatosensory perception'
+p424
+aS'source memory'
+p425
+aS'source monitoring'
+p426
+aS'spatial ability'
+p427
+aS'spatial attention'
+p428
+aS'spatial cognition'
+p429
+aS'spatial cueing'
+p430
+aS'spatial memory'
+p431
+aS'spatial working memory'
+p432
+aS'speech perception'
+p433
+aS'speech processing'
+p434
+aS'speech production'
+p435
+aS'spreading activation'
+p436
+aS'stereopsis'
+p437
+aS'stereotypes'
+p438
+aS'strategic learning'
+p439
+aS'strategy'
+p440
+aS'stress'
+p441
+aS'sublexical route'
+p442
+aS'subliminal perception'
+p443
+aS'subordinate'
+p444
+aS'supervisory attentional system'
+p445
+aS'surprise'
+p446
+aS'sustained attention'
+p447
+aS'syntactic parsing'
+p448
+aS'syntactic processing'
+p449
+aS'syntax'
+p450
+aS'taste aversion'
+p451
+aS'text comprehension'
+p452
+aS'text processing'
+p453
+aS'theory of mind'
+p454
+aS'thermosensation'
+p455
+aS'top down processing'
+p456
+aS'traumatic memory'
+p457
+aS'uncertainty'
+p458
+aS'unconscious process'
+p459
+aS'utility'
+p460
+aS'valence'
+p461
+aS'verbal fluency'
+p462
+aS'verbal memory'
+p463
+aS'verbal semantics'
+p464
+aS'visual attention'
+p465
+aS'visual buffer'
+p466
+aS'visual imagery'
+p467
+aS'visual masking'
+p468
+aS'visual memory'
+p469
+aS'visual object recognition'
+p470
+aS'visual perception'
+p471
+aS'visual representation'
+p472
+aS'visual search'
+p473
+aS'visual working memory'
+p474
+aS'visuospatial sketch pad'
+p475
+aS'wisdom'
+p476
+aS'word comprehension'
+p477
+aS'word frequency'
+p478
+aS'word generation'
+p479
+aS'word order'
+p480
+aS'word production'
+p481
+aS'word pronunciation'
+p482
+aS'word recognition'
+p483
+aS'word repetition'
+p484
+aS'working memory'
+p485
+aS'action initiation'
+p486
+aS'action selection'
+p487
+aS'attention shift'
+p488
+aS'attention span'
+p489
+aS'attentional focusing'
+p490
+aS'attention shifting'
+p491
+aS'set shifting'
+p492
+aS'task switching'
+p493
+aS'decision'
+p494
+aS'framing'
+p495
+aS'risk seeking'
+p496
+aS'emotion perception'
+p497
+aS'emotion recognition'
+p498
+aS'emotional bonding'
+p499
+aS'empathy'
+p500
+aS'fear'
+p501
+aS'frustration'
+p502
+aS'grief'
+p503
+aS'happiness'
+p504
+aS'comprehension'
+p505
+aS'discourse'
+p506
+aS'discourse comprehension'
+p507
+aS'discourse knowledge'
+p508
+aS'discourse planning'
+p509
+aS'discourse processing'
+p510
+aS'discourse production'
+p511
+aS'grammatical encoding'
+p512
+aS'grapheme'
+p513
+aS'graphemic buffer'
+p514
+aS'illocutionary force'
+p515
+aS'language acquisition'
+p516
+aS'language processing'
+p517
+aS'lexical access'
+p518
+aS'lexical ambiguity'
+p519
+aS'lexical processing'
+p520
+aS'morphological processing'
+p521
+aS'morphology'
+p522
+aS'orthography'
+p523
+aS'phonetics'
+p524
+aS'semantic processing'
+p525
+aS'sentence comprehension'
+p526
+aS'sentence processing'
+p527
+aS'sentence production'
+p528
+aS'active recall'
+p529
+aS'active retrieval'
+p530
+aS'consolidation'
+p531
+aS'elaborative rehearsal'
+p532
+aS'encoding'
+p533
+aS'episodic buffer'
+p534
+aS'familiarity'
+p535
+aS'forgetting'
+p536
+aS'memory acquisition'
+p537
+aS'memory consolidation'
+p538
+aS'memory decay'
+p539
+aS'memory storage'
+p540
+aS'memory trace'
+p541
+aS'metamemory'
+p542
+aS'recall'
+p543
+aS'recognition'
+p544
+aS'reconsolidation'
+p545
+aS'remembering'
+p546
+aS'acuity'
+p547
+aS'echolocation'
+p548
+aS'edge detection'
+p549
+aS'feature detection'
+p550
+aS'figure ground'
+p551
+aS'figure ground relations'
+p552
+aS'figure ground reversal'
+p553
+aS'figure ground segregation'
+p554
+aS'gustation'
+p555
+aS'hearing'
+p556
+aS'memory retrieval'
+p557
+aS'active maintenance'
+p558
+aS'articulatory loop'
+p559
+aS'central executive'
+p560
+aS'maintenance'
+p561
+aS'manipulation'
+p562
+aS'phonological loop'
+p563
+aS'rehearsal'
+p564
+aS'rehearsal loop'
+p565
+aS'working memory retrieval'
+p566
+aS'working memory storage'
+p567
+aS'cognitive control'
+p568
+aS'echoic memory'
+p569
+aS'Motor response suppression'
+p570
+aS'Task set reconfiguration'
+p571
+aS'reward'
+p572
+aS'pain'
+p573
+aS'Joint Attention'
+p574
+aS'behavioral inhibition (cognitive)'
+p575
+aS'behavioral inhibition (temperament)'
+p576
+aS'Central Coherence'
+p577
+aS'interference resolution'
+p578
+aS'updating'
+p579
+aS'task set'
+p580
+aS'subconscious'
+p581
+aS'semantic information'
+p582
+aS'paraphasia'
+p583
+aS'phonemic paraphasia'
+p584
+aS'neologism'
+p585
+aS'Metacomprehension'
+p586
+aS'Self-Regulation'
+p587
+aS'conceptual metaphor'
+p588
+aS'body representation'
+p589
+aS'multisensory integration'
+p590
+aS'crossmodal'
+p591
+aS'unisensory'
+p592
+aS'multisensory'
+p593
+aS'multisensory index (MSI)'
+p594
+aS'multisensory process'
+p595
+aS'synchrony perception'
+p596
+aS'tactile working memory'
+p597
+aS'interoceptive representation'
+p598
+aS'Sense of ownership'
+p599
+aS'Sense of body ownership'
+p600
+aS'pain sensitization'
+p601
+aS'pain habituation'
+p602
+aS'priming'
+p603
+aS'expectancy'
+p604
+aS'Self-control'
+p605
+a.

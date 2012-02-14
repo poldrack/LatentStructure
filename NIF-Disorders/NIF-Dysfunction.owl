@@ -1,0 +1,1365 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY swrl "http://www.w3.org/2003/11/swrl#" >
+    <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
+    <!ENTITY swrlb "http://www.w3.org/2003/11/swrlb#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY snap "http://www.ifomis.org/bfo/1.1/snap#" >
+    <!ENTITY span "http://www.ifomis.org/bfo/1.1/span#" >
+    <!ENTITY j.0 "http://www.w3.org/2004/02/skos/core#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY j.1 "http://protege.stanford.edu/plugins/owl/protege#" >
+    <!ENTITY xsp "http://www.owl-ontologies.com/2005/08/07/xsp.owl#" >
+    <!ENTITY p9 "http://ontology.neuinfo.org/NIF/Backend/BIRNLex-OBI-proxy.owl#" >
+    <!ENTITY obo_annot "http://ontology.neuinfo.org/NIF/Backend/OBO_annotation_properties.owl#" >
+    <!ENTITY j.2 "http://ontology.neuinfo.org/NIF/Backend/BIRNLex_annotation_properties.owl#" >
+]>
+
+
+<rdf:RDF xmlns="http://ontology.neuinfo.org/NIF/Dysfunction/NIF-Dysfunction.owl#"
+     xml:base="http://ontology.neuinfo.org/NIF/Dysfunction/NIF-Dysfunction.owl"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:xsp="http://www.owl-ontologies.com/2005/08/07/xsp.owl#"
+     xmlns:snap="http://www.ifomis.org/bfo/1.1/snap#"
+     xmlns:j.1="http://protege.stanford.edu/plugins/owl/protege#"
+     xmlns:j.0="http://www.w3.org/2004/02/skos/core#"
+     xmlns:j.2="http://ontology.neuinfo.org/NIF/Backend/BIRNLex_annotation_properties.owl#"
+     xmlns:p9="http://ontology.neuinfo.org/NIF/Backend/BIRNLex-OBI-proxy.owl#"
+     xmlns:obo_annot="http://ontology.neuinfo.org/NIF/Backend/OBO_annotation_properties.owl#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:span="http://www.ifomis.org/bfo/1.1/span#">
+    <owl:Ontology rdf:about="http://ontology.neuinfo.org/NIF/Dysfunction/NIF-Dysfunction.owl">
+        <owl:imports rdf:resource="http://ontology.neuinfo.org/NIF/Backend/nif_backend.owl"/>
+        <owl:versionInfo rdf:datatype="&xsd;string">1.3.3</owl:versionInfo>
+        <dc:contributor rdf:datatype="&xsd;string">Amarnath Gupta</dc:contributor>
+        <dc:contributor rdf:datatype="&xsd;string">Bill Bug</dc:contributor>
+        <dc:contributor rdf:datatype="&xsd;string">Carol Bean</dc:contributor>
+        <dc:contributor rdf:datatype="&xsd;string">Christine Fennema-Notestine</dc:contributor>
+        <dc:contributor rdf:datatype="&xsd;string">David Kennedy</dc:contributor>
+        <dc:contributor rdf:datatype="&xsd;string">Fahim Imam</dc:contributor>
+        <j.0:editorialNote rdf:datatype="&xsd;string">ID use: 2086, 2104; 12500 - 12831</j.0:editorialNote>
+        <dc:contributor rdf:datatype="&xsd;string">Jeff Grethe</dc:contributor>
+        <dc:contributor rdf:datatype="&xsd;string">Jessica Turner</dc:contributor>
+        <dc:contributor rdf:datatype="&xsd;string">Maryann Martone</dc:contributor>
+        <dc:title rdf:datatype="&xsd;string">NIF-Dysfunction (formally BIRNLex-Disease)</dc:title>
+        <dc:creator rdf:datatype="&xsd;string">The BIRN Ontology Task Force</dc:creator>
+        <dc:subject rdf:datatype="&xsd;string">The BIRN project lexicon</dc:subject>
+        <j.0:definition rdf:datatype="&xsd;string">This ontology contains the former BIRNLex-Disease, version 1.3.2. -- The BIRN Project lexicon will provide entities for data and database annotation for the BIRN project, covering anatomy, disease, data collection, project management and experimental design.  It is built using the organizational framework provided by the foundational Basic Formal Ontology (BFO).  It uses an abstract biomedical layer on top of that - OBO-UBO which has been constructed  as a proposal to the OBO Foundry.  This is meant to support creating a sharable view of core biomedical objects such as biomaterial_entity, and organismal_entity that all biomedical ontologies are likely to need and want to use with the same intended meaning.  The BIRNLex biomaterial entities have already been factored to separately maintained ontology - BIRNLexBiomaterialEntity.owl which this BIRNLex-Main.owl file imports.  The Ontology of Biomedical Investigation (OBI) is also imported and forms the foundation for the formal description of all experiment-related artifacts.  The BIRNLex will serve as the basis for construction of a formal ontology for the multiscale investigation of neurological disease.</j.0:definition>
+        <j.0:editorialNote rdf:datatype="&xsd;string">Using birnlex IDs starting with 12500.</j.0:editorialNote>
+        <j.1:defaultLanguage rdf:datatype="&xsd;string">en</j.1:defaultLanguage>
+        <j.0:editorialNote rdf:datatype="&xsd;string">next ID: birnlex_12832</j.0:editorialNote>
+        <j.0:historyNote rdf:datatype="&xsd;string">v1.3.1 - moved disease from BIRNLex-Other to to this stand-alone module. (BB: 2007-10-05)</j.0:historyNote>
+        <j.0:historyNote rdf:datatype="&xsd;string">v1.3.2 - moved neuro diseases under Nervous system disease class and added eye and multisystem diseases (BB: 2007-11-18).</j.0:historyNote>
+        <j.0:historyNote rdf:datatype="&xsd;string">v1.3.3 - added all three variants as synonyms for the disease names (or their synonyms) with (or sometimes without) an apostrophe (’s), e.g.,  “Batten disease”, “Batten’s disease” and “Battens disease” are kept as synonymous terms. (Fahim Imam: April 14, 2009)</j.0:historyNote>
+     </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <owl:AnnotationProperty rdf:about="&obo_annot;hasExternalSource"/>
+    <owl:AnnotationProperty rdf:about="&obo_annot;definingCitation"/>
+    <owl:AnnotationProperty rdf:about="&j.0;prefLabel"/>
+    <owl:AnnotationProperty rdf:about="&j.2;hasBirnlexCurator"/>
+    <owl:AnnotationProperty rdf:about="&obo_annot;acronym"/>
+    <owl:AnnotationProperty rdf:about="&obo_annot;externallySourcedDefinition"/>
+    <owl:AnnotationProperty rdf:about="&j.2;hasCurationStatus"/>
+    <owl:AnnotationProperty rdf:about="&obo_annot;MeshUid"/>
+    <owl:AnnotationProperty rdf:about="&dc;contributor"/>
+    <owl:AnnotationProperty rdf:about="&j.0;editorialNote"/>
+    <owl:AnnotationProperty rdf:about="&j.0;example"/>
+    <owl:AnnotationProperty rdf:about="&j.2;birnlexDefinition"/>
+    <owl:AnnotationProperty rdf:about="&obo_annot;definingCitationURI"/>
+    <owl:AnnotationProperty rdf:about="&j.2;putativeClassExtension"/>
+    <owl:AnnotationProperty rdf:about="&obo_annot;hasDefinitionSource"/>
+    <owl:AnnotationProperty rdf:about="&obo_annot;usageNote"/>
+    <owl:AnnotationProperty rdf:about="&obo_annot;nifID"/>
+    <owl:AnnotationProperty rdf:about="&j.0;scopeNote"/>
+    <owl:AnnotationProperty rdf:about="&obo_annot;createdDate"/>
+    <owl:AnnotationProperty rdf:about="&j.0;definition"/>
+    <owl:AnnotationProperty rdf:about="&obo_annot;modifiedDate"/>
+    <owl:AnnotationProperty rdf:about="&obo_annot;UmlsCui"/>
+    <owl:AnnotationProperty rdf:about="&obo_annot;synonym"/>
+    <owl:AnnotationProperty rdf:about="&obo_annot;abbrev"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    // NB: classes unrelated to DSM have been removed - RP, 2/4/2012
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://ontology.neuinfo.org/NIF/Backend/BIRNLex-OBI-proxy.owl#birnlex_11013 -->
+
+    <owl:Class rdf:about="&p9;birnlex_11013">
+        <rdfs:label rdf:datatype="&xsd;string">Disease</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&snap;Disposition"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.neuinfo.org/NIF/Dysfunction/NIF-Dysfunction.owl#birnlex_12500 -->
+
+    <owl:Class rdf:about="http://ontology.neuinfo.org/NIF/Dysfunction/NIF-Dysfunction.owl#birnlex_12500">
+        <rdfs:label rdf:datatype="&xsd;string">Huntingtons disease</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://ontology.neuinfo.org/NIF/Dysfunction/NIF-Dysfunction.owl#birnlex_2086"/>
+        <obo_annot:UmlsCui rdf:datatype="&xsd;string"></obo_annot:UmlsCui>
+        <obo_annot:createdDate rdf:datatype="&xsd;string">2007-10-05</obo_annot:createdDate>
+        <j.0:definition rdf:datatype="&xsd;string">A familial disorder inherited as an autosomal dominant trait and characterized by the onset of progressive CHOREA and DEMENTIA in the fourth or fifth decade of life. Common initial manifestations include paranoia; poor impulse control; DEPRESSION; HALLUCINATIONS; and DELUSIONS. Eventually intellectual impairment; loss of fine motor control; ATHETOSIS; and diffuse chorea involving axial and limb musculature develops, leading to a vegetative state within 10-15 years of disease onset. The juvenile variant has a more fulminant course including SEIZURES; ATAXIA; dementia; and chorea.</j.0:definition>
+        <obo_annot:definingCitation rdf:datatype="&xsd;string">Adams et al., Principles of Neurology, 6th ed, pp1060-4</obo_annot:definingCitation>
+        <obo_annot:modifiedDate rdf:datatype="&xsd;string">April 11, 2009</obo_annot:modifiedDate>
+        <obo_annot:synonym rdf:datatype="&xsd;string">Chronic Progressive Hereditary Chorea (Huntington)</obo_annot:synonym>
+        <obo_annot:MeshUid rdf:datatype="&xsd;string">D006816</obo_annot:MeshUid>
+        <obo_annot:synonym rdf:datatype="&xsd;string">Huntington Chronic Progressive Hereditary Chorea</obo_annot:synonym>
+        <obo_annot:synonym rdf:datatype="&xsd;string">Huntington disease</obo_annot:synonym>
+        <obo_annot:synonym rdf:datatype="&xsd;string">Huntington&#39;s Chorea</obo_annot:synonym>
+        <obo_annot:synonym rdf:datatype="&xsd;string">Huntington&#39;s disease</obo_annot:synonym>
+        <j.0:prefLabel rdf:datatype="&xsd;string">Huntingtons disease</j.0:prefLabel>
+        <obo_annot:nifID rdf:datatype="&xsd;string">_8.3_2.10</obo_annot:nifID>
+        <j.2:hasBirnlexCurator rdf:datatype="&xsd;string">http://ontology.neuinfo.org/NIF/Backend/BIRNLex_annotation_properties.owl#BillBug</j.2:hasBirnlexCurator>
+        <j.2:hasCurationStatus rdf:datatype="&xsd;string">http://ontology.neuinfo.org/NIF/Backend/BIRNLex_annotation_properties.owl#uncurated</j.2:hasCurationStatus>
+        <obo_annot:hasExternalSource rdf:datatype="&xsd;string">http://ontology.neuinfo.org/NIF/Backend/OBO_annotation_properties.owl#MeSH</obo_annot:hasExternalSource>
+        <obo_annot:hasDefinitionSource rdf:datatype="&xsd;string">http://ontology.neuinfo.org/NIF/Backend/OBO_annotation_properties.owl#MeSH_defSource</obo_annot:hasDefinitionSource>
+        <obo_annot:definingCitationURI rdf:datatype="&xsd;string">http://www.ninds.nih.gov/disorders/huntington/huntington.htm</obo_annot:definingCitationURI>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.neuinfo.org/NIF/Dysfunction/NIF-Dysfunction.owl#birnlex_12501 -->
+
+    <owl:Class rdf:about="http://ontology.neuinfo.org/NIF/Dysfunction/NIF-Dysfunction.owl#birnlex_12501">
+        <rdfs:label rdf:datatype="&xsd;string">Autism</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://ontology.neuinfo.org/NIF/Dysfunction/NIF-Dysfunction.owl#birnlex_12768"/>
+        <obo_annot:UmlsCui rdf:datatype="&xsd;string"></obo_annot:UmlsCui>
+        <obo_annot:createdDate rdf:datatype="&xsd;string">2007-10-01</obo_annot:createdDate>
+        <obo_annot:modifiedDate rdf:datatype="&xsd;string">2007-10-08</obo_annot:modifiedDate>
+        <obo_annot:synonym rdf:datatype="&xsd;string">Autistic Disorder</obo_annot:synonym>
+        <j.0:prefLabel rdf:datatype="&xsd;string">Autistic Disorder</j.0:prefLabel>
+        <obo_annot:definingCitation rdf:datatype="&xsd;string">DSM-IV</obo_annot:definingCitation>
+        <obo_annot:synonym rdf:datatype="&xsd;string">Early Infantile Autism</obo_annot:synonym>
+        <obo_annot:synonym rdf:datatype="&xsd;string">Infantile Autism</obo_annot:synonym>
+        <obo_annot:synonym rdf:datatype="&xsd;string">Kanner&#39;s Syndrome</obo_annot:synonym>
+        <obo_annot:nifID rdf:datatype="&xsd;string">_8.3_11.7</obo_annot:nifID>
+        <j.2:hasBirnlexCurator rdf:datatype="&xsd;string">http://ontology.neuinfo.org/NIF/Backend/BIRNLex_annotation_properties.owl#BillBug</j.2:hasBirnlexCurator>
+        <j.2:hasCurationStatus rdf:datatype="&xsd;string">http://ontology.neuinfo.org/NIF/Backend/BIRNLex_annotation_properties.owl#uncurated</j.2:hasCurationStatus>
+        <obo_annot:definingCitationURI rdf:datatype="&xsd;string">http://www.ninds.nih.gov/disorders/autism/autism.htm</obo_annot:definingCitationURI>
+    </owl:Class>
+    
+
+
+ 
+ 
+
+    <!-- http://ontology.neuinfo.org/NIF/Dysfunction/NIF-Dysfunction.owl#birnlex_12653 -->
+
+    <owl:Class rdf:about="http://ontology.neuinfo.org/NIF/Dysfunction/NIF-Dysfunction.owl#birnlex_12653">
+        <rdfs:label rdf:datatype="&xsd;string">Catalepsy</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://ontology.neuinfo.org/NIF/Dysfunction/NIF-Dysfunction.owl#birnlex_12638"/>
+        <obo_annot:createdDate rdf:datatype="&xsd;string">2007-10-05</obo_annot:createdDate>
+        <obo_annot:modifiedDate rdf:datatype="&xsd;string">2007-10-05</obo_annot:modifiedDate>
+        <j.0:definition rdf:datatype="&xsd;string">A condition characterized by inactivity, decreased responsiveness to stimuli, and a tendency to maintain an immobile posture. The limbs tend to remain in whatever position they are placed (waxy flexibility). Catalepsy may be associated with PSYCHOTIC DISORDERS (e.g., SCHIZOPHRENIA, CATATONIC), nervous system drug toxicity, and other conditions (MeSH).</j.0:definition>
+        <obo_annot:synonym rdf:datatype="&xsd;string">Anochlesia</obo_annot:synonym>
+        <j.0:prefLabel rdf:datatype="&xsd;string">Catalepsy</j.0:prefLabel>
+        <obo_annot:synonym rdf:datatype="&xsd;string">Cerea Flexibilitas</obo_annot:synonym>
+        <obo_annot:MeshUid rdf:datatype="&xsd;string">D002375</obo_annot:MeshUid>
+        <obo_annot:synonym rdf:datatype="&xsd;string">Flexibility, Waxy</obo_annot:synonym>
+        <j.2:hasBirnlexCurator rdf:datatype="&xsd;string">http://ontology.neuinfo.org/NIF/Backend/BIRNLex_annotation_properties.owl#BillBug</j.2:hasBirnlexCurator>
+        <j.2:hasCurationStatus rdf:datatype="&xsd;string">http://ontology.neuinfo.org/NIF/Backend/BIRNLex_annotation_properties.owl#uncurated</j.2:hasCurationStatus>
+        <obo_annot:hasExternalSource rdf:datatype="&xsd;string">http://ontology.neuinfo.org/NIF/Backend/OBO_annotation_properties.owl#MeSH</obo_annot:hasExternalSource>
+        <obo_annot:hasDefinitionSource rdf:datatype="&xsd;string">http://ontology.neuinfo.org/NIF/Backend/OBO_annotation_properties.owl#MeSH_defSource</obo_annot:hasDefinitionSource>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.neuinfo.org/NIF/Dysfunction/NIF-Dysfunction.owl#birnlex_12670 -->
+
+    <owl:Class rdf:about="http://ontology.neuinfo.org/NIF/Dysfunction/NIF-Dysfunction.owl#birnlex_12670">
+        <rdfs:label rdf:datatype="&xsd;string">Adjustment Disorder</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://ontology.neuinfo.org/NIF/Dysfunction/NIF-Dysfunction.owl#birnlex_12669"/>
+        <obo_annot:createdDate rdf:datatype="&xsd;string">2007-10-05</obo_annot:createdDate>
+        <obo_annot:modifiedDate rdf:datatype="&xsd;string">2007-10-05</obo_annot:modifiedDate>
+        <j.0:prefLabel rdf:datatype="&xsd;string">Adjustment Disorder</j.0:prefLabel>
+        <obo_annot:synonym rdf:datatype="&xsd;string">Anniversary Reaction</obo_annot:synonym>
+        <obo_annot:MeshUid rdf:datatype="&xsd;string">D000275</obo_annot:MeshUid>
+        <j.0:definition rdf:datatype="&xsd;string">Maladaptive reactions to identifiable psychosocial stressors occurring within a short time after onset of the stressor. They are manifested by either impairment in social or occupational functioning or by symptoms (depression, anxiety, etc.) that are in excess of a normal and expected reaction to the stressor (MeSH).</j.0:definition>
+        <obo_annot:synonym rdf:datatype="&xsd;string">Reactive Depression</obo_annot:synonym>
+        <obo_annot:synonym rdf:datatype="&xsd;string">Reactive Disorder</obo_annot:synonym>
+        <obo_annot:synonym rdf:datatype="&xsd;string">Transient Situational Disturbance</obo_annot:synonym>
+        <j.2:hasBirnlexCurator rdf:datatype="&xsd;string">http://ontology.neuinfo.org/NIF/Backend/BIRNLex_annotation_properties.owl#BillBug</j.2:hasBirnlexCurator>
+        <j.2:hasCurationStatus rdf:datatype="&xsd;string">http://ontology.neuinfo.org/NIF/Backend/BIRNLex_annotation_properties.owl#uncurated</j.2:hasCurationStatus>
+        <obo_annot:hasExternalSource rdf:datatype="&xsd;string">http://ontology.neuinfo.org/NIF/Backend/OBO_annotation_properties.owl#MeSH</obo_annot:hasExternalSource>
+        <obo_annot:hasDefinitionSource rdf:datatype="&xsd;string">http://ontology.neuinfo.org/NIF/Backend/OBO_annotation_properties.owl#MeSH_defSource</obo_annot:hasDefinitionSource>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.neuinfo.org/NIF/Dysfunction/NIF-Dysfunction.owl#birnlex_12671 -->
+
+    <owl:Class rdf:about="http://ontology.neuinfo.org/NIF/Dysfunction/NIF-Dysfunction.owl#birnlex_12671">
+        <rdfs:label rdf:datatype="&xsd;string">Anxiety Disorder</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://ontology.neuinfo.org/NIF/Dysfunction/NIF-Dysfunction.owl#birnlex_12669"/>
+        <obo_annot:modifiedDate rdf:datatype="&xsd;string">2007-10-05</obo_annot:modifiedDate>
+        <obo_annot:createdDate rdf:datatype="&xsd;string">2007-10-05</obo_annot:createdDate>
+        <j.0:prefLabel rdf:datatype="&xsd;string">Anxiety Disorder</j.0:prefLabel>
+        <obo_annot:synonym rdf:datatype="&xsd;string">Anxiety Neurosis</obo_annot:synonym>
+        <obo_annot:MeshUid rdf:datatype="&xsd;string">D001008</obo_annot:MeshUid>
+        <obo_annot:synonym rdf:datatype="&xsd;string">Neurotic Anxiety State</obo_annot:synonym>
+        <j.0:definition rdf:datatype="&xsd;string">Persistent and disabling ANXIETY (MeSH).</j.0:definition>
+        <obo_annot:nifID rdf:datatype="&xsd;string">_8.3_11.4</obo_annot:nifID>
+        <j.2:hasBirnlexCurator rdf:datatype="&xsd;string">http://ontology.neuinfo.org/NIF/Backend/BIRNLex_annotation_properties.owl#BillBug</j.2:hasBirnlexCurator>
+        <j.2:hasCurationStatus rdf:datatype="&xsd;string">http://ontology.neuinfo.org/NIF/Backend/BIRNLex_annotation_properties.owl#uncurated</j.2:hasCurationStatus>
+        <obo_annot:hasExternalSource rdf:datatype="&xsd;string">http://ontology.neuinfo.org/NIF/Backend/OBO_annotation_properties.owl#MeSH</obo_annot:hasExternalSource>
+        <obo_annot:hasDefinitionSource rdf:datatype="&xsd;string">http://ontology.neuinfo.org/NIF/Backend/OBO_annotation_properties.owl#MeSH_defSource</obo_annot:hasDefinitionSource>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.neuinfo.org/NIF/Dysfunction/NIF-Dysfunction.owl#birnlex_12672 -->
+
+    <owl:Class rdf:about="http://ontology.neuinfo.org/NIF/Dysfunction/NIF-Dysfunction.owl#birnlex_12672">
+        <rdfs:label rdf:datatype="&xsd;string">Agoraphobia</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://ontology.neuinfo.org/NIF/Dysfunction/NIF-Dysfunction.owl#birnlex_12671"/>
+        <obo_annot:createdDate rdf:datatype="&xsd;string">2007-10-05</obo_annot:createdDate>
+        <obo_annot:modifiedDate rdf:datatype="&xsd;string">2007-10-05</obo_annot:modifiedDate>
+        <j.0:prefLabel rdf:datatype="&xsd;string">Agoraphobia</j.0:prefLabel>
+        <obo_annot:MeshUid rdf:datatype="&xsd;string">D000379</obo_annot:MeshUid>
+        <j.0:definition rdf:datatype="&xsd;string">Obsessive, persistent, intense fear of open places (MeSH).</j.0:definition>
+        <j.2:hasBirnlexCurator rdf:datatype="&xsd;string">http://ontology.neuinfo.org/NIF/Backend/BIRNLex_annotation_properties.owl#BillBug</j.2:hasBirnlexCurator>
+        <j.2:hasCurationStatus rdf:datatype="&xsd;string">http://ontology.neuinfo.org/NIF/Backend/BIRNLex_annotation_properties.owl#uncurated</j.2:hasCurationStatus>
+        <obo_annot:hasExternalSource rdf:datatype="&xsd;string">http://ontology.neuinfo.org/NIF/Backend/OBO_annotation_properties.owl#MeSH</obo_annot:hasExternalSource>
+        <obo_annot:hasDefinitionSource rdf:datatype="&xsd;string">http://ontology.neuinfo.org/NIF/Backend/OBO_annotation_properties.owl#MeSH_defSource</obo_annot:hasDefinitionSource>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.neuinfo.org/NIF/Dysfunction/NIF-Dysfunction.owl#birnlex_12673 -->
+
+    <owl:Class rdf:about="http://ontology.neuinfo.org/NIF/Dysfunction/NIF-Dysfunction.owl#birnlex_12673">
+        <rdfs:label rdf:datatype="&xsd;string">Neurocirculatory Asthenia</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://ontology.neuinfo.org/NIF/Dysfunction/NIF-Dysfunction.owl#birnlex_12671"/>
+        <obo_annot:createdDate rdf:datatype="&xsd;string">2007-10-05</obo_annot:createdDate>
+        <obo_annot:modifiedDate rdf:datatype="&xsd;string">2007-10-05</obo_annot:modifiedDate>
+        <j.0:definition rdf:datatype="&xsd;string">A clinical syndrome characterized by palpitation, SHORTNESS OF BREATH, labored breathing, subjective complaints of effort and discomfort, all following slight EXERTION. Other symptoms may be DIZZINESS, tremulousness, SWEATING, and INSOMNIA. Neurocirculatory asthenia is most typically seen as a form of anxiety disorder (MeSH).</j.0:definition>
+        <obo_annot:synonym rdf:datatype="&xsd;string">Cardiac Neurosis</obo_annot:synonym>
+        <obo_annot:MeshUid rdf:datatype="&xsd;string">D009449</obo_annot:MeshUid>
+        <obo_annot:synonym rdf:datatype="&xsd;string">Effort Syndrome</obo_annot:synonym>
+        <obo_annot:synonym rdf:datatype="&xsd;string">Hyperkinetic Heart Syndrome</obo_annot:synonym>
+        <j.0:prefLabel rdf:datatype="&xsd;string">Neurocirculatory Asthenia</j.0:prefLabel>
+        <j.2:hasBirnlexCurator rdf:datatype="&xsd;string">http://ontology.neuinfo.org/NIF/Backend/BIRNLex_annotation_properties.owl#BillBug</j.2:hasBirnlexCurator>
+        <j.2:hasCurationStatus rdf:datatype="&xsd;string">http://ontology.neuinfo.org/NIF/Backend/BIRNLex_annotation_properties.owl#uncurated</j.2:hasCurationStatus>
+        <obo_annot:hasExternalSource rdf:datatype="&xsd;string">http://ontology.neuinfo.org/NIF/Backend/OBO_annotation_properties.owl#MeSH</obo_annot:hasExternalSource>
+        <obo_annot:hasDefinitionSource rdf:datatype="&xsd;string">http://ontology.neuinfo.org/NIF/Backend/OBO_annotation_properties.owl#MeSH_defSource</obo_annot:hasDefinitionSource>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.neuinfo.org/NIF/Dysfunction/NIF-Dysfunction.owl#birnlex_12674 -->
+
+    <owl:Class rdf:about="http://ontology.neuinfo.org/NIF/Dysfunction/NIF-Dysfunction.owl#birnlex_12674">
+        <rdfs:label rdf:datatype="&xsd;string">Obsessive-Compulsive Disorder</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://ontology.neuinfo.org/NIF/Dysfunction/NIF-Dysfunction.owl#birnlex_12671"/>
+        <obo_annot:createdDate rdf:datatype="&xsd;string">2007-10-05</obo_annot:createdDate>
+        <obo_annot:modifiedDate rdf:datatype="&xsd;string">2007-10-05</obo_annot:modifiedDate>
+        <j.0:definition rdf:datatype="&xsd;string">An anxiety disorder characterized by recurrent, persistent obsessions or compulsions. Obsessions are the intrusive ideas, thoughts, or images that are experienced as senseless or repugnant. Compulsions are repetitive and seemingly purposeful behavior which the individual generally recognizes as senseless and from which the individual does not derive pleasure although it may provide a release from tension (MeSH).</j.0:definition>
+        <obo_annot:MeshUid rdf:datatype="&xsd;string">D009771</obo_annot:MeshUid>
+        <j.0:prefLabel rdf:datatype="&xsd;string">Obsessive-Compulsive Disorder</j.0:prefLabel>
+        <obo_annot:synonym rdf:datatype="&xsd;string">Obsessive-Compulsive Neurosis</obo_annot:synonym>
+        <obo_annot:synonym rdf:datatype="&xsd;string">OCD</obo_annot:synonym>
+        <j.2:hasBirnlexCurator rdf:datatype="&xsd;string">http://ontology.neuinfo.org/NIF/Backend/BIRNLex_annotation_properties.owl#BillBug</j.2:hasBirnlexCurator>
+        <j.2:hasCurationStatus rdf:datatype="&xsd;string">http://ontology.neuinfo.org/NIF/Backend/BIRNLex_annotation_properties.owl#uncurated</j.2:hasCurationStatus>
+        <obo_annot:hasExternalSource rdf:datatype="&xsd;string">http://ontology.neuinfo.org/NIF/Backend/OBO_annotation_properties.owl#MeSH</obo_annot:hasExternalSource>
+        <obo_annot:hasDefinitionSource rdf:datatype="&xsd;string">http://ontology.neuinfo.org/NIF/Backend/OBO_annotation_properties.owl#MeSH_defSource</obo_annot:hasDefinitionSource>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.neuinfo.org/NIF/Dysfunction/NIF-Dysfunction.owl#birnlex_12675 -->
+
+    <owl:Class rdf:about="http://ontology.neuinfo.org/NIF/Dysfunction/NIF-Dysfunction.owl#birnlex_12675">
+        <rdfs:label rdf:datatype="&xsd;string">Phobia</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://ontology.neuinfo.org/NIF/Dysfunction/NIF-Dysfunction.owl#birnlex_12671"/>
+        <obo_annot:modifiedDate rdf:datatype="&xsd;string">2007-10-05</obo_annot:modifiedDate>
+        <obo_annot:createdDate rdf:datatype="&xsd;string">2007-10-05</obo_annot:createdDate>
+        <j.0:definition rdf:datatype="&xsd;string">Anxiety disorders in which the essential feature is persistent and irrational fear of a specific object, activity, or situation that the individual feels compelled to avoid. The individual recognizes the fear as excessive or unreasonable (MeSH).</j.0:definition>
+        <j.2:putativeClassExtension rdf:datatype="&xsd;string">Claustrophobia</j.2:putativeClassExtension>
+        <obo_annot:MeshUid rdf:datatype="&xsd;string">D010698</obo_annot:MeshUid>
+        <obo_annot:usageNote rdf:datatype="&xsd;string">MeSH includes the following qualified subtypes based on the type of object or experience inducing the fear reaction: ; ; </obo_annot:usageNote>
+        <obo_annot:synonym rdf:datatype="&xsd;string">Phobic Disorder</obo_annot:synonym>
+        <j.0:prefLabel rdf:datatype="&xsd;string">Phobic Disorder</j.0:prefLabel>
+        <obo_annot:synonym rdf:datatype="&xsd;string">Phobic Neurosis</obo_annot:synonym>
+        <j.2:putativeClassExtension rdf:datatype="&xsd;string">School Phobia</j.2:putativeClassExtension>
+        <j.2:putativeClassExtension rdf:datatype="&xsd;string">Social Phobia</j.2:putativeClassExtension>
+        <j.2:hasBirnlexCurator rdf:datatype="&xsd;string">http://ontology.neuinfo.org/NIF/Backend/BIRNLex_annotation_properties.owl#BillBug</j.2:hasBirnlexCurator>
+        <j.2:hasCurationStatus rdf:datatype="&xsd;string">http://ontology.neuinfo.org/NIF/Backend/BIRNLex_annotation_properties.owl#uncurated</j.2:hasCurationStatus>
+        <obo_annot:hasExternalSource rdf:datatype="&xsd;string">http://ontology.neuinfo.org/NIF/Backend/OBO_annotation_properties.owl#MeSH</obo_annot:hasExternalSource>
+        <obo_annot:hasDefinitionSource rdf:datatype="&xsd;string">http://ontology.neuinfo.org/NIF/Backend/OBO_annotation_properties.owl#MeSH_defSource</obo_annot:hasDefinitionSource>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.neuinfo.org/NIF/Dysfunction/NIF-Dysfunction.owl#birnlex_12676 -->
+
+    <owl:Class rdf:about="http://ontology.neuinfo.org/NIF/Dysfunction/NIF-Dysfunction.owl#birnlex_12676">
+        <rdfs:label rdf:datatype="&xsd;string">Panic Disorder</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://ontology.neuinfo.org/NIF/Dysfunction/NIF-Dysfunction.owl#birnlex_12671"/>
+        <obo_annot:modifiedDate rdf:datatype="&xsd;string">2007-10-05</obo_annot:modifiedDate>
+        <obo_annot:createdDate rdf:datatype="&xsd;string">2007-10-05</obo_annot:createdDate>
+        <j.0:definition rdf:datatype="&xsd;string">A type of anxiety disorder characterized by unexpected panic attacks that last minutes or, rarely, hours. Panic attacks begin with intense apprehension, fear or terror and, often, a feeling of impending doom. Symptoms experienced during a panic attack include dyspnea or sensations of being smothered; dizziness, loss of balance or faintness; choking sensations; palpitations or accelerated heart rate; shakiness; sweating; nausea or other form of abdominal distress; depersonalization or derealization; paresthesias; hot flashes or chills; chest discomfort or pain; fear of dying and fear of not being in control of oneself or going crazy. Agoraphobia may also develop. Similar to other anxiety disorders, it may be inherited as an autosomal dominant trait (MeSH).</j.0:definition>
+        <obo_annot:MeshUid rdf:datatype="&xsd;string">D016584</obo_annot:MeshUid>
+        <obo_annot:synonym rdf:datatype="&xsd;string">Panic Attack</obo_annot:synonym>
+        <j.0:prefLabel rdf:datatype="&xsd;string">Panic Disorder</j.0:prefLabel>
+        <j.2:hasBirnlexCurator rdf:datatype="&xsd;string">http://ontology.neuinfo.org/NIF/Backend/BIRNLex_annotation_properties.owl#BillBug</j.2:hasBirnlexCurator>
+        <j.2:hasCurationStatus rdf:datatype="&xsd;string">http://ontology.neuinfo.org/NIF/Backend/BIRNLex_annotation_properties.owl#uncurated</j.2:hasCurationStatus>
+        <obo_annot:hasExternalSource rdf:datatype="&xsd;string">http://ontology.neuinfo.org/NIF/Backend/OBO_annotation_properties.owl#MeSH</obo_annot:hasExternalSource>
+        <obo_annot:hasDefinitionSource rdf:datatype="&xsd;string">http://ontology.neuinfo.org/NIF/Backend/OBO_annotation_properties.owl#MeSH_defSource</obo_annot:hasDefinitionSource>
+    </owl:Class>
+    
+
+
+
+    <!-- http://ontology.neuinfo.org/NIF/Dysfunction/NIF-Dysfunction.owl#birnlex_12678 -->
+
+    <owl:Class rdf:about="http://ontology.neuinfo.org/NIF/Dysfunction/NIF-Dysfunction.owl#birnlex_12678">
+        <rdfs:label rdf:datatype="&xsd;string">Combat Disorder</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://ontology.neuinfo.org/NIF/Dysfunction/NIF-Dysfunction.owl#birnlex_12677"/>
+        <obo_annot:modifiedDate rdf:datatype="&xsd;string">2007-10-05</obo_annot:modifiedDate>
+        <obo_annot:createdDate rdf:datatype="&xsd;string">2007-10-05</obo_annot:createdDate>
+        <j.0:prefLabel rdf:datatype="&xsd;string">Combat Disorder</j.0:prefLabel>
+        <obo_annot:synonym rdf:datatype="&xsd;string">Combat Neurosis</obo_annot:synonym>
+        <obo_annot:MeshUid rdf:datatype="&xsd;string">D003130</obo_annot:MeshUid>
+        <j.0:definition rdf:datatype="&xsd;string">Neurotic reactions to unusual, severe, or overwhelming military stress (MeSH).</j.0:definition>
+        <obo_annot:synonym rdf:datatype="&xsd;string">War Neurosis</obo_annot:synonym>
+        <j.2:hasBirnlexCurator rdf:datatype="&xsd;string">http://ontology.neuinfo.org/NIF/Backend/BIRNLex_annotation_properties.owl#BillBug</j.2:hasBirnlexCurator>
+        <j.2:hasCurationStatus rdf:datatype="&xsd;string">http://ontology.neuinfo.org/NIF/Backend/BIRNLex_annotation_properties.owl#uncurated</j.2:hasCurationStatus>
+        <obo_annot:hasExternalSource rdf:datatype="&xsd;string">http://ontology.neuinfo.org/NIF/Backend/OBO_annotation_properties.owl#MeSH</obo_annot:hasExternalSource>
+        <obo_annot:hasDefinitionSource rdf:datatype="&xsd;string">http://ontology.neuinfo.org/NIF/Backend/OBO_annotation_properties.owl#MeSH_defSource</obo_annot:hasDefinitionSource>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.neuinfo.org/NIF/Dysfunction/NIF-Dysfunction.owl#birnlex_12679 -->
+
+    <owl:Class rdf:about="http://ontology.neuinfo.org/NIF/Dysfunction/NIF-Dysfunction.owl#birnlex_12679">
+        <rdfs:label rdf:datatype="&xsd;string">Post-Traumatic Stress Disorder</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://ontology.neuinfo.org/NIF/Dysfunction/NIF-Dysfunction.owl#birnlex_12677"/>
+        <obo_annot:modifiedDate rdf:datatype="&xsd;string">2007-10-05</obo_annot:modifiedDate>
+        <obo_annot:createdDate rdf:datatype="&xsd;string">2007-10-05</obo_annot:createdDate>
+        <j.0:definition rdf:datatype="&xsd;string">A class of traumatic stress disorders with symptoms that last more than one month. There are various forms of post-traumatic stress disorder, depending on the time of onset and the duration of these stress symptoms. In the acute form, the duration of the symptoms is between 1 to 3 months. In the chronic form, symptoms last more than 3 months. With delayed onset, symptoms develop more than 6 months after the traumatic event (MeSH).</j.0:definition>
+        <j.2:putativeClassExtension rdf:datatype="&xsd;string">Acute Post-Traumatic Stress Disorder</j.2:putativeClassExtension>
+        <j.2:putativeClassExtension rdf:datatype="&xsd;string">Chronic Post-Traumatic Stress Disorder</j.2:putativeClassExtension>
+        <obo_annot:MeshUid rdf:datatype="&xsd;string">D013313</obo_annot:MeshUid>
+        <j.2:putativeClassExtension rdf:datatype="&xsd;string">Delayed Onset Post-Traumatic Stress Disorder</j.2:putativeClassExtension>
+        <obo_annot:usageNote rdf:datatype="&xsd;string">MeSH includes qualified subtypes based on the time of onset or temporal extent of the stress reaction</obo_annot:usageNote>
+        <obo_annot:acronym rdf:datatype="&xsd;string">PTSD</obo_annot:acronym>
+        <obo_annot:synonym rdf:datatype="&xsd;string">Post-Traumatic Neurosis</obo_annot:synonym>
+        <j.0:prefLabel rdf:datatype="&xsd;string">Post-Traumatic Stress Disorder</j.0:prefLabel>
+        <j.2:hasBirnlexCurator rdf:datatype="&xsd;string">http://ontology.neuinfo.org/NIF/Backend/BIRNLex_annotation_properties.owl#BillBug</j.2:hasBirnlexCurator>
+        <j.2:hasCurationStatus rdf:datatype="&xsd;string">http://ontology.neuinfo.org/NIF/Backend/BIRNLex_annotation_properties.owl#uncurated</j.2:hasCurationStatus>
+        <obo_annot:hasExternalSource rdf:datatype="&xsd;string">http://ontology.neuinfo.org/NIF/Backend/OBO_annotation_properties.owl#MeSH</obo_annot:hasExternalSource>
+        <obo_annot:hasDefinitionSource rdf:datatype="&xsd;string">http://ontology.neuinfo.org/NIF/Backend/OBO_annotation_properties.owl#MeSH_defSource</obo_annot:hasDefinitionSource>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.neuinfo.org/NIF/Dysfunction/NIF-Dysfunction.owl#birnlex_12698 -->
+
+    <owl:Class rdf:about="http://ontology.neuinfo.org/NIF/Dysfunction/NIF-Dysfunction.owl#birnlex_12698">
+        <rdfs:label rdf:datatype="&xsd;string">Drug Abuse</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://ontology.neuinfo.org/NIF/Dysfunction/NIF-Dysfunction.owl#birnlex_12669"/>
+        <obo_annot:createdDate rdf:datatype="&xsd;string">2007-10-08</obo_annot:createdDate>
+        <obo_annot:synonym rdf:datatype="&xsd;string">Addiction</obo_annot:synonym>
+        <obo_annot:MeshUid rdf:datatype="&xsd;string">D019966</obo_annot:MeshUid>
+        <j.0:definition rdf:datatype="&xsd;string">Disorder related to substance abuse, the side effects of a medication, toxin exposure, and ALCOHOL-RELATED DISORDERS (MeSH).</j.0:definition>
+        <obo_annot:synonym rdf:datatype="&xsd;string">Substance-Related Disorder</obo_annot:synonym>
+        <j.2:putativeClassExtension rdf:datatype="&xsd;string">Drug Addiction</j.2:putativeClassExtension>
+        <j.2:putativeClassExtension rdf:datatype="&xsd;string">Drug Dependence</j.2:putativeClassExtension>
+        <j.2:putativeClassExtension rdf:datatype="&xsd;string">Drug Habituation</j.2:putativeClassExtension>
+        <obo_annot:synonym rdf:datatype="&xsd;string">Drug Usage</obo_annot:synonym>
+        <obo_annot:synonym rdf:datatype="&xsd;string">Drug Use Disorder</obo_annot:synonym>
+        <j.2:putativeClassExtension rdf:datatype="&xsd;string">Glue Sniffing</j.2:putativeClassExtension>
+        <obo_annot:modifiedDate rdf:datatype="&xsd;string">March 18, 2009</obo_annot:modifiedDate>
+        <obo_annot:usageNote rdf:datatype="&xsd;string">MeSH includes the following entry terms that are either implied sub-types or components of the overall spectrum of functional manifestations of Substance-Related Disorder</obo_annot:usageNote>
+        <obo_annot:synonym rdf:datatype="&xsd;string">Substance Abuse</obo_annot:synonym>
+        <j.2:putativeClassExtension rdf:datatype="&xsd;string">Substance Addiction</j.2:putativeClassExtension>
+        <j.2:putativeClassExtension rdf:datatype="&xsd;string">Substance Dependence</j.2:putativeClassExtension>
+        <obo_annot:synonym rdf:datatype="&xsd;string">Substance Use Disorder</obo_annot:synonym>
+        <obo_annot:synonym rdf:datatype="&xsd;string">Substance-Induced Organic Mental Disorder</obo_annot:synonym>
+        <j.0:prefLabel rdf:datatype="&xsd;string">Substance-Related Disorder</j.0:prefLabel>
+        <obo_annot:nifID rdf:datatype="&xsd;string">_8.3_11.1</obo_annot:nifID>
+        <j.2:hasBirnlexCurator rdf:datatype="&xsd;string">http://ontology.neuinfo.org/NIF/Backend/BIRNLex_annotation_properties.owl#BillBug</j.2:hasBirnlexCurator>
+        <j.2:hasCurationStatus rdf:datatype="&xsd;string">http://ontology.neuinfo.org/NIF/Backend/BIRNLex_annotation_properties.owl#uncurated</j.2:hasCurationStatus>
+        <obo_annot:hasExternalSource rdf:datatype="&xsd;string">http://ontology.neuinfo.org/NIF/Backend/OBO_annotation_properties.owl#MeSH</obo_annot:hasExternalSource>
+        <obo_annot:hasDefinitionSource rdf:datatype="&xsd;string">http://ontology.neuinfo.org/NIF/Backend/OBO_annotation_properties.owl#MeSH_defSource</obo_annot:hasDefinitionSource>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.neuinfo.org/NIF/Dysfunction/NIF-Dysfunction.owl#birnlex_12699 -->
+
+    <owl:Class rdf:about="http://ontology.neuinfo.org/NIF/Dysfunction/NIF-Dysfunction.owl#birnlex_12699">
+        <rdfs:label rdf:datatype="&xsd;string">Alcohol-Related Disorder</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://ontology.neuinfo.org/NIF/Dysfunction/NIF-Dysfunction.owl#birnlex_12698"/>
+        <obo_annot:createdDate rdf:datatype="&xsd;string">2007-10-08</obo_annot:createdDate>
+        <obo_annot:modifiedDate rdf:datatype="&xsd;string">2007-10-08</obo_annot:modifiedDate>
+        <j.0:prefLabel rdf:datatype="&xsd;string">Alcohol-Related Disorder</j.0:prefLabel>
+        <obo_annot:MeshUid rdf:datatype="&xsd;string">D019973</obo_annot:MeshUid>
+        <j.0:definition rdf:datatype="&xsd;string">Disorder related to or resulting from abuse or mis-use of alcohol (MeSH).</j.0:definition>
+        <obo_annot:nifID rdf:datatype="&xsd;string">_8.3_11.1.1</obo_annot:nifID>
+        <j.2:hasBirnlexCurator rdf:datatype="&xsd;string">http://ontology.neuinfo.org/NIF/Backend/BIRNLex_annotation_properties.owl#BillBug</j.2:hasBirnlexCurator>
+        <j.2:hasCurationStatus rdf:datatype="&xsd;string">http://ontology.neuinfo.org/NIF/Backend/BIRNLex_annotation_properties.owl#uncurated</j.2:hasCurationStatus>
+        <obo_annot:hasExternalSource rdf:datatype="&xsd;string">http://ontology.neuinfo.org/NIF/Backend/OBO_annotation_properties.owl#MeSH</obo_annot:hasExternalSource>
+        <obo_annot:hasDefinitionSource rdf:datatype="&xsd;string">http://ontology.neuinfo.org/NIF/Backend/OBO_annotation_properties.owl#MeSH_defSource</obo_annot:hasDefinitionSource>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.neuinfo.org/NIF/Dysfunction/NIF-Dysfunction.owl#birnlex_12700 -->
+
+    <owl:Class rdf:about="http://ontology.neuinfo.org/NIF/Dysfunction/NIF-Dysfunction.owl#birnlex_12700">
+        <rdfs:label rdf:datatype="&xsd;string">Alcohol Amnestic Disorder</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://ontology.neuinfo.org/NIF/Dysfunction/NIF-Dysfunction.owl#birnlex_12699"/>
+        <obo_annot:createdDate rdf:datatype="&xsd;string">2007-10-08</obo_annot:createdDate>
+        <obo_annot:modifiedDate rdf:datatype="&xsd;string">2007-10-08</obo_annot:modifiedDate>
+        <j.0:definition rdf:datatype="&xsd;string">A mental disorder associated with chronic ethanol abuse ( ALCOHOLISM) and nutritional deficiencies characterized by short term memory loss, confabulations, and disturbances of attention (MeSH).</j.0:definition>
+        <obo_annot:definingCitation rdf:datatype="&xsd;string">Adams et al., Principles of Neurology, 6th ed, p1139</obo_annot:definingCitation>
+        <j.0:prefLabel rdf:datatype="&xsd;string">Alcohol Amnestic Disorder</j.0:prefLabel>
+        <obo_annot:synonym rdf:datatype="&xsd;string">Alcohol Amnestic Syndrome</obo_annot:synonym>
+        <obo_annot:synonym rdf:datatype="&xsd;string">Alcohol-Induced Amnestic Psychosis</obo_annot:synonym>
+        <obo_annot:synonym rdf:datatype="&xsd;string">Alcohol-Induced Amnestic Syndrome</obo_annot:synonym>
+        <obo_annot:synonym rdf:datatype="&xsd;string">Alcohol-Induced Dysmnesic Psychosis</obo_annot:synonym>
+        <obo_annot:synonym rdf:datatype="&xsd;string">Alcohol-Induced Dysmnesic Syndrome</obo_annot:synonym>
+        <obo_annot:MeshUid rdf:datatype="&xsd;string">D000425</obo_annot:MeshUid>
+        <j.2:hasBirnlexCurator rdf:datatype="&xsd;string">http://ontology.neuinfo.org/NIF/Backend/BIRNLex_annotation_properties.owl#BillBug</j.2:hasBirnlexCurator>
+        <j.2:hasCurationStatus rdf:datatype="&xsd;string">http://ontology.neuinfo.org/NIF/Backend/BIRNLex_annotation_properties.owl#uncurated</j.2:hasCurationStatus>
+        <obo_annot:hasExternalSource rdf:datatype="&xsd;string">http://ontology.neuinfo.org/NIF/Backend/OBO_annotation_properties.owl#MeSH</obo_annot:hasExternalSource>
+        <obo_annot:hasDefinitionSource rdf:datatype="&xsd;string">http://ontology.neuinfo.org/NIF/Backend/OBO_annotation_properties.owl#MeSH_defSource</obo_annot:hasDefinitionSource>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.neuinfo.org/NIF/Dysfunction/NIF-Dysfunction.owl#birnlex_12701 -->
+
+    <owl:Class rdf:about="http://ontology.neuinfo.org/NIF/Dysfunction/NIF-Dysfunction.owl#birnlex_12701">
+        <rdfs:label rdf:datatype="&xsd;string">Korsakoff Syndrome</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://ontology.neuinfo.org/NIF/Dysfunction/NIF-Dysfunction.owl#birnlex_12700"/>
+        <obo_annot:modifiedDate rdf:datatype="&xsd;string">2007-10-08</obo_annot:modifiedDate>
+        <obo_annot:createdDate rdf:datatype="&xsd;string">2007-10-08</obo_annot:createdDate>
+        <obo_annot:definingCitation rdf:datatype="&xsd;string">Adams et al., Principles of Neurology, 6th ed, p1139</obo_annot:definingCitation>
+        <j.0:definition rdf:datatype="&xsd;string">An acquired cognitive disorder characterized by inattentiveness and the inability to form short term memories. This disorder is frequently associated with chronic ALCOHOLISM; but it may also result from dietary deficiencies; CRANIOCEREBRAL TRAUMA; NEOPLASMS; CEREBROVASCULAR DISORDERS; ENCEPHALITIS; EPILEPSY; and other conditions (MeSH).</j.0:definition>
+        <obo_annot:MeshUid rdf:datatype="&xsd;string">D019973</obo_annot:MeshUid>
+        <obo_annot:synonym rdf:datatype="&xsd;string">Korsakoff Psychosis</obo_annot:synonym>
+        <j.0:prefLabel rdf:datatype="&xsd;string">Korsakoff Syndrome</j.0:prefLabel>
+        <j.0:prefLabel rdf:datatype="&xsd;string">Korsakoff's Syndrome</j.0:prefLabel>
+        <obo_annot:synonym rdf:datatype="&xsd;string">Wernicke-Korsakoff Syndrome</obo_annot:synonym>
+        <j.2:hasBirnlexCurator rdf:datatype="&xsd;string">http://ontology.neuinfo.org/NIF/Backend/BIRNLex_annotation_properties.owl#BillBug</j.2:hasBirnlexCurator>
+        <j.2:hasCurationStatus rdf:datatype="&xsd;string">http://ontology.neuinfo.org/NIF/Backend/BIRNLex_annotation_properties.owl#uncurated</j.2:hasCurationStatus>
+        <obo_annot:hasExternalSource rdf:datatype="&xsd;string">http://ontology.neuinfo.org/NIF/Backend/OBO_annotation_properties.owl#MeSH</obo_annot:hasExternalSource>
+        <obo_annot:hasDefinitionSource rdf:datatype="&xsd;string">http://ontology.neuinfo.org/NIF/Backend/OBO_annotation_properties.owl#MeSH_defSource</obo_annot:hasDefinitionSource>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.neuinfo.org/NIF/Dysfunction/NIF-Dysfunction.owl#birnlex_12702 -->
+
+    <owl:Class rdf:about="http://ontology.neuinfo.org/NIF/Dysfunction/NIF-Dysfunction.owl#birnlex_12702">
+        <rdfs:label rdf:datatype="&xsd;string">Alcohol Withdrawal Delirium</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://ontology.neuinfo.org/NIF/Dysfunction/NIF-Dysfunction.owl#birnlex_12699"/>
+        <obo_annot:createdDate rdf:datatype="&xsd;string">2007-10-08</obo_annot:createdDate>
+        <obo_annot:modifiedDate rdf:datatype="&xsd;string">2007-10-08</obo_annot:modifiedDate>
+        <obo_annot:definingCitation rdf:datatype="&xsd;string">Adams et al., Principles of Neurology, 6th ed, p1175</obo_annot:definingCitation>
+        <obo_annot:synonym rdf:datatype="&xsd;string">Alcohol Withdrawal Associated Autonomic Hyperactivity</obo_annot:synonym>
+        <j.0:prefLabel rdf:datatype="&xsd;string">Alcohol Withdrawal Delirium</j.0:prefLabel>
+        <obo_annot:synonym rdf:datatype="&xsd;string">Alcohol Withdrawal Hallucinosis</obo_annot:synonym>
+        <obo_annot:synonym rdf:datatype="&xsd;string">Alcohol Withdrawal-Induced Delirium Tremens</obo_annot:synonym>
+        <j.0:definition rdf:datatype="&xsd;string">An acute organic mental disorder induced by cessation or reduction in chronic alcohol consumption. Clinical characteristics include CONFUSION; DELUSIONS; vivid HALLUCINATIONS; TREMOR; agitation; insomnia; and signs of autonomic hyperactivity (e.g., elevated blood pressure and heart rate, dilated pupils, and diaphoresis). This condition may occasionally be fatal. It was formerly called delirium tremens (MeSH).</j.0:definition>
+        <obo_annot:MeshUid rdf:datatype="&xsd;string">D000430</obo_annot:MeshUid>
+        <obo_annot:synonym rdf:datatype="&xsd;string">Delirium Tremens</obo_annot:synonym>
+        <j.2:hasBirnlexCurator rdf:datatype="&xsd;string">http://ontology.neuinfo.org/NIF/Backend/BIRNLex_annotation_properties.owl#BillBug</j.2:hasBirnlexCurator>
+        <j.2:hasCurationStatus rdf:datatype="&xsd;string">http://ontology.neuinfo.org/NIF/Backend/BIRNLex_annotation_properties.owl#uncurated</j.2:hasCurationStatus>
+        <obo_annot:hasExternalSource rdf:datatype="&xsd;string">http://ontology.neuinfo.org/NIF/Backend/OBO_annotation_properties.owl#MeSH</obo_annot:hasExternalSource>
+        <obo_annot:hasDefinitionSource rdf:datatype="&xsd;string">http://ontology.neuinfo.org/NIF/Backend/OBO_annotation_properties.owl#MeSH_defSource</obo_annot:hasDefinitionSource>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.neuinfo.org/NIF/Dysfunction/NIF-Dysfunction.owl#birnlex_12703 -->
+
+    <owl:Class rdf:about="http://ontology.neuinfo.org/NIF/Dysfunction/NIF-Dysfunction.owl#birnlex_12703">
+        <rdfs:label rdf:datatype="&xsd;string">Alcoholic Intoxication</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://ontology.neuinfo.org/NIF/Dysfunction/NIF-Dysfunction.owl#birnlex_12699"/>
+        <obo_annot:modifiedDate rdf:datatype="&xsd;string">2007-10-08</obo_annot:modifiedDate>
+        <obo_annot:createdDate rdf:datatype="&xsd;string">2007-10-08</obo_annot:createdDate>
+        <j.0:prefLabel rdf:datatype="&xsd;string">Alcoholic Intoxication</j.0:prefLabel>
+        <j.0:definition rdf:datatype="&xsd;string">An acute brain syndrome which results from the excessive ingestion of ETHANOL or ALCOHOLIC BEVERAGES (MeSH).</j.0:definition>
+        <obo_annot:MeshUid rdf:datatype="&xsd;string">D000435</obo_annot:MeshUid>
+        <obo_annot:synonym rdf:datatype="&xsd;string">Drunkenness</obo_annot:synonym>
+        <j.2:hasBirnlexCurator rdf:datatype="&xsd;string">http://ontology.neuinfo.org/NIF/Backend/BIRNLex_annotation_properties.owl#BillBug</j.2:hasBirnlexCurator>
+        <j.2:hasCurationStatus rdf:datatype="&xsd;string">http://ontology.neuinfo.org/NIF/Backend/BIRNLex_annotation_properties.owl#uncurated</j.2:hasCurationStatus>
+        <obo_annot:hasExternalSource rdf:datatype="&xsd;string">http://ontology.neuinfo.org/NIF/Backend/OBO_annotation_properties.owl#MeSH</obo_annot:hasExternalSource>
+        <obo_annot:hasDefinitionSource rdf:datatype="&xsd;string">http://ontology.neuinfo.org/NIF/Backend/OBO_annotation_properties.owl#MeSH_defSource</obo_annot:hasDefinitionSource>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.neuinfo.org/NIF/Dysfunction/NIF-Dysfunction.owl#birnlex_12704 -->
+
+    <owl:Class rdf:about="http://ontology.neuinfo.org/NIF/Dysfunction/NIF-Dysfunction.owl#birnlex_12704">
+        <rdfs:label rdf:datatype="&xsd;string">Alcoholism</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://ontology.neuinfo.org/NIF/Dysfunction/NIF-Dysfunction.owl#birnlex_12699"/>
+        <obo_annot:modifiedDate rdf:datatype="&xsd;string">2007-10-08</obo_annot:modifiedDate>
+        <obo_annot:createdDate rdf:datatype="&xsd;string">2007-10-08</obo_annot:createdDate>
+        <j.0:definition rdf:datatype="&xsd;string">A primary, chronic disease with genetic, psychosocial, and environmental factors influencing its development and manifestations. The disease is often progressive and fatal. It is characterized by impaired control over drinking, preoccupation with the drug alcohol, use of alcohol despite adverse consequences, and distortions in thinking, most notably denial. Each of these symptoms may be continuous or periodic (MeSH).</j.0:definition>
+        <obo_annot:synonym rdf:datatype="&xsd;string">Alcohol Abuse</obo_annot:synonym>
+        <j.0:prefLabel rdf:datatype="&xsd;string">Alcoholism</j.0:prefLabel>
+        <obo_annot:synonym rdf:datatype="&xsd;string">Chronic Alcoholic Intoxication</obo_annot:synonym>
+        <obo_annot:MeshUid rdf:datatype="&xsd;string">D000437</obo_annot:MeshUid>
+        <obo_annot:definingCitation rdf:datatype="&xsd;string">Morse and Flavin for the Joint Commission of the National Council on Alcoholism and Drug Dependence and the American Society of Addiction Medicine to Study the Definition and Criteria for the Diagnosis of Alcoholism: in JAMA 1992;268:1012-4</obo_annot:definingCitation>
+        <j.2:hasBirnlexCurator rdf:datatype="&xsd;string">http://ontology.neuinfo.org/NIF/Backend/BIRNLex_annotation_properties.owl#BillBug</j.2:hasBirnlexCurator>
+        <j.2:hasCurationStatus rdf:datatype="&xsd;string">http://ontology.neuinfo.org/NIF/Backend/BIRNLex_annotation_properties.owl#uncurated</j.2:hasCurationStatus>
+        <obo_annot:hasExternalSource rdf:datatype="&xsd;string">http://ontology.neuinfo.org/NIF/Backend/OBO_annotation_properties.owl#MeSH</obo_annot:hasExternalSource>
+        <obo_annot:hasDefinitionSource rdf:datatype="&xsd;string">http://ontology.neuinfo.org/NIF/Backend/OBO_annotation_properties.owl#MeSH_defSource</obo_annot:hasDefinitionSource>
+    </owl:Class>
+    
+
+
+
+    <!-- http://ontology.neuinfo.org/NIF/Dysfunction/NIF-Dysfunction.owl#birnlex_12707 -->
+
+    <owl:Class rdf:about="http://ontology.neuinfo.org/NIF/Dysfunction/NIF-Dysfunction.owl#birnlex_12707">
+        <rdfs:label rdf:datatype="&xsd;string">Alcoholic Psychosis</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://ontology.neuinfo.org/NIF/Dysfunction/NIF-Dysfunction.owl#birnlex_12699"/>
+        <obo_annot:createdDate rdf:datatype="&xsd;string">2007-10-08</obo_annot:createdDate>
+        <obo_annot:modifiedDate rdf:datatype="&xsd;string">2007-10-08</obo_annot:modifiedDate>
+        <j.0:definition rdf:datatype="&xsd;string">A group of mental disorders associated with organic brain damage and caused by poisoning from alcohol (MeSH).</j.0:definition>
+        <j.0:prefLabel rdf:datatype="&xsd;string">Alcoholic Psychosis</j.0:prefLabel>
+        <obo_annot:MeshUid rdf:datatype="&xsd;string">D011604</obo_annot:MeshUid>
+        <j.0:editorialNote rdf:datatype="&xsd;string">This class will utlimately be moved to a position reflecting the effected function, as opposed to one reflecting causation (BB: 2007-10-08)</j.0:editorialNote>
+        <j.2:hasBirnlexCurator rdf:datatype="&xsd;string">http://ontology.neuinfo.org/NIF/Backend/BIRNLex_annotation_properties.owl#BillBug</j.2:hasBirnlexCurator>
+        <j.2:hasCurationStatus rdf:datatype="&xsd;string">http://ontology.neuinfo.org/NIF/Backend/BIRNLex_annotation_properties.owl#graph_position_temporary</j.2:hasCurationStatus>
+        <obo_annot:hasExternalSource rdf:datatype="&xsd;string">http://ontology.neuinfo.org/NIF/Backend/OBO_annotation_properties.owl#MeSH</obo_annot:hasExternalSource>
+        <obo_annot:hasDefinitionSource rdf:datatype="&xsd;string">http://ontology.neuinfo.org/NIF/Backend/OBO_annotation_properties.owl#MeSH_defSource</obo_annot:hasDefinitionSource>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.neuinfo.org/NIF/Dysfunction/NIF-Dysfunction.owl#birnlex_12708 -->
+
+    <owl:Class rdf:about="http://ontology.neuinfo.org/NIF/Dysfunction/NIF-Dysfunction.owl#birnlex_12708">
+        <rdfs:label rdf:datatype="&xsd;string">Wernicke Encephalopathy</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://ontology.neuinfo.org/NIF/Dysfunction/NIF-Dysfunction.owl#birnlex_12699"/>
+        <obo_annot:createdDate rdf:datatype="&xsd;string">2007-10-08</obo_annot:createdDate>
+        <obo_annot:modifiedDate rdf:datatype="&xsd;string">2007-10-08</obo_annot:modifiedDate>
+        <obo_annot:definingCitation rdf:datatype="&xsd;string">Adams et al., Principles of Neurology, 6th ed, pp1139-42; Davis &amp; Robertson, Textbook of Neuropathology, 2nd ed, pp452-3</obo_annot:definingCitation>
+        <j.0:definition rdf:datatype="&xsd;string">An acute neurological disorder characterized by the triad of ophthalmoplegia, ataxia, and disturbances of mental activity or consciousness. Eye movement abnormalities include nystagmus, external rectus palsies, and reduced conjugate gaze. THIAMINE DEFICIENCY and chronic ALCOHOLISM are associated conditions. Pathologic features include periventricular petechial hemorrhages and neuropil breakdown in the diencephalon and brainstem. Chronic thiamine deficiency may lead to KORSAKOFF SYNDROME (MeSH).</j.0:definition>
+        <obo_annot:synonym rdf:datatype="&xsd;string">Cerebral Beriberi</obo_annot:synonym>
+        <obo_annot:MeshUid rdf:datatype="&xsd;string">D011604</obo_annot:MeshUid>
+        <obo_annot:synonym rdf:datatype="&xsd;string">Gayet-Wernicke Encephalopathy</obo_annot:synonym>
+        <j.0:editorialNote rdf:datatype="&xsd;string">This class will utlimately be moved to a position reflecting the effected function, as opposed to one reflecting causation (BB: 2007-10-08)</j.0:editorialNote>
+        <obo_annot:synonym rdf:datatype="&xsd;string">Wernicke Disease</obo_annot:synonym>
+        <j.0:prefLabel rdf:datatype="&xsd;string">Wernicke Encephalopathy</j.0:prefLabel>
+        <obo_annot:synonym rdf:datatype="&xsd;string">Wernicke Syndrome</obo_annot:synonym>
+        <j.2:hasBirnlexCurator rdf:datatype="&xsd;string">http://ontology.neuinfo.org/NIF/Backend/BIRNLex_annotation_properties.owl#BillBug</j.2:hasBirnlexCurator>
+        <j.2:hasCurationStatus rdf:datatype="&xsd;string">http://ontology.neuinfo.org/NIF/Backend/BIRNLex_annotation_properties.owl#graph_position_temporary</j.2:hasCurationStatus>
+        <obo_annot:hasExternalSource rdf:datatype="&xsd;string">http://ontology.neuinfo.org/NIF/Backend/OBO_annotation_properties.owl#MeSH</obo_annot:hasExternalSource>
+        <obo_annot:hasDefinitionSource rdf:datatype="&xsd;string">http://ontology.neuinfo.org/NIF/Backend/OBO_annotation_properties.owl#MeSH_defSource</obo_annot:hasDefinitionSource>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.neuinfo.org/NIF/Dysfunction/NIF-Dysfunction.owl#birnlex_12709 -->
+
+    <owl:Class rdf:about="http://ontology.neuinfo.org/NIF/Dysfunction/NIF-Dysfunction.owl#birnlex_12709">
+        <rdfs:label rdf:datatype="&xsd;string">Amphetamine-Related Disorder</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://ontology.neuinfo.org/NIF/Dysfunction/NIF-Dysfunction.owl#birnlex_12698"/>
+        <obo_annot:modifiedDate rdf:datatype="&xsd;string">2007-10-08</obo_annot:modifiedDate>
+        <obo_annot:createdDate rdf:datatype="&xsd;string">2007-10-08</obo_annot:createdDate>
+        <obo_annot:synonym rdf:datatype="&xsd;string">Amphetamine Abuse</obo_annot:synonym>
+        <j.2:putativeClassExtension rdf:datatype="&xsd;string">Amphetamine Addiction</j.2:putativeClassExtension>
+        <j.2:putativeClassExtension rdf:datatype="&xsd;string">Amphetamine Dependence</j.2:putativeClassExtension>
+        <obo_annot:synonym rdf:datatype="&xsd;string">Amphetamine Usage</obo_annot:synonym>
+        <j.0:prefLabel rdf:datatype="&xsd;string">Amphetamine-Related Disorder</j.0:prefLabel>
+        <obo_annot:MeshUid rdf:datatype="&xsd;string">D019969</obo_annot:MeshUid>
+        <j.0:definition rdf:datatype="&xsd;string">Disorders related or resulting from use of amphetamines (MeSH).</j.0:definition>
+        <obo_annot:usageNote rdf:datatype="&xsd;string">MeSH includes implied components of the overall spectrum of functional manifestations of Amphetamine-Related Disorder</obo_annot:usageNote>
+        <j.2:hasBirnlexCurator rdf:datatype="&xsd;string">http://ontology.neuinfo.org/NIF/Backend/BIRNLex_annotation_properties.owl#BillBug</j.2:hasBirnlexCurator>
+        <j.2:hasCurationStatus rdf:datatype="&xsd;string">http://ontology.neuinfo.org/NIF/Backend/BIRNLex_annotation_properties.owl#uncurated</j.2:hasCurationStatus>
+        <obo_annot:hasExternalSource rdf:datatype="&xsd;string">http://ontology.neuinfo.org/NIF/Backend/OBO_annotation_properties.owl#MeSH</obo_annot:hasExternalSource>
+        <obo_annot:hasDefinitionSource rdf:datatype="&xsd;string">http://ontology.neuinfo.org/NIF/Backend/OBO_annotation_properties.owl#MeSH_defSource</obo_annot:hasDefinitionSource>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.neuinfo.org/NIF/Dysfunction/NIF-Dysfunction.owl#birnlex_12710 -->
+
+    <owl:Class rdf:about="http://ontology.neuinfo.org/NIF/Dysfunction/NIF-Dysfunction.owl#birnlex_12710">
+        <rdfs:label rdf:datatype="&xsd;string">Cocaine-Related Disorder</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://ontology.neuinfo.org/NIF/Dysfunction/NIF-Dysfunction.owl#birnlex_12698"/>
+        <obo_annot:createdDate rdf:datatype="&xsd;string">2007-10-08</obo_annot:createdDate>
+        <obo_annot:modifiedDate rdf:datatype="&xsd;string">2007-10-08</obo_annot:modifiedDate>
+        <obo_annot:synonym rdf:datatype="&xsd;string">Cocaine Abuse</obo_annot:synonym>
+        <j.2:putativeClassExtension rdf:datatype="&xsd;string">Cocaine Addiction</j.2:putativeClassExtension>
+        <j.2:putativeClassExtension rdf:datatype="&xsd;string">Cocaine Dependence</j.2:putativeClassExtension>
+        <obo_annot:synonym rdf:datatype="&xsd;string">Cocaine Usage</obo_annot:synonym>
+        <j.0:prefLabel rdf:datatype="&xsd;string">Cocaine-Related Disorder</j.0:prefLabel>
+        <obo_annot:MeshUid rdf:datatype="&xsd;string">D019970</obo_annot:MeshUid>
+        <j.0:definition rdf:datatype="&xsd;string">Disorders related or resulting from use of amphetamines (MeSH).</j.0:definition>
+        <obo_annot:usageNote rdf:datatype="&xsd;string">MeSH includes implied components of the overall spectrum of functional manifestations of Cocaine-Related Disorder</obo_annot:usageNote>
+        <obo_annot:nifID rdf:datatype="&xsd;string">_8.3_11.1.3</obo_annot:nifID>
+        <j.2:hasBirnlexCurator rdf:datatype="&xsd;string">http://ontology.neuinfo.org/NIF/Backend/BIRNLex_annotation_properties.owl#BillBug</j.2:hasBirnlexCurator>
+        <j.2:hasCurationStatus rdf:datatype="&xsd;string">http://ontology.neuinfo.org/NIF/Backend/BIRNLex_annotation_properties.owl#uncurated</j.2:hasCurationStatus>
+        <obo_annot:hasExternalSource rdf:datatype="&xsd;string">http://ontology.neuinfo.org/NIF/Backend/OBO_annotation_properties.owl#MeSH</obo_annot:hasExternalSource>
+        <obo_annot:hasDefinitionSource rdf:datatype="&xsd;string">http://ontology.neuinfo.org/NIF/Backend/OBO_annotation_properties.owl#MeSH_defSource</obo_annot:hasDefinitionSource>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.neuinfo.org/NIF/Dysfunction/NIF-Dysfunction.owl#birnlex_12711 -->
+
+    <owl:Class rdf:about="http://ontology.neuinfo.org/NIF/Dysfunction/NIF-Dysfunction.owl#birnlex_12711">
+        <rdfs:label rdf:datatype="&xsd;string">Cannabis-Related Disorder</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://ontology.neuinfo.org/NIF/Dysfunction/NIF-Dysfunction.owl#birnlex_12698"/>
+        <obo_annot:modifiedDate rdf:datatype="&xsd;string">2007-10-08</obo_annot:modifiedDate>
+        <obo_annot:createdDate rdf:datatype="&xsd;string">2007-10-08</obo_annot:createdDate>
+        <obo_annot:synonym rdf:datatype="&xsd;string">Cannabinoid Abuse</obo_annot:synonym>
+        <obo_annot:synonym rdf:datatype="&xsd;string">Cannabis Abuse</obo_annot:synonym>
+        <j.2:putativeClassExtension rdf:datatype="&xsd;string">Cannabis Dependence</j.2:putativeClassExtension>
+        <j.0:prefLabel rdf:datatype="&xsd;string">Cannabis-Related Disorder</j.0:prefLabel>
+        <obo_annot:MeshUid rdf:datatype="&xsd;string">D002189</obo_annot:MeshUid>
+        <obo_annot:synonym rdf:datatype="&xsd;string">Hashish Abuse</obo_annot:synonym>
+        <obo_annot:synonym rdf:datatype="&xsd;string">Marijuana Abuse</obo_annot:synonym>
+        <j.2:putativeClassExtension rdf:datatype="&xsd;string">Marijuana Dependence</j.2:putativeClassExtension>
+        <obo_annot:usageNote rdf:datatype="&xsd;string">MeSH includes implied components of the overall spectrum of functional manifestations of Cannabis-Related Disorder</obo_annot:usageNote>
+        <j.0:definition rdf:datatype="&xsd;string">The excessive use of marijuana with associated psychological symptoms and impairment in social or occupational functioning (MeSH).</j.0:definition>
+        <obo_annot:nifID rdf:datatype="&xsd;string">_8.3_11.1.2</obo_annot:nifID>
+        <j.2:hasBirnlexCurator rdf:datatype="&xsd;string">http://ontology.neuinfo.org/NIF/Backend/BIRNLex_annotation_properties.owl#BillBug</j.2:hasBirnlexCurator>
+        <j.2:hasCurationStatus rdf:datatype="&xsd;string">http://ontology.neuinfo.org/NIF/Backend/BIRNLex_annotation_properties.owl#uncurated</j.2:hasCurationStatus>
+        <obo_annot:hasExternalSource rdf:datatype="&xsd;string">http://ontology.neuinfo.org/NIF/Backend/OBO_annotation_properties.owl#MeSH</obo_annot:hasExternalSource>
+        <obo_annot:hasDefinitionSource rdf:datatype="&xsd;string">http://ontology.neuinfo.org/NIF/Backend/OBO_annotation_properties.owl#MeSH_defSource</obo_annot:hasDefinitionSource>
+    </owl:Class>
+    
+
+    <!-- http://ontology.neuinfo.org/NIF/Dysfunction/NIF-Dysfunction.owl#birnlex_12713 -->
+
+    <owl:Class rdf:about="http://ontology.neuinfo.org/NIF/Dysfunction/NIF-Dysfunction.owl#birnlex_12713">
+        <rdfs:label rdf:datatype="&xsd;string">Opioid-Related Disorder</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://ontology.neuinfo.org/NIF/Dysfunction/NIF-Dysfunction.owl#birnlex_12698"/>
+        <obo_annot:modifiedDate rdf:datatype="&xsd;string">2007-10-08</obo_annot:modifiedDate>
+        <obo_annot:createdDate rdf:datatype="&xsd;string">2007-10-08</obo_annot:createdDate>
+        <obo_annot:MeshUid rdf:datatype="&xsd;string">D009293</obo_annot:MeshUid>
+        <j.0:definition rdf:datatype="&xsd;string">Disorders related or resulting from abuse or mis-use of opioids (MeSH).</j.0:definition>
+        <obo_annot:usageNote rdf:datatype="&xsd;string">MeSH includes implied components of the overall spectrum of functional manifestations of Opioid-Related Disorder</obo_annot:usageNote>
+        <obo_annot:synonym rdf:datatype="&xsd;string">Narcotic Abuse</obo_annot:synonym>
+        <j.2:putativeClassExtension rdf:datatype="&xsd;string">Narcotic Addiction</j.2:putativeClassExtension>
+        <j.2:putativeClassExtension rdf:datatype="&xsd;string">Narcotic Dependence</j.2:putativeClassExtension>
+        <j.2:putativeClassExtension rdf:datatype="&xsd;string">Opiate Addiction</j.2:putativeClassExtension>
+        <j.2:putativeClassExtension rdf:datatype="&xsd;string">Opiate Dependence</j.2:putativeClassExtension>
+        <j.0:prefLabel rdf:datatype="&xsd;string">Opioid-Related Disorder</j.0:prefLabel>
+        <obo_annot:nifID rdf:datatype="&xsd;string">_8.3_11.1.5</obo_annot:nifID>
+        <j.2:hasBirnlexCurator rdf:datatype="&xsd;string">http://ontology.neuinfo.org/NIF/Backend/BIRNLex_annotation_properties.owl#BillBug</j.2:hasBirnlexCurator>
+        <j.2:hasCurationStatus rdf:datatype="&xsd;string">http://ontology.neuinfo.org/NIF/Backend/BIRNLex_annotation_properties.owl#uncurated</j.2:hasCurationStatus>
+        <obo_annot:hasExternalSource rdf:datatype="&xsd;string">http://ontology.neuinfo.org/NIF/Backend/OBO_annotation_properties.owl#MeSH</obo_annot:hasExternalSource>
+        <obo_annot:hasDefinitionSource rdf:datatype="&xsd;string">http://ontology.neuinfo.org/NIF/Backend/OBO_annotation_properties.owl#MeSH_defSource</obo_annot:hasDefinitionSource>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.neuinfo.org/NIF/Dysfunction/NIF-Dysfunction.owl#birnlex_12714 -->
+
+    <owl:Class rdf:about="http://ontology.neuinfo.org/NIF/Dysfunction/NIF-Dysfunction.owl#birnlex_12714">
+        <rdfs:label rdf:datatype="&xsd;string">Heroin-Related Disorder</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://ontology.neuinfo.org/NIF/Dysfunction/NIF-Dysfunction.owl#birnlex_12713"/>
+        <obo_annot:createdDate rdf:datatype="&xsd;string">2007-10-08</obo_annot:createdDate>
+        <obo_annot:modifiedDate rdf:datatype="&xsd;string">2007-10-08</obo_annot:modifiedDate>
+        <obo_annot:MeshUid rdf:datatype="&xsd;string">D006556</obo_annot:MeshUid>
+        <j.0:definition rdf:datatype="&xsd;string">Disorders related or resulting from abuse or mis-use of heroin.</j.0:definition>
+        <obo_annot:synonym rdf:datatype="&xsd;string">Heroin Abuse</obo_annot:synonym>
+        <j.2:putativeClassExtension rdf:datatype="&xsd;string">Heroin Addiction</j.2:putativeClassExtension>
+        <j.2:putativeClassExtension rdf:datatype="&xsd;string">Heroin Dependence</j.2:putativeClassExtension>
+        <obo_annot:synonym rdf:datatype="&xsd;string">Heroin Usage</obo_annot:synonym>
+        <j.0:prefLabel rdf:datatype="&xsd;string">Heroin-Related Disorder</j.0:prefLabel>
+        <obo_annot:usageNote rdf:datatype="&xsd;string">MeSH includes implied components of the overall spectrum of functional manifestations of Opioid-Related Disorder</obo_annot:usageNote>
+        <j.2:hasBirnlexCurator rdf:datatype="&xsd;string">http://ontology.neuinfo.org/NIF/Backend/BIRNLex_annotation_properties.owl#BillBug</j.2:hasBirnlexCurator>
+        <j.2:hasCurationStatus rdf:datatype="&xsd;string">http://ontology.neuinfo.org/NIF/Backend/BIRNLex_annotation_properties.owl#uncurated</j.2:hasCurationStatus>
+        <obo_annot:hasExternalSource rdf:datatype="&xsd;string">http://ontology.neuinfo.org/NIF/Backend/OBO_annotation_properties.owl#MeSH</obo_annot:hasExternalSource>
+        <obo_annot:hasDefinitionSource rdf:datatype="&xsd;string">http://ontology.neuinfo.org/NIF/Backend/OBO_annotation_properties.owl#MeSH_defSource</obo_annot:hasDefinitionSource>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.neuinfo.org/NIF/Dysfunction/NIF-Dysfunction.owl#birnlex_12715 -->
+
+    <owl:Class rdf:about="http://ontology.neuinfo.org/NIF/Dysfunction/NIF-Dysfunction.owl#birnlex_12715">
+        <rdfs:label rdf:datatype="&xsd;string">Morphine-Related Disorder</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://ontology.neuinfo.org/NIF/Dysfunction/NIF-Dysfunction.owl#birnlex_12713"/>
+        <obo_annot:createdDate rdf:datatype="&xsd;string">2007-10-08</obo_annot:createdDate>
+        <obo_annot:modifiedDate rdf:datatype="&xsd;string">2007-10-08</obo_annot:modifiedDate>
+        <obo_annot:MeshUid rdf:datatype="&xsd;string">D009021</obo_annot:MeshUid>
+        <j.0:definition rdf:datatype="&xsd;string">Disorders related or resulting from abuse or mis-use of morphine.</j.0:definition>
+        <obo_annot:usageNote rdf:datatype="&xsd;string">MeSH includes implied components of the overall spectrum of functional manifestations of Morphine-Related Disorder</obo_annot:usageNote>
+        <obo_annot:synonym rdf:datatype="&xsd;string">Morphine Abuse</obo_annot:synonym>
+        <j.2:putativeClassExtension rdf:datatype="&xsd;string">Morphine Addiction</j.2:putativeClassExtension>
+        <j.2:putativeClassExtension rdf:datatype="&xsd;string">Morphine Dependence</j.2:putativeClassExtension>
+        <obo_annot:synonym rdf:datatype="&xsd;string">Morphine Usage</obo_annot:synonym>
+        <j.0:prefLabel rdf:datatype="&xsd;string">Morphine-Related Disorder</j.0:prefLabel>
+        <j.2:hasBirnlexCurator rdf:datatype="&xsd;string">http://ontology.neuinfo.org/NIF/Backend/BIRNLex_annotation_properties.owl#BillBug</j.2:hasBirnlexCurator>
+        <j.2:hasCurationStatus rdf:datatype="&xsd;string">http://ontology.neuinfo.org/NIF/Backend/BIRNLex_annotation_properties.owl#uncurated</j.2:hasCurationStatus>
+        <obo_annot:hasExternalSource rdf:datatype="&xsd;string">http://ontology.neuinfo.org/NIF/Backend/OBO_annotation_properties.owl#MeSH</obo_annot:hasExternalSource>
+        <obo_annot:hasDefinitionSource rdf:datatype="&xsd;string">http://ontology.neuinfo.org/NIF/Backend/OBO_annotation_properties.owl#MeSH_defSource</obo_annot:hasDefinitionSource>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.neuinfo.org/NIF/Dysfunction/NIF-Dysfunction.owl#birnlex_12716 -->
+
+    <owl:Class rdf:about="http://ontology.neuinfo.org/NIF/Dysfunction/NIF-Dysfunction.owl#birnlex_12716">
+        <rdfs:label rdf:datatype="&xsd;string">Nicotine Use Disorder</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://ontology.neuinfo.org/NIF/Dysfunction/NIF-Dysfunction.owl#birnlex_12698"/>
+        <obo_annot:createdDate rdf:datatype="&xsd;string">2007-10-08</obo_annot:createdDate>
+        <obo_annot:modifiedDate rdf:datatype="&xsd;string">2007-10-08</obo_annot:modifiedDate>
+        <obo_annot:MeshUid rdf:datatype="&xsd;string">D014029</obo_annot:MeshUid>
+        <obo_annot:usageNote rdf:datatype="&xsd;string">MeSH includes implied components of the overall spectrum of functional manifestations of Nicotine Use Disorder</obo_annot:usageNote>
+        <j.2:putativeClassExtension rdf:datatype="&xsd;string">Nicotine Addiction</j.2:putativeClassExtension>
+        <j.2:putativeClassExtension rdf:datatype="&xsd;string">Nicotine Dependence</j.2:putativeClassExtension>
+        <j.0:prefLabel rdf:datatype="&xsd;string">Nicotine Use Disorder</j.0:prefLabel>
+        <obo_annot:synonym rdf:datatype="&xsd;string">Tobacco Use Disorder</obo_annot:synonym>
+        <j.0:definition rdf:datatype="&xsd;string">Tobacco used to the detriment of a person&#39;s health or social functioning. Tobacco dependence is included (MeSH).</j.0:definition>
+        <obo_annot:nifID rdf:datatype="&xsd;string">_8.3_11.1.4</obo_annot:nifID>
+        <j.2:hasBirnlexCurator rdf:datatype="&xsd;string">http://ontology.neuinfo.org/NIF/Backend/BIRNLex_annotation_properties.owl#BillBug</j.2:hasBirnlexCurator>
+        <j.2:hasCurationStatus rdf:datatype="&xsd;string">http://ontology.neuinfo.org/NIF/Backend/BIRNLex_annotation_properties.owl#uncurated</j.2:hasCurationStatus>
+        <obo_annot:hasExternalSource rdf:datatype="&xsd;string">http://ontology.neuinfo.org/NIF/Backend/OBO_annotation_properties.owl#MeSH</obo_annot:hasExternalSource>
+        <obo_annot:hasDefinitionSource rdf:datatype="&xsd;string">http://ontology.neuinfo.org/NIF/Backend/OBO_annotation_properties.owl#MeSH_defSource</obo_annot:hasDefinitionSource>
+        <j.0:scopeNote rdf:datatype="&xsd;string">includes cigarettes, cigars, chewing tobacco &amp; snuff; a psychiatric diag: do not confuse with SMOKING / adv eff; note X ref NICOTINE DEPENDENCE: do not coord with NICOTINE unless nicotine is substantially discussed as a chemical</j.0:scopeNote>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.neuinfo.org/NIF/Dysfunction/NIF-Dysfunction.owl#birnlex_12717 -->
+
+    <owl:Class rdf:about="http://ontology.neuinfo.org/NIF/Dysfunction/NIF-Dysfunction.owl#birnlex_12717">
+        <rdfs:label rdf:datatype="&xsd;string">Phencyclidine-Related Disorder</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://ontology.neuinfo.org/NIF/Dysfunction/NIF-Dysfunction.owl#birnlex_12698"/>
+        <obo_annot:createdDate rdf:datatype="&xsd;string">2007-10-08</obo_annot:createdDate>
+        <obo_annot:modifiedDate rdf:datatype="&xsd;string">2007-10-08</obo_annot:modifiedDate>
+        <obo_annot:synonym rdf:datatype="&xsd;string">Angel Dust Abuse</obo_annot:synonym>
+        <obo_annot:MeshUid rdf:datatype="&xsd;string">D010623</obo_annot:MeshUid>
+        <obo_annot:synonym rdf:datatype="&xsd;string">PCP Abuse</obo_annot:synonym>
+        <j.0:prefLabel rdf:datatype="&xsd;string">Phencyclidine-Related Disorder</j.0:prefLabel>
+        <j.0:definition rdf:datatype="&xsd;string">The misuse of phencyclidine with associated psychological symptoms and impairment in social or occupational functioning (MeSH).</j.0:definition>
+        <j.2:hasBirnlexCurator rdf:datatype="&xsd;string">http://ontology.neuinfo.org/NIF/Backend/BIRNLex_annotation_properties.owl#BillBug</j.2:hasBirnlexCurator>
+        <j.2:hasCurationStatus rdf:datatype="&xsd;string">http://ontology.neuinfo.org/NIF/Backend/BIRNLex_annotation_properties.owl#uncurated</j.2:hasCurationStatus>
+        <obo_annot:hasExternalSource rdf:datatype="&xsd;string">http://ontology.neuinfo.org/NIF/Backend/OBO_annotation_properties.owl#MeSH</obo_annot:hasExternalSource>
+        <obo_annot:hasDefinitionSource rdf:datatype="&xsd;string">http://ontology.neuinfo.org/NIF/Backend/OBO_annotation_properties.owl#MeSH_defSource</obo_annot:hasDefinitionSource>
+    </owl:Class>
+    
+
+
+
+    <!-- http://ontology.neuinfo.org/NIF/Dysfunction/NIF-Dysfunction.owl#birnlex_12752 -->
+
+    <owl:Class rdf:about="http://ontology.neuinfo.org/NIF/Dysfunction/NIF-Dysfunction.owl#birnlex_12752">
+        <rdfs:label rdf:datatype="&xsd;string">Mood Disorder</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://ontology.neuinfo.org/NIF/Dysfunction/NIF-Dysfunction.owl#birnlex_12669"/>
+        <obo_annot:modifiedDate rdf:datatype="&xsd;string">2007-10-05</obo_annot:modifiedDate>
+        <obo_annot:createdDate rdf:datatype="&xsd;string">2007-10-05</obo_annot:createdDate>
+        <obo_annot:synonym rdf:datatype="&xsd;string">Affective Disorder</obo_annot:synonym>
+        <obo_annot:MeshUid rdf:datatype="&xsd;string">D019964</obo_annot:MeshUid>
+        <j.0:prefLabel rdf:datatype="&xsd;string">Mood Disorder</j.0:prefLabel>
+        <j.0:definition rdf:datatype="&xsd;string">Those disorders that have a disturbance in mood as their predominant feature. (MeSH).</j.0:definition>
+        <j.2:hasBirnlexCurator rdf:datatype="&xsd;string">http://ontology.neuinfo.org/NIF/Backend/BIRNLex_annotation_properties.owl#BillBug</j.2:hasBirnlexCurator>
+        <j.2:hasCurationStatus rdf:datatype="&xsd;string">http://ontology.neuinfo.org/NIF/Backend/BIRNLex_annotation_properties.owl#uncurated</j.2:hasCurationStatus>
+        <obo_annot:hasExternalSource rdf:datatype="&xsd;string">http://ontology.neuinfo.org/NIF/Backend/OBO_annotation_properties.owl#MeSH</obo_annot:hasExternalSource>
+        <obo_annot:hasDefinitionSource rdf:datatype="&xsd;string">http://ontology.neuinfo.org/NIF/Backend/OBO_annotation_properties.owl#MeSH_defSource</obo_annot:hasDefinitionSource>
+        <j.0:editorialNote rdf:datatype="&xsd;string">human only; do not confuse with AFFECTIVE SYMPTOMS (MeSH).</j.0:editorialNote>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.neuinfo.org/NIF/Dysfunction/NIF-Dysfunction.owl#birnlex_12753 -->
+
+    <owl:Class rdf:about="http://ontology.neuinfo.org/NIF/Dysfunction/NIF-Dysfunction.owl#birnlex_12753">
+        <rdfs:label rdf:datatype="&xsd;string">Affective Psychotic Disorder</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://ontology.neuinfo.org/NIF/Dysfunction/NIF-Dysfunction.owl#birnlex_12752"/>
+        <obo_annot:modifiedDate rdf:datatype="&xsd;string">2007-10-08</obo_annot:modifiedDate>
+        <obo_annot:createdDate rdf:datatype="&xsd;string">2007-10-08</obo_annot:createdDate>
+        <obo_annot:synonym rdf:datatype="&xsd;string">Affective Psychosis</obo_annot:synonym>
+        <j.0:prefLabel rdf:datatype="&xsd;string">Affective Psychotic Disorder</j.0:prefLabel>
+        <obo_annot:MeshUid rdf:datatype="&xsd;string">D000341</obo_annot:MeshUid>
+        <j.0:definition rdf:datatype="&xsd;string">Disorders in which the essential feature is a severe disturbance in mood (depression, anxiety, elation, and excitement) accompanied by psychotic symptoms such as delusions, hallucinations, gross impairment in reality testing, etc. (MeSH).</j.0:definition>
+        <obo_annot:synonym rdf:datatype="&xsd;string">Psychotic Mood Disorder</obo_annot:synonym>
+        <obo_annot:synonym rdf:datatype="&xsd;string">Reactive Psychotic Depression</obo_annot:synonym>
+        <j.2:hasBirnlexCurator rdf:datatype="&xsd;string">http://ontology.neuinfo.org/NIF/Backend/BIRNLex_annotation_properties.owl#BillBug</j.2:hasBirnlexCurator>
+        <j.2:hasCurationStatus rdf:datatype="&xsd;string">http://ontology.neuinfo.org/NIF/Backend/BIRNLex_annotation_properties.owl#uncurated</j.2:hasCurationStatus>
+        <obo_annot:hasExternalSource rdf:datatype="&xsd;string">http://ontology.neuinfo.org/NIF/Backend/OBO_annotation_properties.owl#MeSH</obo_annot:hasExternalSource>
+        <obo_annot:hasDefinitionSource rdf:datatype="&xsd;string">http://ontology.neuinfo.org/NIF/Backend/OBO_annotation_properties.owl#MeSH_defSource</obo_annot:hasDefinitionSource>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.neuinfo.org/NIF/Dysfunction/NIF-Dysfunction.owl#birnlex_12754 -->
+
+    <owl:Class rdf:about="http://ontology.neuinfo.org/NIF/Dysfunction/NIF-Dysfunction.owl#birnlex_12754">
+        <rdfs:label rdf:datatype="&xsd;string">Bipolar Disorder</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://ontology.neuinfo.org/NIF/Dysfunction/NIF-Dysfunction.owl#birnlex_12753"/>
+        <obo_annot:modifiedDate rdf:datatype="&xsd;string">2007-10-08</obo_annot:modifiedDate>
+        <obo_annot:createdDate rdf:datatype="&xsd;string">2007-10-08</obo_annot:createdDate>
+        <j.0:definition rdf:datatype="&xsd;string">A major affective disorder marked by severe mood swings (manic or major depressive episodes) and a tendency to remission and recurrence (MeSH).</j.0:definition>
+        <obo_annot:synonym rdf:datatype="&xsd;string">Affective Bipolar Psychosis</obo_annot:synonym>
+        <obo_annot:synonym rdf:datatype="&xsd;string">Bipolar Depression</obo_annot:synonym>
+        <j.0:prefLabel rdf:datatype="&xsd;string">Bipolar Disorder</j.0:prefLabel>
+        <obo_annot:MeshUid rdf:datatype="&xsd;string">D001714</obo_annot:MeshUid>
+        <j.2:putativeClassExtension rdf:datatype="&xsd;string">Mania</j.2:putativeClassExtension>
+        <j.2:putativeClassExtension rdf:datatype="&xsd;string">Manic Disorder</j.2:putativeClassExtension>
+        <j.2:putativeClassExtension rdf:datatype="&xsd;string">Manic State</j.2:putativeClassExtension>
+        <obo_annot:synonym rdf:datatype="&xsd;string">Manic-Depressive Psychosis</obo_annot:synonym>
+        <obo_annot:usageNote rdf:datatype="&xsd;string">MeSH includes implied subcomponents</obo_annot:usageNote>
+        <obo_annot:nifID rdf:datatype="&xsd;string">_8.3_11.3</obo_annot:nifID>
+        <j.2:hasBirnlexCurator rdf:datatype="&xsd;string">http://ontology.neuinfo.org/NIF/Backend/BIRNLex_annotation_properties.owl#BillBug</j.2:hasBirnlexCurator>
+        <j.2:hasCurationStatus rdf:datatype="&xsd;string">http://ontology.neuinfo.org/NIF/Backend/BIRNLex_annotation_properties.owl#uncurated</j.2:hasCurationStatus>
+        <obo_annot:hasExternalSource rdf:datatype="&xsd;string">http://ontology.neuinfo.org/NIF/Backend/OBO_annotation_properties.owl#MeSH</obo_annot:hasExternalSource>
+        <obo_annot:hasDefinitionSource rdf:datatype="&xsd;string">http://ontology.neuinfo.org/NIF/Backend/OBO_annotation_properties.owl#MeSH_defSource</obo_annot:hasDefinitionSource>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.neuinfo.org/NIF/Dysfunction/NIF-Dysfunction.owl#birnlex_12755 -->
+
+    <owl:Class rdf:about="http://ontology.neuinfo.org/NIF/Dysfunction/NIF-Dysfunction.owl#birnlex_12755">
+        <rdfs:label rdf:datatype="&xsd;string">Cyclothymic Disorder</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://ontology.neuinfo.org/NIF/Dysfunction/NIF-Dysfunction.owl#birnlex_12754"/>
+        <obo_annot:modifiedDate rdf:datatype="&xsd;string">2007-10-08</obo_annot:modifiedDate>
+        <obo_annot:createdDate rdf:datatype="&xsd;string">2007-10-08</obo_annot:createdDate>
+        <j.0:definition rdf:datatype="&xsd;string">An affective disorder characterized by periods of depression and hypomania. These may be separated by periods of normal mood (MeSH).</j.0:definition>
+        <j.0:prefLabel rdf:datatype="&xsd;string">Cyclothymic Disorder</j.0:prefLabel>
+        <obo_annot:synonym rdf:datatype="&xsd;string">Cyclothymic Personality</obo_annot:synonym>
+        <obo_annot:MeshUid rdf:datatype="&xsd;string">D003527</obo_annot:MeshUid>
+        <j.2:hasBirnlexCurator rdf:datatype="&xsd;string">http://ontology.neuinfo.org/NIF/Backend/BIRNLex_annotation_properties.owl#BillBug</j.2:hasBirnlexCurator>
+        <j.2:hasCurationStatus rdf:datatype="&xsd;string">http://ontology.neuinfo.org/NIF/Backend/BIRNLex_annotation_properties.owl#uncurated</j.2:hasCurationStatus>
+        <obo_annot:hasExternalSource rdf:datatype="&xsd;string">http://ontology.neuinfo.org/NIF/Backend/OBO_annotation_properties.owl#MeSH</obo_annot:hasExternalSource>
+        <obo_annot:hasDefinitionSource rdf:datatype="&xsd;string">http://ontology.neuinfo.org/NIF/Backend/OBO_annotation_properties.owl#MeSH_defSource</obo_annot:hasDefinitionSource>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.neuinfo.org/NIF/Dysfunction/NIF-Dysfunction.owl#birnlex_12756 -->
+
+    <owl:Class rdf:about="http://ontology.neuinfo.org/NIF/Dysfunction/NIF-Dysfunction.owl#birnlex_12756">
+        <rdfs:label rdf:datatype="&xsd;string">Depressive Disorder</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://ontology.neuinfo.org/NIF/Dysfunction/NIF-Dysfunction.owl#birnlex_12752"/>
+        <obo_annot:modifiedDate rdf:datatype="&xsd;string">2007-10-08</obo_annot:modifiedDate>
+        <obo_annot:createdDate rdf:datatype="&xsd;string">2007-10-08</obo_annot:createdDate>
+        <j.0:definition rdf:datatype="&xsd;string">An affective disorder manifested by either a dysphoric mood or loss of interest or pleasure in usual activities. The mood disturbance is prominent and relatively persistent (MeSH).</j.0:definition>
+        <obo_annot:MeshUid rdf:datatype="&xsd;string">D003866</obo_annot:MeshUid>
+        <j.0:prefLabel rdf:datatype="&xsd;string">Depressive Disorder</j.0:prefLabel>
+        <obo_annot:synonym rdf:datatype="&xsd;string">Depressive Neurosis</obo_annot:synonym>
+        <obo_annot:synonym rdf:datatype="&xsd;string">Depressive Syndrome</obo_annot:synonym>
+        <obo_annot:synonym rdf:datatype="&xsd;string">Endogenous Depression</obo_annot:synonym>
+        <obo_annot:synonym rdf:datatype="&xsd;string">Melancholia</obo_annot:synonym>
+        <obo_annot:synonym rdf:datatype="&xsd;string">Neurotic Depression</obo_annot:synonym>
+        <obo_annot:synonym rdf:datatype="&xsd;string">Unipolar Depression</obo_annot:synonym>
+        <obo_annot:nifID rdf:datatype="&xsd;string">_8.3_11.2</obo_annot:nifID>
+        <j.2:hasBirnlexCurator rdf:datatype="&xsd;string">http://ontology.neuinfo.org/NIF/Backend/BIRNLex_annotation_properties.owl#BillBug</j.2:hasBirnlexCurator>
+        <j.2:hasCurationStatus rdf:datatype="&xsd;string">http://ontology.neuinfo.org/NIF/Backend/BIRNLex_annotation_properties.owl#uncurated</j.2:hasCurationStatus>
+        <obo_annot:hasExternalSource rdf:datatype="&xsd;string">http://ontology.neuinfo.org/NIF/Backend/OBO_annotation_properties.owl#MeSH</obo_annot:hasExternalSource>
+        <obo_annot:hasDefinitionSource rdf:datatype="&xsd;string">http://ontology.neuinfo.org/NIF/Backend/OBO_annotation_properties.owl#MeSH_defSource</obo_annot:hasDefinitionSource>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.neuinfo.org/NIF/Dysfunction/NIF-Dysfunction.owl#birnlex_12757 -->
+
+    <owl:Class rdf:about="http://ontology.neuinfo.org/NIF/Dysfunction/NIF-Dysfunction.owl#birnlex_12757">
+        <rdfs:label rdf:datatype="&xsd;string">Postpartum Depression</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://ontology.neuinfo.org/NIF/Dysfunction/NIF-Dysfunction.owl#birnlex_12756"/>
+        <obo_annot:modifiedDate rdf:datatype="&xsd;string">2007-10-08</obo_annot:modifiedDate>
+        <obo_annot:createdDate rdf:datatype="&xsd;string">2007-10-08</obo_annot:createdDate>
+        <obo_annot:MeshUid rdf:datatype="&xsd;string">D019052</obo_annot:MeshUid>
+        <obo_annot:definingCitation rdf:datatype="&xsd;string">DSM-IV, p386</obo_annot:definingCitation>
+        <j.0:definition rdf:datatype="&xsd;string">Depression in POSTPARTUM WOMEN, usually within four weeks after giving birth ( PARTURITION). The degree of depression ranges from mild transient depression to neurotic or psychotic depressive disorders (MeSH).</j.0:definition>
+        <obo_annot:synonym rdf:datatype="&xsd;string">Post-Natal Depression</obo_annot:synonym>
+        <obo_annot:synonym rdf:datatype="&xsd;string">Post-Partum Depression</obo_annot:synonym>
+        <j.0:prefLabel rdf:datatype="&xsd;string">Postpartum Depression</j.0:prefLabel>
+        <j.2:hasBirnlexCurator rdf:datatype="&xsd;string">http://ontology.neuinfo.org/NIF/Backend/BIRNLex_annotation_properties.owl#BillBug</j.2:hasBirnlexCurator>
+        <j.2:hasCurationStatus rdf:datatype="&xsd;string">http://ontology.neuinfo.org/NIF/Backend/BIRNLex_annotation_properties.owl#uncurated</j.2:hasCurationStatus>
+        <obo_annot:hasExternalSource rdf:datatype="&xsd;string">http://ontology.neuinfo.org/NIF/Backend/OBO_annotation_properties.owl#MeSH</obo_annot:hasExternalSource>
+        <obo_annot:hasDefinitionSource rdf:datatype="&xsd;string">http://ontology.neuinfo.org/NIF/Backend/OBO_annotation_properties.owl#MeSH_defSource</obo_annot:hasDefinitionSource>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.neuinfo.org/NIF/Dysfunction/NIF-Dysfunction.owl#birnlex_12758 -->
+
+    <owl:Class rdf:about="http://ontology.neuinfo.org/NIF/Dysfunction/NIF-Dysfunction.owl#birnlex_12758">
+        <rdfs:label rdf:datatype="&xsd;string">Major Depressive Disorder</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://ontology.neuinfo.org/NIF/Dysfunction/NIF-Dysfunction.owl#birnlex_12756"/>
+        <obo_annot:createdDate rdf:datatype="&xsd;string">2007-10-08</obo_annot:createdDate>
+        <obo_annot:modifiedDate rdf:datatype="&xsd;string">2007-10-08</obo_annot:modifiedDate>
+        <obo_annot:MeshUid rdf:datatype="&xsd;string">D003865</obo_annot:MeshUid>
+        <obo_annot:synonym rdf:datatype="&xsd;string">Involutional Depression</obo_annot:synonym>
+        <obo_annot:synonym rdf:datatype="&xsd;string">Involutional Melancholia</obo_annot:synonym>
+        <obo_annot:synonym rdf:datatype="&xsd;string">Involutional Paraphrenia</obo_annot:synonym>
+        <obo_annot:synonym rdf:datatype="&xsd;string">Involutional Psychosis</obo_annot:synonym>
+        <j.0:prefLabel rdf:datatype="&xsd;string">Major Depressive Disorder</j.0:prefLabel>
+        <j.0:definition rdf:datatype="&xsd;string">Marked depression appearing in the involution period and characterized by hallucinations, delusions, paranoia, and agitation. (MeSH).</j.0:definition>
+        <j.2:hasBirnlexCurator rdf:datatype="&xsd;string">http://ontology.neuinfo.org/NIF/Backend/BIRNLex_annotation_properties.owl#BillBug</j.2:hasBirnlexCurator>
+        <j.2:hasCurationStatus rdf:datatype="&xsd;string">http://ontology.neuinfo.org/NIF/Backend/BIRNLex_annotation_properties.owl#uncurated</j.2:hasCurationStatus>
+        <obo_annot:hasExternalSource rdf:datatype="&xsd;string">http://ontology.neuinfo.org/NIF/Backend/OBO_annotation_properties.owl#MeSH</obo_annot:hasExternalSource>
+        <obo_annot:hasDefinitionSource rdf:datatype="&xsd;string">http://ontology.neuinfo.org/NIF/Backend/OBO_annotation_properties.owl#MeSH_defSource</obo_annot:hasDefinitionSource>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.neuinfo.org/NIF/Dysfunction/NIF-Dysfunction.owl#birnlex_12759 -->
+
+    <owl:Class rdf:about="http://ontology.neuinfo.org/NIF/Dysfunction/NIF-Dysfunction.owl#birnlex_12759">
+        <rdfs:label rdf:datatype="&xsd;string">Dysthymic Disorder</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://ontology.neuinfo.org/NIF/Dysfunction/NIF-Dysfunction.owl#birnlex_12756"/>
+        <obo_annot:createdDate rdf:datatype="&xsd;string">2007-10-08</obo_annot:createdDate>
+        <obo_annot:modifiedDate rdf:datatype="&xsd;string">2007-10-08</obo_annot:modifiedDate>
+        <j.0:definition rdf:datatype="&xsd;string">Chronically depressed mood that occurs for most of the day more days than not for at least 2 years. The required minimum duration in children to make this diagnosis is 1 year. During periods of depressed mood, at least 2 of the following additional symptoms are present: poor appetite or overeating, insomnia or hypersomnia, low energy or fatigue, low self esteem, poor concentration or difficulty making decisions, and feelings of hopelessness (MeSH).</j.0:definition>
+        <obo_annot:MeshUid rdf:datatype="&xsd;string">D019263</obo_annot:MeshUid>
+        <j.0:prefLabel rdf:datatype="&xsd;string">Dysthymic Disorder</j.0:prefLabel>
+        <j.2:hasBirnlexCurator rdf:datatype="&xsd;string">http://ontology.neuinfo.org/NIF/Backend/BIRNLex_annotation_properties.owl#BillBug</j.2:hasBirnlexCurator>
+        <j.2:hasCurationStatus rdf:datatype="&xsd;string">http://ontology.neuinfo.org/NIF/Backend/BIRNLex_annotation_properties.owl#uncurated</j.2:hasCurationStatus>
+        <obo_annot:hasExternalSource rdf:datatype="&xsd;string">http://ontology.neuinfo.org/NIF/Backend/OBO_annotation_properties.owl#MeSH</obo_annot:hasExternalSource>
+        <obo_annot:hasDefinitionSource rdf:datatype="&xsd;string">http://ontology.neuinfo.org/NIF/Backend/OBO_annotation_properties.owl#MeSH_defSource</obo_annot:hasDefinitionSource>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.neuinfo.org/NIF/Dysfunction/NIF-Dysfunction.owl#birnlex_12760 -->
+
+    <owl:Class rdf:about="http://ontology.neuinfo.org/NIF/Dysfunction/NIF-Dysfunction.owl#birnlex_12760">
+        <rdfs:label rdf:datatype="&xsd;string">Seasonal Affective Disorder</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://ontology.neuinfo.org/NIF/Dysfunction/NIF-Dysfunction.owl#birnlex_12756"/>
+        <obo_annot:createdDate rdf:datatype="&xsd;string">2007-10-08</obo_annot:createdDate>
+        <obo_annot:modifiedDate rdf:datatype="&xsd;string">2007-10-08</obo_annot:modifiedDate>
+        <j.0:definition rdf:datatype="&xsd;string">A syndrome characterized by depressions that recur annually at the same time each year, usually during the winter months. Other symptoms include anxiety, irritability, decreased energy, increased appetite (carbohydrate cravings), increased duration of sleep, and weight gain. SAD (seasonal affective disorder) can be treated by daily exposure to bright artificial lights ( PHOTOTHERAPY), during the season of recurrence (MeSH).</j.0:definition>
+        <obo_annot:MeshUid rdf:datatype="&xsd;string">D016574</obo_annot:MeshUid>
+        <j.0:prefLabel rdf:datatype="&xsd;string">Seasonal Affective Disorder</j.0:prefLabel>
+        <obo_annot:synonym rdf:datatype="&xsd;string">Seasonal Mood Disorder</obo_annot:synonym>
+        <j.2:hasBirnlexCurator rdf:datatype="&xsd;string">http://ontology.neuinfo.org/NIF/Backend/BIRNLex_annotation_properties.owl#BillBug</j.2:hasBirnlexCurator>
+        <j.2:hasCurationStatus rdf:datatype="&xsd;string">http://ontology.neuinfo.org/NIF/Backend/BIRNLex_annotation_properties.owl#uncurated</j.2:hasCurationStatus>
+        <obo_annot:hasExternalSource rdf:datatype="&xsd;string">http://ontology.neuinfo.org/NIF/Backend/OBO_annotation_properties.owl#MeSH</obo_annot:hasExternalSource>
+        <obo_annot:hasDefinitionSource rdf:datatype="&xsd;string">http://ontology.neuinfo.org/NIF/Backend/OBO_annotation_properties.owl#MeSH_defSource</obo_annot:hasDefinitionSource>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.neuinfo.org/NIF/Dysfunction/NIF-Dysfunction.owl#birnlex_12761 -->
+
+    <owl:Class rdf:about="http://ontology.neuinfo.org/NIF/Dysfunction/NIF-Dysfunction.owl#birnlex_12761">
+        <rdfs:label rdf:datatype="&xsd;string">Psychotic Disorder</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://ontology.neuinfo.org/NIF/Dysfunction/NIF-Dysfunction.owl#birnlex_12669"/>
+        <obo_annot:createdDate rdf:datatype="&xsd;string">2007-10-08</obo_annot:createdDate>
+        <obo_annot:modifiedDate rdf:datatype="&xsd;string">2007-10-08</obo_annot:modifiedDate>
+        <j.2:putativeClassExtension rdf:datatype="&xsd;string">Brief Reactive Psychosis</j.2:putativeClassExtension>
+        <obo_annot:MeshUid rdf:datatype="&xsd;string">D011618</obo_annot:MeshUid>
+        <obo_annot:usageNote rdf:datatype="&xsd;string">MeSH includes implied subcomponents</obo_annot:usageNote>
+        <obo_annot:synonym rdf:datatype="&xsd;string">Psychosis</obo_annot:synonym>
+        <j.0:prefLabel rdf:datatype="&xsd;string">Psychotic Disorder</j.0:prefLabel>
+        <j.2:putativeClassExtension rdf:datatype="&xsd;string">Schizoaffective Disorder</j.2:putativeClassExtension>
+        <j.2:putativeClassExtension rdf:datatype="&xsd;string">Schizophreniform Disorder</j.2:putativeClassExtension>
+        <j.0:definition rdf:datatype="&xsd;string">Those disorders that have a disturbance in mood as their predominant feature. (MeSH).</j.0:definition>
+        <obo_annot:nifID rdf:datatype="&xsd;string">_8.3_11.5</obo_annot:nifID>
+        <j.2:hasBirnlexCurator rdf:datatype="&xsd;string">http://ontology.neuinfo.org/NIF/Backend/BIRNLex_annotation_properties.owl#BillBug</j.2:hasBirnlexCurator>
+        <j.2:hasCurationStatus rdf:datatype="&xsd;string">http://ontology.neuinfo.org/NIF/Backend/BIRNLex_annotation_properties.owl#uncurated</j.2:hasCurationStatus>
+        <obo_annot:hasExternalSource rdf:datatype="&xsd;string">http://ontology.neuinfo.org/NIF/Backend/OBO_annotation_properties.owl#MeSH</obo_annot:hasExternalSource>
+        <obo_annot:hasDefinitionSource rdf:datatype="&xsd;string">http://ontology.neuinfo.org/NIF/Backend/OBO_annotation_properties.owl#MeSH_defSource</obo_annot:hasDefinitionSource>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.neuinfo.org/NIF/Dysfunction/NIF-Dysfunction.owl#birnlex_12762 -->
+
+    <owl:Class rdf:about="http://ontology.neuinfo.org/NIF/Dysfunction/NIF-Dysfunction.owl#birnlex_12762">
+        <rdfs:label rdf:datatype="&xsd;string">Capgras Syndrome</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://ontology.neuinfo.org/NIF/Dysfunction/NIF-Dysfunction.owl#birnlex_12761"/>
+        <obo_annot:createdDate rdf:datatype="&xsd;string">2007-10-08</obo_annot:createdDate>
+        <obo_annot:modifiedDate rdf:datatype="&xsd;string">2007-10-08</obo_annot:modifiedDate>
+        <obo_annot:externallySourcedDefinition rdf:datatype="&xsd;string">A psychotic disorder characterized by the patient&#39;s belief that acquaintances or closely related persons have been replaced by doubles or imposters. (MeSH)</obo_annot:externallySourcedDefinition>
+        <j.0:prefLabel rdf:datatype="&xsd;string">Capgras Syndrome</j.0:prefLabel>
+        <obo_annot:MeshUid rdf:datatype="&xsd;string">D002194</obo_annot:MeshUid>
+        <j.2:hasBirnlexCurator rdf:datatype="&xsd;string">http://ontology.neuinfo.org/NIF/Backend/BIRNLex_annotation_properties.owl#Jessica_Turner</j.2:hasBirnlexCurator>
+        <j.2:hasCurationStatus rdf:datatype="&xsd;string">http://ontology.neuinfo.org/NIF/Backend/BIRNLex_annotation_properties.owl#uncurated</j.2:hasCurationStatus>
+        <obo_annot:hasExternalSource rdf:datatype="&xsd;string">http://ontology.neuinfo.org/NIF/Backend/OBO_annotation_properties.owl#UMLS</obo_annot:hasExternalSource>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.neuinfo.org/NIF/Dysfunction/NIF-Dysfunction.owl#birnlex_12763 -->
+
+    <owl:Class rdf:about="http://ontology.neuinfo.org/NIF/Dysfunction/NIF-Dysfunction.owl#birnlex_12763">
+        <rdfs:label rdf:datatype="&xsd;string">Paranoid Disorder</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://ontology.neuinfo.org/NIF/Dysfunction/NIF-Dysfunction.owl#birnlex_12761"/>
+        <obo_annot:modifiedDate rdf:datatype="&xsd;string">2007-10-08</obo_annot:modifiedDate>
+        <obo_annot:createdDate rdf:datatype="&xsd;string">2007-10-08</obo_annot:createdDate>
+        <obo_annot:externallySourcedDefinition rdf:datatype="&xsd;string">Chronic mental disorders in which there has been an insidious development of a permanent and unshakeable delusional system (persecutory delusions or delusions of jealousy), accompanied by preservation of clear and orderly thinking. Emotional responses and behavior are consistent with the delusional state. (MeSH)</obo_annot:externallySourcedDefinition>
+        <obo_annot:MeshUid rdf:datatype="&xsd;string">D010259</obo_annot:MeshUid>
+        <obo_annot:synonym rdf:datatype="&xsd;string">Paranoia</obo_annot:synonym>
+        <j.0:prefLabel rdf:datatype="&xsd;string">Paranoid Disorder</j.0:prefLabel>
+        <obo_annot:synonym rdf:datatype="&xsd;string">Paranoid Psychosis</obo_annot:synonym>
+        <obo_annot:synonym rdf:datatype="&xsd;string">Psychosis</obo_annot:synonym>
+        <j.2:hasBirnlexCurator rdf:datatype="&xsd;string">http://ontology.neuinfo.org/NIF/Backend/BIRNLex_annotation_properties.owl#Jessica_Turner</j.2:hasBirnlexCurator>
+        <j.2:hasCurationStatus rdf:datatype="&xsd;string">http://ontology.neuinfo.org/NIF/Backend/BIRNLex_annotation_properties.owl#uncurated</j.2:hasCurationStatus>
+        <obo_annot:hasExternalSource rdf:datatype="&xsd;string">http://ontology.neuinfo.org/NIF/Backend/OBO_annotation_properties.owl#UMLS</obo_annot:hasExternalSource>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.neuinfo.org/NIF/Dysfunction/NIF-Dysfunction.owl#birnlex_12764 -->
+
+    <owl:Class rdf:about="http://ontology.neuinfo.org/NIF/Dysfunction/NIF-Dysfunction.owl#birnlex_12764">
+        <rdfs:label rdf:datatype="&xsd;string">Catatonic Schizophrenia</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://ontology.neuinfo.org/NIF/Dysfunction/NIF-Dysfunction.owl#birnlex_2104"/>
+        <obo_annot:createdDate rdf:datatype="&xsd;string">2007-10-08</obo_annot:createdDate>
+        <obo_annot:modifiedDate rdf:datatype="&xsd;string">2007-10-08</obo_annot:modifiedDate>
+        <obo_annot:externallySourcedDefinition rdf:datatype="&xsd;string">A type of schizophrenia characterized by abnormality of motor behavior which may involve particular forms of stupor, rigidity, excitement or inappropriate posture (MeSH)</obo_annot:externallySourcedDefinition>
+        <j.0:prefLabel rdf:datatype="&xsd;string">Catatonic Schizophrenia</j.0:prefLabel>
+        <obo_annot:MeshUid rdf:datatype="&xsd;string">D012560</obo_annot:MeshUid>
+        <j.2:hasBirnlexCurator rdf:datatype="&xsd;string">http://ontology.neuinfo.org/NIF/Backend/BIRNLex_annotation_properties.owl#Jessica_Turner</j.2:hasBirnlexCurator>
+        <j.2:hasCurationStatus rdf:datatype="&xsd;string">http://ontology.neuinfo.org/NIF/Backend/BIRNLex_annotation_properties.owl#uncurated</j.2:hasCurationStatus>
+        <obo_annot:hasExternalSource rdf:datatype="&xsd;string">http://ontology.neuinfo.org/NIF/Backend/OBO_annotation_properties.owl#UMLS</obo_annot:hasExternalSource>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.neuinfo.org/NIF/Dysfunction/NIF-Dysfunction.owl#birnlex_12765 -->
+
+    <owl:Class rdf:about="http://ontology.neuinfo.org/NIF/Dysfunction/NIF-Dysfunction.owl#birnlex_12765">
+        <rdfs:label rdf:datatype="&xsd;string">Disorganized Schizophrenia</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://ontology.neuinfo.org/NIF/Dysfunction/NIF-Dysfunction.owl#birnlex_2104"/>
+        <obo_annot:modifiedDate rdf:datatype="&xsd;string">2007-10-08</obo_annot:modifiedDate>
+        <obo_annot:createdDate rdf:datatype="&xsd;string">2007-10-08</obo_annot:createdDate>
+        <obo_annot:externallySourcedDefinition rdf:datatype="&xsd;string">A type of schizophrenia characterized by frequent incoherence; marked loosening of associations, or grossly disorganized behavior and flat or grossly inappropriate affect that does not meet the criteria for the catatonic type; associated features include extreme social withdrawal, grimacing, mannerisms, mirror gazing, inappropriate giggling, and other odd behavior (MeSH)</obo_annot:externallySourcedDefinition>
+        <obo_annot:MeshUid rdf:datatype="&xsd;string">D012562</obo_annot:MeshUid>
+        <j.0:prefLabel rdf:datatype="&xsd;string">Disorganized Schizophrenia</j.0:prefLabel>
+        <obo_annot:definingCitation rdf:datatype="&xsd;string">Dorland, 27th ed</obo_annot:definingCitation>
+        <obo_annot:synonym rdf:datatype="&xsd;string">Hebephrenic Schizophrenia</obo_annot:synonym>
+        <j.2:hasBirnlexCurator rdf:datatype="&xsd;string">http://ontology.neuinfo.org/NIF/Backend/BIRNLex_annotation_properties.owl#Jessica_Turner</j.2:hasBirnlexCurator>
+        <j.2:hasCurationStatus rdf:datatype="&xsd;string">http://ontology.neuinfo.org/NIF/Backend/BIRNLex_annotation_properties.owl#uncurated</j.2:hasCurationStatus>
+        <obo_annot:hasExternalSource rdf:datatype="&xsd;string">http://ontology.neuinfo.org/NIF/Backend/OBO_annotation_properties.owl#UMLS</obo_annot:hasExternalSource>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.neuinfo.org/NIF/Dysfunction/NIF-Dysfunction.owl#birnlex_12766 -->
+
+    <owl:Class rdf:about="http://ontology.neuinfo.org/NIF/Dysfunction/NIF-Dysfunction.owl#birnlex_12766">
+        <rdfs:label rdf:datatype="&xsd;string">Paranoid Schizophrenia</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://ontology.neuinfo.org/NIF/Dysfunction/NIF-Dysfunction.owl#birnlex_2104"/>
+        <obo_annot:modifiedDate rdf:datatype="&xsd;string">2007-10-08</obo_annot:modifiedDate>
+        <obo_annot:createdDate rdf:datatype="&xsd;string">2007-10-08</obo_annot:createdDate>
+        <obo_annot:externallySourcedDefinition rdf:datatype="&xsd;string">A chronic form of schizophrenia characterized primarily by the presence of persecutory or grandiose delusions, often associated with hallucination (MeSH)</obo_annot:externallySourcedDefinition>
+        <obo_annot:MeshUid rdf:datatype="&xsd;string">D012563</obo_annot:MeshUid>
+        <obo_annot:synonym rdf:datatype="&xsd;string">Delusional Disorder</obo_annot:synonym>
+        <j.0:prefLabel rdf:datatype="&xsd;string">Paranoid Schizophrenia</j.0:prefLabel>
+        <j.2:hasBirnlexCurator rdf:datatype="&xsd;string">http://ontology.neuinfo.org/NIF/Backend/BIRNLex_annotation_properties.owl#Jessica_Turner</j.2:hasBirnlexCurator>
+        <j.2:hasCurationStatus rdf:datatype="&xsd;string">http://ontology.neuinfo.org/NIF/Backend/BIRNLex_annotation_properties.owl#uncurated</j.2:hasCurationStatus>
+        <obo_annot:hasExternalSource rdf:datatype="&xsd;string">http://ontology.neuinfo.org/NIF/Backend/OBO_annotation_properties.owl#UMLS</obo_annot:hasExternalSource>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.neuinfo.org/NIF/Dysfunction/NIF-Dysfunction.owl#birnlex_12767 -->
+
+    <owl:Class rdf:about="http://ontology.neuinfo.org/NIF/Dysfunction/NIF-Dysfunction.owl#birnlex_12767">
+        <rdfs:label rdf:datatype="&xsd;string">Shared Paranoid Disorder</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://ontology.neuinfo.org/NIF/Dysfunction/NIF-Dysfunction.owl#birnlex_2104"/>
+        <obo_annot:createdDate rdf:datatype="&xsd;string">2007-10-08</obo_annot:createdDate>
+        <obo_annot:modifiedDate rdf:datatype="&xsd;string">2007-10-08</obo_annot:modifiedDate>
+        <obo_annot:externallySourcedDefinition rdf:datatype="&xsd;string">A condition in which two closely related persons, usually in the same family, share the same delusions. (MeSH)</obo_annot:externallySourcedDefinition>
+        <obo_annot:MeshUid rdf:datatype="&xsd;string">D012753</obo_annot:MeshUid>
+        <obo_annot:synonym rdf:datatype="&xsd;string">Folie a Deux</obo_annot:synonym>
+        <obo_annot:synonym rdf:datatype="&xsd;string">Folie a Trois</obo_annot:synonym>
+        <j.0:prefLabel rdf:datatype="&xsd;string">Shared Paranoid Disorder</j.0:prefLabel>
+        <obo_annot:synonym rdf:datatype="&xsd;string">Shared Psychotic Disorder</obo_annot:synonym>
+        <j.2:hasBirnlexCurator rdf:datatype="&xsd;string">http://ontology.neuinfo.org/NIF/Backend/BIRNLex_annotation_properties.owl#Jessica_Turner</j.2:hasBirnlexCurator>
+        <j.2:hasCurationStatus rdf:datatype="&xsd;string">http://ontology.neuinfo.org/NIF/Backend/BIRNLex_annotation_properties.owl#uncurated</j.2:hasCurationStatus>
+        <obo_annot:hasExternalSource rdf:datatype="&xsd;string">http://ontology.neuinfo.org/NIF/Backend/OBO_annotation_properties.owl#UMLS</obo_annot:hasExternalSource>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.neuinfo.org/NIF/Dysfunction/NIF-Dysfunction.owl#birnlex_12768 -->
+
+    <owl:Class rdf:about="http://ontology.neuinfo.org/NIF/Dysfunction/NIF-Dysfunction.owl#birnlex_12768">
+        <rdfs:label rdf:datatype="&xsd;string">Pervasive Development Disorder</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://ontology.neuinfo.org/NIF/Dysfunction/NIF-Dysfunction.owl#birnlex_12669"/>
+        <obo_annot:modifiedDate rdf:datatype="&xsd;string">2007-10-08</obo_annot:modifiedDate>
+        <obo_annot:createdDate rdf:datatype="&xsd;string">2007-10-08</obo_annot:createdDate>
+        <obo_annot:MeshUid rdf:datatype="&xsd;string">D002659</obo_annot:MeshUid>
+        <obo_annot:synonym rdf:datatype="&xsd;string">Pervasive Child Development Disorder</obo_annot:synonym>
+        <j.0:prefLabel rdf:datatype="&xsd;string">Pervasive Development Disorder</j.0:prefLabel>
+        <j.0:definition rdf:datatype="&xsd;string">Severe distortions in the development of many basic psychological functions that are not normal for any stage in development. These distortions are manifested in sustained social impairment, speech abnormalities, and peculiar motor movements (MeSH).</j.0:definition>
+        <j.2:hasBirnlexCurator rdf:datatype="&xsd;string">http://ontology.neuinfo.org/NIF/Backend/BIRNLex_annotation_properties.owl#BillBug</j.2:hasBirnlexCurator>
+        <j.2:hasCurationStatus rdf:datatype="&xsd;string">http://ontology.neuinfo.org/NIF/Backend/BIRNLex_annotation_properties.owl#uncurated</j.2:hasCurationStatus>
+        <obo_annot:hasExternalSource rdf:datatype="&xsd;string">http://ontology.neuinfo.org/NIF/Backend/OBO_annotation_properties.owl#MeSH</obo_annot:hasExternalSource>
+        <obo_annot:hasDefinitionSource rdf:datatype="&xsd;string">http://ontology.neuinfo.org/NIF/Backend/OBO_annotation_properties.owl#MeSH_defSource</obo_annot:hasDefinitionSource>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.neuinfo.org/NIF/Dysfunction/NIF-Dysfunction.owl#birnlex_12769 -->
+
+    <owl:Class rdf:about="http://ontology.neuinfo.org/NIF/Dysfunction/NIF-Dysfunction.owl#birnlex_12769">
+        <rdfs:label rdf:datatype="&xsd;string">Asperger Syndrome</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://ontology.neuinfo.org/NIF/Dysfunction/NIF-Dysfunction.owl#birnlex_12768"/>
+        <obo_annot:createdDate rdf:datatype="&xsd;string">2007-10-08</obo_annot:createdDate>
+        <obo_annot:modifiedDate rdf:datatype="&xsd;string">2007-10-08</obo_annot:modifiedDate>
+        <j.0:definition rdf:datatype="&xsd;string">A childhood disorder predominately affecting boys and similar to autism ( AUTISTIC DISORDER). It is characterized by severe, sustained, clinically significant impairment of social interaction, and restricted repetitive and stereotyped patterns of behavior. In contrast to autism, there are no clinically significant delays in language or cognitive development (MeSH).</j.0:definition>
+        <j.0:prefLabel rdf:datatype="&xsd;string">Asperger Syndrome</j.0:prefLabel>
+        <obo_annot:synonym rdf:datatype="&xsd;string">Asperger&#39;s Disorder</obo_annot:synonym>
+        <obo_annot:MeshUid rdf:datatype="&xsd;string">D020817</obo_annot:MeshUid>
+        <obo_annot:definingCitation rdf:datatype="&xsd;string">DSM-IV</obo_annot:definingCitation>
+        <j.2:hasBirnlexCurator rdf:datatype="&xsd;string">http://ontology.neuinfo.org/NIF/Backend/BIRNLex_annotation_properties.owl#BillBug</j.2:hasBirnlexCurator>
+        <j.2:hasCurationStatus rdf:datatype="&xsd;string">http://ontology.neuinfo.org/NIF/Backend/BIRNLex_annotation_properties.owl#uncurated</j.2:hasCurationStatus>
+        <obo_annot:hasExternalSource rdf:datatype="&xsd;string">http://ontology.neuinfo.org/NIF/Backend/OBO_annotation_properties.owl#MeSH</obo_annot:hasExternalSource>
+        <obo_annot:hasDefinitionSource rdf:datatype="&xsd;string">http://ontology.neuinfo.org/NIF/Backend/OBO_annotation_properties.owl#MeSH_defSource</obo_annot:hasDefinitionSource>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.neuinfo.org/NIF/Dysfunction/NIF-Dysfunction.owl#birnlex_12770 -->
+
+    <owl:Class rdf:about="http://ontology.neuinfo.org/NIF/Dysfunction/NIF-Dysfunction.owl#birnlex_12770">
+        <rdfs:label rdf:datatype="&xsd;string">Rett Syndrome</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://ontology.neuinfo.org/NIF/Dysfunction/NIF-Dysfunction.owl#birnlex_12768"/>
+        <obo_annot:modifiedDate rdf:datatype="&xsd;string">2007-10-08</obo_annot:modifiedDate>
+        <obo_annot:createdDate rdf:datatype="&xsd;string">2007-10-08</obo_annot:createdDate>
+        <j.0:definition rdf:datatype="&xsd;string">An inherited neurological developmental disorder that is associated with X-LINKED INHERITANCE and may be lethal in utero to hemizygous males. The affected female is normal until the age of 6-25 months when progressive loss of voluntary control of hand movements and communication skills; ATAXIA; SEIZURES; autistic behavior; intermittent HYPERVENTILATION; and HYPERAMMONEMIA appear (MeSH).</j.0:definition>
+        <obo_annot:synonym rdf:datatype="&xsd;string">Autism-Dementia-Ataxia-Loss of Purposeful Hand Use Syndrome</obo_annot:synonym>
+        <obo_annot:synonym rdf:datatype="&xsd;string">Cerebroatrophic Hyperammonemia</obo_annot:synonym>
+        <obo_annot:MeshUid rdf:datatype="&xsd;string">D015518</obo_annot:MeshUid>
+        <obo_annot:definingCitation rdf:datatype="&xsd;string">Menkes, Textbook of Child Neurology, 5th ed, p199</obo_annot:definingCitation>
+        <obo_annot:synonym rdf:datatype="&xsd;string">Rett Disorder</obo_annot:synonym>
+        <j.0:prefLabel rdf:datatype="&xsd;string">Rett Syndrome</j.0:prefLabel>
+        <j.2:hasBirnlexCurator rdf:datatype="&xsd;string">http://ontology.neuinfo.org/NIF/Backend/BIRNLex_annotation_properties.owl#BillBug</j.2:hasBirnlexCurator>
+        <j.2:hasCurationStatus rdf:datatype="&xsd;string">http://ontology.neuinfo.org/NIF/Backend/BIRNLex_annotation_properties.owl#uncurated</j.2:hasCurationStatus>
+        <obo_annot:hasExternalSource rdf:datatype="&xsd;string">http://ontology.neuinfo.org/NIF/Backend/OBO_annotation_properties.owl#MeSH</obo_annot:hasExternalSource>
+        <obo_annot:hasDefinitionSource rdf:datatype="&xsd;string">http://ontology.neuinfo.org/NIF/Backend/OBO_annotation_properties.owl#MeSH_defSource</obo_annot:hasDefinitionSource>
+    </owl:Class>
+    
+
+    <!-- http://ontology.neuinfo.org/NIF/Dysfunction/NIF-Dysfunction.owl#birnlex_2092 -->
+
+    <owl:Class rdf:about="http://ontology.neuinfo.org/NIF/Dysfunction/NIF-Dysfunction.owl#birnlex_2092">
+        <rdfs:label rdf:datatype="&xsd;string">Alzheimers disease</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://ontology.neuinfo.org/NIF/Dysfunction/NIF-Dysfunction.owl#birnlex_12696"/>
+        <obo_annot:createdDate rdf:datatype="&xsd;string">2006-04-04</obo_annot:createdDate>
+        <j.2:birnlexDefinition rdf:datatype="&xsd;string">A neurodegenerative disease resulting in the insidious onset of dementia. Impairment of memory, judgement, attention span, and problem solving skills are followed by severe APRAXIAS and a global loss of cognitive abilities. The condition primarily occurs after age 60, and is marked pathologically by severe cortical atrophy and the triad of SENILE PLAQUES; NEUROFIBRILLARY TANGLES; and NEUROPIL THREADS. (adapted from MSH)</j.2:birnlexDefinition>
+        <obo_annot:abbrev rdf:datatype="&xsd;string">AD</obo_annot:abbrev>
+        <j.2:putativeClassExtension rdf:datatype="&xsd;string">Acute Confusional Senile Dementia</j.2:putativeClassExtension>
+        <obo_annot:definingCitation rdf:datatype="&xsd;string">Adams et al., Principles of Neurology, 6th ed, pp1049-57</obo_annot:definingCitation>
+        <obo_annot:synonym rdf:datatype="&xsd;string">Alzheimer Dementia</obo_annot:synonym>
+        <obo_annot:synonym rdf:datatype="&xsd;string">Alzheimer Senile Dementia</obo_annot:synonym>
+        <obo_annot:synonym rdf:datatype="&xsd;string">Alzheimer Type Dementia</obo_annot:synonym>
+        <obo_annot:synonym rdf:datatype="&xsd;string">Alzheimer Type Senile Dementia</obo_annot:synonym>
+        <obo_annot:synonym rdf:datatype="&xsd;string">Alzheimer disease</obo_annot:synonym>
+        <obo_annot:synonym rdf:datatype="&xsd;string">dementia of the Alzheimer type</obo_annot:synonym>
+        <obo_annot:synonym rdf:datatype="&xsd;string">Alzheimer&#39;s Dementia</obo_annot:synonym>
+        <obo_annot:synonym rdf:datatype="&xsd;string">Alzheimer&#39;s disease</obo_annot:synonym>
+        <obo_annot:synonym rdf:datatype="&xsd;string">Alzheimers</obo_annot:synonym>
+        <j.0:prefLabel rdf:datatype="&xsd;string">Alzheimers disease</j.0:prefLabel>
+        <obo_annot:modifiedDate rdf:datatype="&xsd;string">April 11, 2009</obo_annot:modifiedDate>
+        <obo_annot:UmlsCui rdf:datatype="&xsd;string">C0002395</obo_annot:UmlsCui>
+        <obo_annot:MeshUid rdf:datatype="&xsd;string">D000544</obo_annot:MeshUid>
+        <j.2:putativeClassExtension rdf:datatype="&xsd;string">Early Onset Alzheimer Disease</j.2:putativeClassExtension>
+        <j.2:putativeClassExtension rdf:datatype="&xsd;string">Focal Onset Alzheimer&#39;s Disease</j.2:putativeClassExtension>
+        <j.2:putativeClassExtension rdf:datatype="&xsd;string">Late Onset Alzheimer Disease</j.2:putativeClassExtension>
+        <obo_annot:usageNote rdf:datatype="&xsd;string">MeSH includes implied subtypes based mostly on chronological time of onset</obo_annot:usageNote>
+        <j.2:putativeClassExtension rdf:datatype="&xsd;string">Presenile Dementia</j.2:putativeClassExtension>
+        <j.2:putativeClassExtension rdf:datatype="&xsd;string">Primary Senile Degenerative Dementia</j.2:putativeClassExtension>
+        <obo_annot:nifID rdf:datatype="&xsd;string">_8.3_2.1</obo_annot:nifID>
+        <j.2:hasBirnlexCurator rdf:datatype="&xsd;string">http://ontology.neuinfo.org/NIF/Backend/BIRNLex_annotation_properties.owl#BIRN_OTF</j.2:hasBirnlexCurator>
+        <j.2:hasCurationStatus rdf:datatype="&xsd;string">http://ontology.neuinfo.org/NIF/Backend/BIRNLex_annotation_properties.owl#curation_complete</j.2:hasCurationStatus>
+        <obo_annot:hasExternalSource rdf:datatype="&xsd;string">http://ontology.neuinfo.org/NIF/Backend/OBO_annotation_properties.owl#MeSH</obo_annot:hasExternalSource>
+        <obo_annot:hasDefinitionSource rdf:datatype="&xsd;string">http://ontology.neuinfo.org/NIF/Backend/OBO_annotation_properties.owl#MeSH_defSource</obo_annot:hasDefinitionSource>
+        <obo_annot:definingCitationURI rdf:datatype="&xsd;string">http://www.ninds.nih.gov/disorders/alzheimersdisease/alzheimersdisease.htm</obo_annot:definingCitationURI>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.neuinfo.org/NIF/Dysfunction/NIF-Dysfunction.owl#birnlex_2098 -->
+
+    <owl:Class rdf:about="http://ontology.neuinfo.org/NIF/Dysfunction/NIF-Dysfunction.owl#birnlex_2098">
+        <rdfs:label rdf:datatype="&xsd;string">Parkinsons disease</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://ontology.neuinfo.org/NIF/Dysfunction/NIF-Dysfunction.owl#birnlex_2086"/>
+        <j.2:birnlexDefinition rdf:datatype="&xsd;string">* A disease characterized as a progressive motor disability manifested by tremors, shaking, muscular rigidity, and lack of postural reflexes. (PSY)
+* A progressive, degenerative neurologic disease characterized by a TREMOR that is maximal at rest, retropulsion (i.e. a tendency to fall backwards), rigidity, stooped posture, slowness of voluntary movements, and a masklike facial expression. Pathologic features include loss of melanin containing neurons in the substantia nigra and other pigmented nuclei of the brainstem. LEWY BODIES are present in the substantia nigra and locus coeruleus but may also be found in a related condition (LEWY BODY DISEASE, DIFFUSE) characterized by dementia in combination with varying degrees of parkinsonism. (Adams et al., Principles of Neurology, 6th ed, p1059, pp1067-75) (MSH)
+* progressive, degenerative disorder of the nervous system characterized by tremors, rigidity, bradykinesia, postural instability, and gait abnormalities; caused by a loss of neurons and a decrease of dopamine in the basal ganglia. (CSP)</j.2:birnlexDefinition>
+        <obo_annot:createdDate rdf:datatype="&xsd;string">2007-03-05</obo_annot:createdDate>
+        <obo_annot:UmlsCui rdf:datatype="&xsd;string">C0030567</obo_annot:UmlsCui>
+        <obo_annot:synonym rdf:datatype="&xsd;string">Idiopathic PD</obo_annot:synonym>
+        <j.2:putativeClassExtension rdf:datatype="&xsd;string">Idiopathic Parkinson Disease</j.2:putativeClassExtension>
+        <obo_annot:modifiedDate rdf:datatype="&xsd;string">June 24, 2009</obo_annot:modifiedDate>
+        <j.2:putativeClassExtension rdf:datatype="&xsd;string">Lewy Body Parkinson Disease</j.2:putativeClassExtension>
+        <obo_annot:usageNote rdf:datatype="&xsd;string">MeSH includes several implied subtypes based primarily on causation</obo_annot:usageNote>
+        <obo_annot:acronym rdf:datatype="&xsd;string">PD</obo_annot:acronym>
+        <obo_annot:synonym rdf:datatype="&xsd;string">Paralysis Agitans</obo_annot:synonym>
+        <obo_annot:synonym rdf:datatype="&xsd;string">Parkinson disease</obo_annot:synonym>
+        <obo_annot:synonym rdf:datatype="&xsd;string">Parkinson syndrome</obo_annot:synonym>
+        <obo_annot:synonym rdf:datatype="&xsd;string">Parkinson&#39;s disease</obo_annot:synonym>
+        <obo_annot:synonym rdf:datatype="&xsd;string">Parkinson&#39;s syndrome</obo_annot:synonym>
+        <obo_annot:synonym rdf:datatype="&xsd;string">Parkinsonian disorder</obo_annot:synonym>
+        <j.0:prefLabel rdf:datatype="&xsd;string">Parkinsons disease</j.0:prefLabel>
+        <j.2:putativeClassExtension rdf:datatype="&xsd;string">Primary Parkinsonism</j.2:putativeClassExtension>
+        <obo_annot:nifID rdf:datatype="&xsd;string">_8.3_2.7</obo_annot:nifID>
+        <j.2:hasBirnlexCurator rdf:datatype="&xsd;string">http://ontology.neuinfo.org/NIF/Backend/BIRNLex_annotation_properties.owl#Bill_Bug</j.2:hasBirnlexCurator>
+        <obo_annot:hasDefinitionSource rdf:datatype="&xsd;string">http://ontology.neuinfo.org/NIF/Backend/OBO_annotation_properties.owl#UMLS_defSource</obo_annot:hasDefinitionSource>
+        <obo_annot:definingCitationURI rdf:datatype="&xsd;string">http://www.ninds.nih.gov/disorders/parkinsons_disease/parkinsons_disease.htm</obo_annot:definingCitationURI>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.neuinfo.org/NIF/Dysfunction/NIF-Dysfunction.owl#birnlex_2104 -->
+
+    <owl:Class rdf:about="http://ontology.neuinfo.org/NIF/Dysfunction/NIF-Dysfunction.owl#birnlex_2104">
+        <rdfs:label rdf:datatype="&xsd;string">Schizophrenia</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://ontology.neuinfo.org/NIF/Dysfunction/NIF-Dysfunction.owl#birnlex_12761"/>
+        <obo_annot:createdDate rdf:datatype="&xsd;string">2006-06-01</obo_annot:createdDate>
+        <obo_annot:modifiedDate rdf:datatype="&xsd;string">2007-10-08</obo_annot:modifiedDate>
+        <obo_annot:externallySourcedDefinition rdf:datatype="&xsd;string">A severe emotional disorder of psychotic depth characteristically marked by a retreat from reality with delusion formation, hallucinations, emotional disharmony, and regressive behavior. (MeSH)</obo_annot:externallySourcedDefinition>
+        <obo_annot:UmlsCui rdf:datatype="&xsd;string">C0036341</obo_annot:UmlsCui>
+        <obo_annot:synonym rdf:datatype="&xsd;string">Dementia Praecox</obo_annot:synonym>
+        <j.0:prefLabel rdf:datatype="&xsd;string">Schizophrenia</j.0:prefLabel>
+        <obo_annot:synonym rdf:datatype="&xsd;string">Schizophrenic Disorder</obo_annot:synonym>
+        <obo_annot:nifID rdf:datatype="&xsd;string">_8.3_11.6</obo_annot:nifID>
+        <j.2:hasBirnlexCurator rdf:datatype="&xsd;string">http://ontology.neuinfo.org/NIF/Backend/BIRNLex_annotation_properties.owl#Jessica_Turner</j.2:hasBirnlexCurator>
+        <j.2:hasCurationStatus rdf:datatype="&xsd;string">http://ontology.neuinfo.org/NIF/Backend/BIRNLex_annotation_properties.owl#uncurated</j.2:hasCurationStatus>
+        <obo_annot:hasExternalSource rdf:datatype="&xsd;string">http://ontology.neuinfo.org/NIF/Backend/OBO_annotation_properties.owl#UMLS</obo_annot:hasExternalSource>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.neuinfo.org/NIF/Dysfunction/NIF-Dysfunction.owl#nlx_dys_090801 -->
+
+    <owl:Class rdf:about="http://ontology.neuinfo.org/NIF/Dysfunction/NIF-Dysfunction.owl#nlx_dys_090801">
+        <rdfs:label rdf:datatype="&xsd;string">Pick&#39;s Disease</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://ontology.neuinfo.org/NIF/Dysfunction/NIF-Dysfunction.owl#birnlex_2086"/>
+        <obo_annot:createdDate rdf:datatype="&xsd;string">August 11, 2009</obo_annot:createdDate>
+        <dc:contributor rdf:datatype="&xsd;string">Jane Bugea</dc:contributor>
+        <obo_annot:synonym rdf:datatype="&xsd;string">Picks Disease</obo_annot:synonym>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.neuinfo.org/NIF/Dysfunction/NIF-Dysfunction.owl#nlx_dys_100301 -->
+
+    <owl:Class rdf:about="http://ontology.neuinfo.org/NIF/Dysfunction/NIF-Dysfunction.owl#nlx_dys_100301">
+        <rdfs:label rdf:datatype="&xsd;string">Tic disorder</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://ontology.neuinfo.org/NIF/Dysfunction/NIF-Dysfunction.owl#birnlex_12669"/>
+        <obo_annot:definingCitation rdf:datatype="&xsd;string">American Psychiatric Association (2000). &quot;Diagnostic criteria for tic disorders&quot;. Diagnostic and Statistical Manual of Mental Disorders, 4th ed., text revision (DSM-IV-TR), ISBN 0890420254. Retrieved on July 22, 2008.</obo_annot:definingCitation>
+        <obo_annot:createdDate rdf:datatype="&xsd;string">March 19, 2010</obo_annot:createdDate>
+        <j.0:definition rdf:datatype="&xsd;string">Tic disorders are defined in the Diagnostic and Statistical Manual of Mental Disorders (DSM) based on type (motor or phonic) and duration of tics (sudden, rapid, nonrhythmic, stereotyped, involuntary movements). Tic disorders are defined similarly by the World Health Organization (ICD-10 codes).\\n\\nDSM-IV-TR diagnosis codes for the tic disorders are:\\n\\n307.20 Tic Disorder NOS (Not Otherwise Specified)\\n\\n307.21 Transient Tic Disorder\\n\\n307.22 Chronic Motor or Vocal Tic Disorder\\n\\n307.23 Tourette&#39;s Disorder\\n\\n\\nICD10 diagnosis codes are:\\n\\nF95.0 Transient tic disorder\\n\\nF95.1 Chronic motor or vocal tic disorder\\n\\nF95.2 Combined vocal and multiple motor tic disorder (de la Tourette)\\n\\nF95.8 Other tic disorders\\n\\nF95.9 Tic disorder, unspecified, Tic disorders are defined in the Diagnostic and Statistical Manual of Mental Disorders (DSM) based on type (motor or phonic) and duration of tics (sudden, rapid, nonrhythmic, stereotyped, involuntary movements). Tic disorders are defined similarly by the World Health Organization (ICD-10 codes).\\\\n\\\\nDSM-IV-TR diagnosis codes for the tic disorders are:\\\\n\\\\n307.20 Tic Disorder NOS (Not Otherwise Specified)\\\\n\\\\n307.21 Transient Tic Disorder\\\\n\\\\n307.22 Chronic Motor or Vocal Tic Disorder\\\\n\\\\n307.23 Tourette&#39;s Disorder\\\\n\\\\n\\\\nICD10 diagnosis codes are:\\\\n\\\\nF95.0 Transient tic disorder\\\\n\\\\nF95.1 Chronic motor or vocal tic disorder\\\\n\\\\nF95.2 Combined vocal and multiple motor tic disorder (de la Tourette)\\\\n\\\\nF95.8 Other tic disorders\\\\n\\\\nF95.9 Tic disorder, unspecified, Tic disorders are defined in the Diagnostic and Statistical Manual of Mental Disorders (DSM) based on type (motor or phonic) and duration of tics (sudden, rapid, nonrhythmic, stereotyped, involuntary movements). Tic disorders are defined similarly by the World Health Organization (ICD-10 codes).\n\nDSM-IV-TR diagnosis codes for the tic disorders are:\n\n307.20 Tic Disorder NOS (Not Otherwise Specified)\n\n307.21 Transient Tic Disorder\n\n307.22 Chronic Motor or Vocal Tic Disorder\n\n307.23 Tourette&#39;s Disorder\n\n\nICD10 diagnosis codes are:\n\nF95.0 Transient tic disorder\n\nF95.1 Chronic motor or vocal tic disorder\n\nF95.2 Combined vocal and multiple motor tic disorder (de la Tourette)\n\nF95.8 Other tic disorders\n\nF95.9 Tic disorder, unspecified</j.0:definition>
+    </owl:Class>
+    
+
+    <!-- http://ontology.neuinfo.org/NIF/Dysfunction/NIF-Dysfunction.owl#nlx_dys_100303 -->
+
+    <owl:Class rdf:about="http://ontology.neuinfo.org/NIF/Dysfunction/NIF-Dysfunction.owl#nlx_dys_100303">
+        <rdfs:label rdf:datatype="&xsd;string">Tourettes Disorder</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://ontology.neuinfo.org/NIF/Dysfunction/NIF-Dysfunction.owl#nlx_dys_100301"/>
+        <j.0:definition rdf:datatype="&xsd;string">Both multiple motor and one or more vocal tics have been present at some time during the illness. A tic is a sudden rapid recurrent, non rhythmic, stereotyped motor movement or vocalization.\n\nTourette syndrome (TS) is a neurological disorder characterized by repetitive, stereotyped, involuntary movements and vocalizations called tics. The disorder is named for Dr. Georges Gilles de la Tourette, the pioneering French neurologist who in 1885 first described the condition in an 86-year-old French noblewoman., Both multiple motor and one or more vocal tics have been present at some time during the illness. A tic is a sudden rapid recurrent, non rhythmic, stereotyped motor movement or vocalization.\\\\n\\\\nTourette syndrome (TS) is a neurological disorder characterized by repetitive, stereotyped, involuntary movements and vocalizations called tics. The disorder is named for Dr. Georges Gilles de la Tourette, the pioneering French neurologist who in 1885 first described the condition in an 86-year-old French noblewoman., Both multiple motor and one or more vocal tics have been present at some time during the illness. A tic is a sudden rapid recurrent, non rhythmic, stereotyped motor movement or vocalization.\\n\\nTourette syndrome (TS) is a neurological disorder characterized by repetitive, stereotyped, involuntary movements and vocalizations called tics. The disorder is named for Dr. Georges Gilles de la Tourette, the pioneering French neurologist who in 1885 first described the condition in an 86-year-old French noblewoman.</j.0:definition>
+        <obo_annot:definingCitation rdf:datatype="&xsd;string">Diagnostic and Statistical Manual of Mental Disorders. 4th ed.</obo_annot:definingCitation>
+        <obo_annot:synonym rdf:datatype="&xsd;string">Gilles de la Tourette syndrome</obo_annot:synonym>
+        <obo_annot:createdDate rdf:datatype="&xsd;string">March 19, 2010</obo_annot:createdDate>
+        <obo_annot:synonym rdf:datatype="&xsd;string">Tourette Disorder</obo_annot:synonym>
+        <obo_annot:synonym rdf:datatype="&xsd;string">Tourette syndrome</obo_annot:synonym>
+        <obo_annot:synonym rdf:datatype="&xsd;string">Tourette&#39;s Syndrome</obo_annot:synonym>
+        <obo_annot:synonym rdf:datatype="&xsd;string">Tourette&#39;s Disorder</obo_annot:synonym>
+        <obo_annot:definingCitationURI rdf:datatype="&xsd;string">http://medical-dictionary.thefreedictionary.com/Tourette+syndrome</obo_annot:definingCitationURI>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.neuinfo.org/NIF/Dysfunction/NIF-Dysfunction.owl#nlx_dys_20090301 -->
+
+    <owl:Class rdf:about="http://ontology.neuinfo.org/NIF/Dysfunction/NIF-Dysfunction.owl#nlx_dys_20090301">
+        <rdfs:label rdf:datatype="&xsd;string">Eating disorder</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&p9;birnlex_11013"/>
+        <j.0:definition rdf:datatype="&xsd;string">A type of disorder involving the results of eating behavior, e.g., eating too much or eating too little.</j.0:definition>
+        <j.0:prefLabel rdf:datatype="&xsd;string">Eating disorder</j.0:prefLabel>
+        <obo_annot:synonym rdf:datatype="&xsd;string">Eating related disorder</obo_annot:synonym>
+        <obo_annot:synonym rdf:datatype="&xsd;string">Eating-related disorder</obo_annot:synonym>
+        <obo_annot:createdDate rdf:datatype="&xsd;string">March 18, 2009</obo_annot:createdDate>
+        <j.0:example rdf:datatype="&xsd;string">Obesity</j.0:example>
+        <rdfs:comment rdf:datatype="&xsd;string">This can be considered a proxy class for conditions like obesity which really are more qualities than diseases; but until the correct classification is in place, we will use it because it is useful. (Maryann Martone, February, 2009)</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.neuinfo.org/NIF/Dysfunction/NIF-Dysfunction.owl#nlx_dys_20090302 -->
+
+    <owl:Class rdf:about="http://ontology.neuinfo.org/NIF/Dysfunction/NIF-Dysfunction.owl#nlx_dys_20090302">
+        <rdfs:label rdf:datatype="&xsd;string">Obesity</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://ontology.neuinfo.org/NIF/Dysfunction/NIF-Dysfunction.owl#nlx_dys_20090301"/>
+        <j.0:definition rdf:datatype="&xsd;string">An eating-related disorder in which excess body fat has accumulated to such an extent that health may be negatively affected. It is commonly defined as a body mass index (weight divided by height squared) of 30 kg/m2 or higher.</j.0:definition>
+        <obo_annot:createdDate rdf:datatype="&xsd;string">March 18, 2009</obo_annot:createdDate>
+        <j.0:prefLabel rdf:datatype="&xsd;string">Obesity</j.0:prefLabel>
+        <obo_annot:hasDefinitionSource rdf:datatype="&xsd;string">http://en.wikipedia.org/wiki/Obesity</obo_annot:hasDefinitionSource>
+    </owl:Class>
+    
+
+
+
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#ConceptScheme -->
+
+    <owl:Class rdf:about="&j.0;ConceptScheme"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Chemical.owl">
+        <rdfs:comment rdf:datatype="&xsd;string"></rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Chemical.owl#CHEBI_23888">
+        <j.0:definition rdf:datatype="&xsd;string">Any substance which when absorbed into a living organism may modify one or more of its functions. The term is generally accepted for a substance taken for a therapeutic purpose, but is also commonly used for abused substances.</j.0:definition>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.2.3.22702) http://owlapi.sourceforge.net -->
+

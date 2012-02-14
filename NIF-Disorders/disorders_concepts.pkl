@@ -1,0 +1,114 @@
+(lp0
+S'Huntingtons disease'
+p1
+aS'Autism'
+p2
+aS'Adjustment Disorder'
+p3
+aS'Anxiety Disorder'
+p4
+aS'Agoraphobia'
+p5
+aS'Obsessive-Compulsive Disorder'
+p6
+aS'Phobia'
+p7
+aS'Panic Disorder'
+p8
+aS'Post-Traumatic Stress Disorder'
+p9
+aS'Drug Abuse'
+p10
+aS'Korsakoff Syndrome'
+p11
+aS'Alcoholic Intoxication'
+p12
+aS'Alcoholism'
+p13
+aS'Wernicke Encephalopathy'
+p14
+aS'Amphetamine-Related Disorder'
+p15
+aS'Cocaine-Related Disorder'
+p16
+aS'Cannabis-Related Disorder'
+p17
+aS'Heroin-Related Disorder'
+p18
+aS'Mood Disorder'
+p19
+aS'Affective Psychotic Disorder'
+p20
+aS'Bipolar Disorder'
+p21
+aS'Cyclothymic Disorder'
+p22
+aS'Depressive Disorder'
+p23
+aS'Postpartum Depression'
+p24
+aS'Major Depressive Disorder'
+p25
+aS'Dysthymic Disorder'
+p26
+aS'Seasonal Affective Disorder'
+p27
+aS'Psychotic Disorder'
+p28
+aS'Capgras Syndrome'
+p29
+aS'Paranoid Disorder'
+p30
+aS'Paranoid Schizophrenia'
+p31
+aS'Asperger Syndrome'
+p32
+aS'Alzheimers disease'
+p33
+aS'Parkinsons disease'
+p34
+aS'Schizophrenia'
+p35
+aS'Tic disorder'
+p36
+aS'Tourettes Disorder'
+p37
+aS'Eating disorder'
+p38
+aS'Obesity'
+p39
+aS'amnesia'
+p40
+aS'alexia'
+p41
+aS'dyslexia'
+p42
+aS'dissociative disorder'
+p43
+aS'specific language impairment'
+p44
+aS'gambling'
+p45
+aS'impulse control disorder'
+p46
+aS'attention deficit disorder'
+p47
+aS'trichotillomania'
+p48
+aS'aphasia'
+p49
+aS'schizotypal personality disorder'
+p50
+aS'paranoid personality disorder'
+p51
+aS'schizoid personality disorder'
+p52
+aS'antisocial personality disorder'
+p53
+aS'conduct disorder'
+p54
+aS'compulsive personality disorder'
+p55
+aS'borderline personality disorder'
+p56
+a.
