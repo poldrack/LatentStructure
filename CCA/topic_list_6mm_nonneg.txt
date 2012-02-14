@@ -1,0 +1,483 @@
+component 0 (0.924734)
+nonzero cognitive topics:
+77 (0.249252): mood induction emotion sadness
+94 (0.247777): reward decision association learning
+15 (0.243353): reward anticipation feedback learning
+40 (0.231611): fear generalization learning association
+105 (0.229092): emotion sadness context happiness
+39 (0.228609): valence arousal fixation context
+93 (0.227693): emotion valence arousal attention
+44 (0.223531): risk decision utility decision_making
+54 (0.216216): desire habit reward association
+49 (0.213132): fear emotion attention perception
+73 (0.206317): arousal attention focus excitement
+98 (0.202518): stress association feedback risk
+88 (0.194326): focus attention association context
+123 (0.193454): stress induction memory arousal
+117 (0.163089): anticipation feedback association reward
+23 (0.144869): pain search perception distraction
+100 (0.134191): choice decision utility reward
+99 (0.129757): facial_expression emotional_expression perception fixation
+58 (0.115992): emotion facial_expression recognition emotion_recognition
+95 (0.115160): attachment emotion grief association
+14 (0.112258): association context learning attention
+97 (0.106934): awareness consciousness insight attention
+33 (0.105389): memory retrieval autobiographical_memory memory_retrieval
+29 (0.104706): learning error_signal rule goal
+12 (0.101317): pain perception attention inhibition
+56 (0.101231): expectancy attention arousal focus
+9 (0.100352): executive_function attention memory working_memory
+129 (0.100091): cognition social_cognition communication theory_of_mind
+112 (0.096691): context social_context integration encoding
+nonzero disease topics:
+25 (0.396620): anxiety_disorder panic_disorder phobia obsessive_compulsive_disorder
+13 (0.362440): depressive_disorder major_depressive_disorder drug_abuse bipolar_disorder
+22 (0.346714): gambling drug_abuse impulse_control_disorder
+8 (0.345578): obesity cocaine_related_disorder drug_abuse eating_disorder
+14 (0.316037): drug_abuse conduct_disorder alcoholism antisocial_personality_disorder
+26 (0.297178): phobia eating_disorder agoraphobia panic_disorder
+7 (0.256729): bipolar_disorder schizophrenia mood_disorder cyclothymic_disorder
+21 (0.251351): drug_abuse alzheimers_disease heroin_related_disorder phobia
+28 (0.226289): borderline_personality_disorder drug_abuse post_traumatic_stress_disorder alcoholism
+5 (0.220522): obsessive_compulsive_disorder drug_abuse tourettes_disorder post_traumatic_stress_disorder
+12 (0.172908): drug_abuse gambling alcoholic_intoxication antisocial_personality_disorder
+4 (0.129933): psychotic_disorder paranoid_disorder schizophrenia affective_psychotic_disorder
+16 (0.088306): schizophrenia
+
+component 1 (0.772770)
+nonzero cognitive topics:
+93 (0.237875): emotion valence arousal attention
+105 (0.229303): emotion sadness context happiness
+39 (0.218796): valence arousal fixation context
+33 (0.217164): memory retrieval autobiographical_memory memory_retrieval
+44 (0.212170): risk decision utility decision_making
+77 (0.202508): mood induction emotion sadness
+129 (0.201559): cognition social_cognition communication theory_of_mind
+94 (0.194599): reward decision association learning
+88 (0.192718): focus attention association context
+54 (0.188233): desire habit reward association
+40 (0.179752): fear generalization learning association
+1 (0.172918): belief theory_of_mind reasoning intention
+15 (0.170251): reward anticipation feedback learning
+49 (0.168424): fear emotion attention perception
+14 (0.150017): association context learning attention
+123 (0.144073): stress induction memory arousal
+3 (0.142921): memory episodic_memory recall learning
+65 (0.141777): recall humor memory retrieval
+98 (0.138920): stress association feedback risk
+73 (0.135212): arousal attention focus excitement
+100 (0.129853): choice decision utility reward
+96 (0.129657): context context_memory framing focus
+112 (0.129136): context social_context integration encoding
+59 (0.128305): intelligence morphology fluid_intelligence association
+97 (0.127762): awareness consciousness insight attention
+120 (0.124951): judgment fixation movement decision
+99 (0.124392): facial_expression emotional_expression perception fixation
+58 (0.123446): emotion facial_expression recognition emotion_recognition
+108 (0.120324): empathy pain theory_of_mind awareness
+nonzero disease topics:
+10 (0.418595): amnesia alzheimers_disease korsakoff_syndrome wernicke_encephalopathy
+3 (0.387468): schizophrenia paranoid_schizophrenia obesity
+9 (0.372166): schizophrenia schizotypal_personality_disorder paranoid_personality_disorder
+23 (0.322880): autism specific_language_impairment
+18 (0.301401): schizophrenia psychotic_disorder paranoid_disorder cannabis_related_disorder
+6 (0.290230): schizophrenia tic_disorder mood_disorder
+1 (0.256108): schizophrenia drug_abuse
+20 (0.245023): attention_deficit_disorder conduct_disorder tourettes_disorder adjustment_disorder
+2 (0.215591): schizophrenia psychotic_disorder paranoid_disorder drug_abuse
+16 (0.184426): schizophrenia
+27 (0.168206): autism asperger_syndrome specific_language_impairment
+4 (0.110058): psychotic_disorder paranoid_disorder schizophrenia affective_psychotic_disorder
+19 (0.087937): autism asperger_syndrome capgras_syndrome
+0 (0.050513): mood_disorder parkinsons_disease huntingtons_disease seasonal_affective_disorder
+
+component 2 (0.867644)
+nonzero cognitive topics:
+66 (0.268120): language syntactic_processing comprehension syntax
+13 (0.264553): language comprehension language_processing meaning
+107 (0.253463): language language_processing language_acquisition language_production
+26 (0.250162): comprehension language sentence_comprehension language_comprehension
+5 (0.249529): word_frequency decision lexicon reading
+62 (0.245627): reading language recognition focus
+87 (0.237961): semantic_processing semantic_information retrieval knowledge
+72 (0.212849): reading language skill orthography
+60 (0.205192): auditory speech_production perception speech_perception
+17 (0.203886): verbal_fluency word_generation articulation language
+82 (0.200981): meaning subordinate context semantic_processing
+57 (0.200054): semantic_memory imageability memory knowledge
+81 (0.191624): hearing auditory perception speech_processing
+50 (0.183058): listening auditory melody perception
+71 (0.181877): narrative discourse comprehension memory
+32 (0.181821): naming retrieval paraphasia lexical_retrieval
+103 (0.174627): prosody mental_rotation intonation perception
+69 (0.158451): concept conceptualization knowledge meaning
+74 (0.152223): auditory perception hearing attention
+0 (0.132546): priming decision fixation judgment
+6 (0.107453): knowledge semantic_knowledge association context
+120 (0.099076): judgment fixation movement decision
+10 (0.096101): rehearsal memory updating working_memory
+85 (0.095861): inference knowledge context search
+118 (0.090341): integration multisensory crossmodal unisensory
+27 (0.085050): analogy reasoning analogical_reasoning integration
+55 (0.082487): recognition object_recognition word_recognition object_identification
+61 (0.082110): memory working_memory maintenance visual_working_memory
+38 (0.079024): categorization prototype fixation category_learning
+nonzero disease topics:
+24 (0.691929): dyslexia specific_language_impairment
+11 (0.676724): aphasia
+27 (0.200437): autism asperger_syndrome specific_language_impairment
+23 (0.121418): autism specific_language_impairment
+17 (0.076761): alcoholism alexia
+19 (0.037062): autism asperger_syndrome capgras_syndrome
+10 (0.033103): amnesia alzheimers_disease korsakoff_syndrome wernicke_encephalopathy
+
+component 3 (0.822665)
+nonzero cognitive topics:
+15 (0.294392): reward anticipation feedback learning
+117 (0.273887): anticipation feedback association reward
+94 (0.272769): reward decision association learning
+77 (0.241636): mood induction emotion sadness
+44 (0.231088): risk decision utility decision_making
+124 (0.216851): feedback learning reward focus
+90 (0.211534): inhibition response_inhibition attention motor_inhibition
+23 (0.210620): pain search perception distraction
+98 (0.208743): stress association feedback risk
+54 (0.207428): desire habit reward association
+16 (0.207352): pain perception movement manipulation
+12 (0.202506): pain perception attention inhibition
+123 (0.200966): stress induction memory arousal
+40 (0.196476): fear generalization learning association
+116 (0.178066): action action_selection monitoring focus
+88 (0.177899): focus attention association context
+73 (0.164982): arousal attention focus excitement
+8 (0.151516): cognitive_control monitoring attention performance_monitoring
+100 (0.141663): choice decision utility reward
+9 (0.132264): executive_function attention memory working_memory
+93 (0.130059): emotion valence arousal attention
+105 (0.117966): emotion sadness context happiness
+39 (0.114665): valence arousal fixation context
+49 (0.104933): fear emotion attention perception
+29 (0.096978): learning error_signal rule goal
+97 (0.089395): awareness consciousness insight attention
+56 (0.086476): expectancy attention arousal focus
+86 (0.083349): decision decision_making choice fixation
+22 (0.075516): uncertainty conversation decision monitoring
+nonzero disease topics:
+0 (0.544328): mood_disorder parkinsons_disease huntingtons_disease seasonal_affective_disorder
+15 (0.408430): attention_deficit_disorder
+20 (0.392068): attention_deficit_disorder conduct_disorder tourettes_disorder adjustment_disorder
+12 (0.351521): drug_abuse gambling alcoholic_intoxication antisocial_personality_disorder
+5 (0.243650): obsessive_compulsive_disorder drug_abuse tourettes_disorder post_traumatic_stress_disorder
+2 (0.194878): schizophrenia psychotic_disorder paranoid_disorder drug_abuse
+18 (0.194465): schizophrenia psychotic_disorder paranoid_disorder cannabis_related_disorder
+6 (0.174796): schizophrenia tic_disorder mood_disorder
+4 (0.158488): psychotic_disorder paranoid_disorder schizophrenia affective_psychotic_disorder
+28 (0.139986): borderline_personality_disorder drug_abuse post_traumatic_stress_disorder alcoholism
+1 (0.138204): schizophrenia drug_abuse
+16 (0.137250): schizophrenia
+7 (0.091846): bipolar_disorder schizophrenia mood_disorder cyclothymic_disorder
+17 (0.044685): alcoholism alexia
+21 (0.027650): drug_abuse alzheimers_disease heroin_related_disorder phobia
+22 (0.006723): gambling drug_abuse impulse_control_disorder
+
+component 4 (0.676671)
+nonzero cognitive topics:
+113 (0.301755): encoding memory retrieval recognition
+101 (0.274626): recognition memory retrieval pattern_recognition
+36 (0.271739): memory explicit_memory declarative_memory encoding
+79 (0.248112): familiarity recognition memory context
+7 (0.248037): encoding memory episodic_memory retrieval
+37 (0.245044): recognition face_recognition fixation familiarity
+25 (0.240667): memory source_memory encoding recognition
+52 (0.233136): retrieval memory memory_retrieval retrieval_cue
+127 (0.214367): memory encoding forgetting emotional_memory
+3 (0.213308): memory episodic_memory recall learning
+0 (0.197657): priming decision fixation judgment
+4 (0.196547): cognition recognition memory social_cognition
+64 (0.191428): retrieval memory memory_retrieval episodic_memory
+57 (0.181798): semantic_memory imageability memory knowledge
+120 (0.161928): judgment fixation movement decision
+33 (0.153775): memory retrieval autobiographical_memory memory_retrieval
+65 (0.141189): recall humor memory retrieval
+38 (0.138865): categorization prototype fixation category_learning
+96 (0.136414): context context_memory framing focus
+87 (0.134367): semantic_processing semantic_information retrieval knowledge
+6 (0.100973): knowledge semantic_knowledge association context
+24 (0.091115): strategy mental_arithmetic focus chunking
+34 (0.090684): perception face_perception fixation apparent_motion
+121 (0.089828): regret surprise reasoning arousal
+91 (0.088915): navigation egocentric movement cognitive_map
+80 (0.083661): expertise attitude prejudice familiarity
+46 (0.078443): search visual_search attention conjunction_search
+58 (0.078164): emotion facial_expression recognition emotion_recognition
+14 (0.077346): association context learning attention
+nonzero disease topics:
+10 (0.773464): amnesia alzheimers_disease korsakoff_syndrome wernicke_encephalopathy
+17 (0.596104): alcoholism alexia
+19 (0.155356): autism asperger_syndrome capgras_syndrome
+23 (0.106664): autism specific_language_impairment
+24 (0.078396): dyslexia specific_language_impairment
+9 (0.068956): schizophrenia schizotypal_personality_disorder paranoid_personality_disorder
+
+component 5 (0.711665)
+nonzero cognitive topics:
+129 (0.430203): cognition social_cognition communication theory_of_mind
+1 (0.342462): belief theory_of_mind reasoning intention
+108 (0.301005): empathy pain theory_of_mind awareness
+45 (0.275991): intention prospective_memory introspection attention
+71 (0.273915): narrative discourse comprehension memory
+99 (0.224282): facial_expression emotional_expression perception fixation
+58 (0.221330): emotion facial_expression recognition emotion_recognition
+85 (0.202085): inference knowledge context search
+80 (0.191237): expertise attitude prejudice familiarity
+105 (0.179733): emotion sadness context happiness
+33 (0.175791): memory retrieval autobiographical_memory memory_retrieval
+93 (0.172254): emotion valence arousal attention
+110 (0.162615): reasoning deductive_reasoning memory knowledge
+26 (0.137532): comprehension language sentence_comprehension language_comprehension
+96 (0.136825): context context_memory framing focus
+120 (0.127059): judgment fixation movement decision
+37 (0.118980): recognition face_recognition fixation familiarity
+97 (0.113392): awareness consciousness insight attention
+39 (0.104565): valence arousal fixation context
+28 (0.093862): salience response_selection manipulation goal
+112 (0.089534): context social_context integration encoding
+4 (0.083082): cognition recognition memory social_cognition
+95 (0.082090): attachment emotion grief association
+121 (0.081391): regret surprise reasoning arousal
+35 (0.079833): hallucination auditory audition language
+46 (0.077849): search visual_search attention conjunction_search
+34 (0.065826): perception face_perception fixation apparent_motion
+49 (0.064976): fear emotion attention perception
+56 (0.049640): expectancy attention arousal focus
+nonzero disease topics:
+19 (0.660810): autism asperger_syndrome capgras_syndrome
+27 (0.587252): autism asperger_syndrome specific_language_impairment
+23 (0.360596): autism specific_language_impairment
+21 (0.182722): drug_abuse alzheimers_disease heroin_related_disorder phobia
+28 (0.170393): borderline_personality_disorder drug_abuse post_traumatic_stress_disorder alcoholism
+4 (0.120504): psychotic_disorder paranoid_disorder schizophrenia affective_psychotic_disorder
+26 (0.107206): phobia eating_disorder agoraphobia panic_disorder
+
+component 6 (0.488674)
+nonzero cognitive topics:
+19 (0.349980): fixation attention movement focus
+30 (0.298564): logic task_set task_switching goal
+43 (0.266765): attention focus visual_attention fixation
+72 (0.265085): reading language skill orthography
+21 (0.255045): interference interference_resolution cognitive_control attention
+55 (0.246578): recognition object_recognition word_recognition object_identification
+122 (0.240841): attention selective_attention divided_attention attention_shift
+111 (0.215710): memory working_memory attention spatial_working_memory
+24 (0.210558): strategy mental_arithmetic focus chunking
+41 (0.204958): rule rule_learning context learning
+61 (0.195555): memory working_memory maintenance visual_working_memory
+109 (0.186460): manipulation maintenance object_manipulation movement
+2 (0.165778): adaptation fixation attention priming
+119 (0.149824): competition context conflict_detection manipulation
+47 (0.148575): imagery mental_imagery visual_imagery perception
+92 (0.146513): attention spatial_attention fixation movement
+113 (0.139167): encoding memory retrieval recognition
+38 (0.125221): categorization prototype fixation category_learning
+118 (0.117112): integration multisensory crossmodal unisensory
+10 (0.113214): rehearsal memory updating working_memory
+62 (0.112300): reading language recognition focus
+76 (0.098530): planning motor_planning movement_planning motor_execution
+0 (0.097851): priming decision fixation judgment
+34 (0.096372): perception face_perception fixation apparent_motion
+125 (0.087468): skill learning procedural_learning skill_learning
+31 (0.087442): perception attention visual_perception focus
+70 (0.083674): memory working_memory efficiency cognition
+32 (0.082289): naming retrieval paraphasia lexical_retrieval
+64 (0.075523): retrieval memory memory_retrieval episodic_memory
+nonzero disease topics:
+24 (1.000000): dyslexia specific_language_impairment
+
+component 7 (0.000000)
+nonzero cognitive topics:
+nonzero disease topics:
+
+component 8 (0.000000)
+nonzero cognitive topics:
+nonzero disease topics:
+
+component 9 (0.000000)
+nonzero cognitive topics:
+nonzero disease topics:
+
+component 10 (0.000000)
+nonzero cognitive topics:
+nonzero disease topics:
+
+component 11 (0.747023)
+nonzero cognitive topics:
+58 (0.445942): emotion facial_expression recognition emotion_recognition
+49 (0.402956): fear emotion attention perception
+99 (0.370859): facial_expression emotional_expression perception fixation
+40 (0.301428): fear generalization learning association
+123 (0.282432): stress induction memory arousal
+73 (0.279051): arousal attention focus excitement
+95 (0.216448): attachment emotion grief association
+39 (0.208083): valence arousal fixation context
+127 (0.190132): memory encoding forgetting emotional_memory
+105 (0.150197): emotion sadness context happiness
+121 (0.148308): regret surprise reasoning arousal
+108 (0.145015): empathy pain theory_of_mind awareness
+93 (0.116279): emotion valence arousal attention
+80 (0.108500): expertise attitude prejudice familiarity
+77 (0.104759): mood induction emotion sadness
+98 (0.103938): stress association feedback risk
+23 (0.089258): pain search perception distraction
+96 (0.045597): context context_memory framing focus
+112 (0.040372): context social_context integration encoding
+54 (0.034967): desire habit reward association
+126 (0.019309): automaticity routine learning attention
+46 (0.018563): search visual_search attention conjunction_search
+14 (0.012697): association context learning attention
+nonzero disease topics:
+26 (0.573328): phobia eating_disorder agoraphobia panic_disorder
+0 (0.442418): mood_disorder parkinsons_disease huntingtons_disease seasonal_affective_disorder
+17 (0.415308): alcoholism alexia
+16 (0.353001): schizophrenia
+2 (0.295590): schizophrenia psychotic_disorder paranoid_disorder drug_abuse
+28 (0.240237): borderline_personality_disorder drug_abuse post_traumatic_stress_disorder alcoholism
+4 (0.129995): psychotic_disorder paranoid_disorder schizophrenia affective_psychotic_disorder
+27 (0.121600): autism asperger_syndrome specific_language_impairment
+18 (0.033629): schizophrenia psychotic_disorder paranoid_disorder cannabis_related_disorder
+12 (0.023813): drug_abuse gambling alcoholic_intoxication antisocial_personality_disorder
+
+component 12 (0.371186)
+nonzero cognitive topics:
+3 (0.359364): memory episodic_memory recall learning
+44 (0.356820): risk decision utility decision_making
+94 (0.282845): reward decision association learning
+114 (0.249909): acuity grapheme constancy excitation
+54 (0.231272): desire habit reward association
+59 (0.227091): intelligence morphology fluid_intelligence association
+88 (0.221225): focus attention association context
+38 (0.192512): categorization prototype fixation category_learning
+14 (0.191924): association context learning attention
+34 (0.188069): perception face_perception fixation apparent_motion
+19 (0.168086): fixation attention movement focus
+62 (0.163112): reading language recognition focus
+65 (0.156425): recall humor memory retrieval
+29 (0.156224): learning error_signal rule goal
+72 (0.154217): reading language skill orthography
+75 (0.142523): retention consolidation memory memory_consolidation
+46 (0.142043): search visual_search attention conjunction_search
+35 (0.139068): hallucination auditory audition language
+112 (0.134898): context social_context integration encoding
+55 (0.123207): recognition object_recognition word_recognition object_identification
+105 (0.117048): emotion sadness context happiness
+77 (0.112373): mood induction emotion sadness
+15 (0.111841): reward anticipation feedback learning
+95 (0.109294): attachment emotion grief association
+39 (0.105322): valence arousal fixation context
+96 (0.103791): context context_memory framing focus
+36 (0.098891): memory explicit_memory declarative_memory encoding
+86 (0.092482): decision decision_making choice fixation
+0 (0.083695): priming decision fixation judgment
+nonzero disease topics:
+17 (1.000000): alcoholism alexia
+
+component 13 (0.000000)
+nonzero cognitive topics:
+nonzero disease topics:
+
+component 14 (0.000000)
+nonzero cognitive topics:
+nonzero disease topics:
+
+component 15 (0.000000)
+nonzero cognitive topics:
+nonzero disease topics:
+
+component 16 (0.000000)
+nonzero cognitive topics:
+nonzero disease topics:
+
+component 17 (0.000000)
+nonzero cognitive topics:
+nonzero disease topics:
+
+component 18 (0.000000)
+nonzero cognitive topics:
+nonzero disease topics:
+
+component 19 (0.000000)
+nonzero cognitive topics:
+nonzero disease topics:
+
+component 20 (0.000000)
+nonzero cognitive topics:
+nonzero disease topics:
+
+component 21 (0.000000)
+nonzero cognitive topics:
+nonzero disease topics:
+
+component 22 (0.774744)
+nonzero cognitive topics:
+59 (0.413528): intelligence morphology fluid_intelligence association
+88 (0.381348): focus attention association context
+14 (0.307085): association context learning attention
+3 (0.286862): memory episodic_memory recall learning
+35 (0.260920): hallucination auditory audition language
+18 (0.255073): lying deception knowledge executive_control
+44 (0.241885): risk decision utility decision_making
+33 (0.239540): memory retrieval autobiographical_memory memory_retrieval
+100 (0.236639): choice decision utility reward
+4 (0.193563): cognition recognition memory social_cognition
+129 (0.167010): cognition social_cognition communication theory_of_mind
+1 (0.145953): belief theory_of_mind reasoning intention
+9 (0.145359): executive_function attention memory working_memory
+86 (0.131093): decision decision_making choice fixation
+97 (0.130513): awareness consciousness insight attention
+120 (0.108841): judgment fixation movement decision
+93 (0.093050): emotion valence arousal attention
+98 (0.087163): stress association feedback risk
+46 (0.079658): search visual_search attention conjunction_search
+110 (0.075756): reasoning deductive_reasoning memory knowledge
+8 (0.065914): cognitive_control monitoring attention performance_monitoring
+39 (0.062812): valence arousal fixation context
+54 (0.059999): desire habit reward association
+105 (0.049258): emotion sadness context happiness
+77 (0.048723): mood induction emotion sadness
+94 (0.028629): reward decision association learning
+65 (0.027040): recall humor memory retrieval
+96 (0.020316): context context_memory framing focus
+85 (0.018992): inference knowledge context search
+nonzero disease topics:
+21 (0.697353): drug_abuse alzheimers_disease heroin_related_disorder phobia
+4 (0.462548): psychotic_disorder paranoid_disorder schizophrenia affective_psychotic_disorder
+7 (0.412231): bipolar_disorder schizophrenia mood_disorder cyclothymic_disorder
+19 (0.297285): autism asperger_syndrome capgras_syndrome
+16 (0.179921): schizophrenia
+12 (0.094454): drug_abuse gambling alcoholic_intoxication antisocial_personality_disorder
+1 (0.011917): schizophrenia drug_abuse
+15 (0.000969): attention_deficit_disorder
+
+component 23 (0.000000)
+nonzero cognitive topics:
+nonzero disease topics:
+
+component 24 (0.000000)
+nonzero cognitive topics:
+nonzero disease topics:
+
+component 25 (0.000000)
+nonzero cognitive topics:
+nonzero disease topics:
+
+component 26 (0.000000)
+nonzero cognitive topics:
+nonzero disease topics:
+
+component 27 (0.000000)
+nonzero cognitive topics:
+nonzero disease topics:
+
+component 28 (0.000000)
+nonzero cognitive topics:
+nonzero disease topics:
+
