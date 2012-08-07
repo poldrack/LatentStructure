@@ -1,5 +1,11 @@
 This repository contains code and relevant files for the Latent Structure
-modeling project described in Poldrack et al. (submitted).
+modeling project described in:
+
+Poldrack RA, Mumford JA, Schonberg T, Kalar D, Barman B, Yarkoni T (2012). Discovering relations between mind, brain, and mental disorders using topic mapping. PLOS Computational Biology, in press.
+
+Preprint available at:
+
+http://talyarkoni.org/papers/Poldrack_et_al_in_press_PLoS_CompBio.pdf
 
 Guide to subdirectories:
 CCA - contains results from CCA analysis
