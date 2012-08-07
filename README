@@ -69,9 +69,9 @@ additional missing terms
 
 18.2_mk_6mm_chisq_maps.sh - make 6mm versions of topic
 
-19_mk_slice_images_cogatlas.py - make slice images
+19_mk_slice_images_cogatlas.py - make slice images using p values
 
-20_mk_slice_images_disorders.py - make slice images
+20_mk_slice_images_disorders.py - make slice images using p values
 
 22_mk_latexreport_cogatlas.py - create latex report
 
@@ -81,8 +81,36 @@ additional missing terms
 
 25_cluster_disorders.R - run clustering on disorders data
 
-26_make_cognitive_topic_figure.py - generate figure 2
+26_make_cognitive_topic_figure.py - generate figure 2 from initial submission
 
-27_make_disorders_topic_figure.py - generate figure 3
+27_make_disorders_topic_figure.py - generate figure 3 from initial submission
 
+28_mk_8fold_fulltext_topic_models.py - create scripts to run fulltext topic models
 
+28.1_mk_8fold_fulltext_mallet_data.py - make 8-fold data for full text analysis
+
+28.2_run_all_fulltext_nfold.sh - run mallet jobs on 8-fold full text
+
+28.3_get_best_dimensionality.py - get best dimensionality for full text
+
+30_get_wordhist.py - get histograms of # of docs for each filtered paper
+
+31_count_locations.py - count # of locations reported across all papers
+
+32_doc_topic_hist.py - make histograms of docs/topic and topics/doc (for Figure 3)
+
+33_plot_likelihood.py - plot empirical likelihood as function of # of topics (for Figure 2)
+
+34_run_CCA_on_topics.py - run CCA directly on topic distributions
+
+35_mk_fold1_loadingdata.py - get loadingdata for fold1 for each ntopics
+
+36.1_mk_slice_corr_images.disorders.py - make images using correlation rather than p value
+
+36_mk_slice_corr_images.cogatlas.py - make images using correlation rather than p value (for figure 
+
+37_make_cognitive_topic_corr_figure.py - make Figure 4
+
+38_make_disorder_topic_corr_figure.py - make Figure 6
+
+39_get_topic_hierarchy.py - create graphviz .dot file for topic hierarchy (Figure 5)

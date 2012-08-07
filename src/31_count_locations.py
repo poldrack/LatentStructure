@@ -1,5 +1,6 @@
 """
 count # of locations reported across all papers
+- for response to PLOS reviews
 """
 
 import numpy as N
